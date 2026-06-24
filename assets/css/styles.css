@@ -597,7 +597,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;                /* espace autour du logo */
+  padding: 0px;                /* espace autour du logo */
 }
 .timeline > li .timeline-image img {
   width: 100%;
