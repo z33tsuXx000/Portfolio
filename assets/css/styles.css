@@ -811,3 +811,59 @@ footer ul li {
 .project:hover img {
   transform: translateY(-100%);
 }
+.certification-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 14px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.certification-logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.certification-content h5 {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.certification-issuer {
+    font-weight: 600;
+    color: #5f5f89;
+    margin-bottom: 6px;
+}
+
+.certification-link {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.certification-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .certification-card {
+        align-items: flex-start;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .certification-logo {
+        width: 55px;
+        height: 55px;
+    }
+}
