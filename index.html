@@ -909,7 +909,213 @@
             </div>
         </div>
     </div>
+<!-- Portfolio Modal 5-->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1"
+    aria-labelledby="portfolioModal5" aria-hidden="true">
 
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body text-center pb-5">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-10">
+
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4">
+                                AI-Augmented SOC Homelab
+                            </h2>
+
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+
+                                <div class="divider-custom-icon">
+                                    <i class="fas fa-shield-halved"></i>
+                                </div>
+
+                                <div class="divider-custom-line"></div>
+                            </div>
+
+
+                            <!-- Hero Image-->
+                            <img class="img-fluid rounded shadow mb-5"
+                                style="max-width: 900px;"
+                                src="assets/img/ai-soc-homelab.png"
+                                alt="AI-Augmented SOC Homelab" />
+
+
+                            <!-- Project Overview-->
+                            <h4 class="text-secondary text-uppercase mb-3">
+                                Project Overview
+                            </h4>
+
+                            <p class="mb-4" style="text-align: justify;">
+                                Conception et déploiement d'un homelab SOC virtualisé visant à
+                                reproduire les principales fonctions d'un environnement Blue Team.
+                                Le laboratoire centralise les événements de sécurité provenant de
+                                différents systèmes afin de permettre leur supervision, leur
+                                détection et leur analyse depuis une plateforme SIEM/XDR.
+                            </p>
+
+                            <p class="mb-5" style="text-align: justify;">
+                                Le projet permet également de générer différents scénarios de
+                                sécurité contrôlés afin d'obtenir des alertes réalistes et de
+                                reproduire les premières étapes du travail d'un analyste SOC :
+                                collecte de télémétrie, qualification d'événements, analyse,
+                                contextualisation et investigation.
+                            </p>
+
+
+                            <!-- Architecture-->
+                            <h4 class="text-secondary text-uppercase mb-3">
+                                SOC Architecture
+                            </h4>
+
+                            <img class="img-fluid rounded shadow mb-4"
+                                style="max-width: 900px;"
+                                src="assets/img/soc-architecture.png"
+                                alt="SOC Homelab Architecture" />
+
+                            <p class="mb-5" style="text-align: justify;">
+                                L'environnement repose sur plusieurs machines virtuelles,
+                                comprenant notamment des endpoints Windows et Linux supervisés par
+                                des agents Wazuh. Les événements sont centralisés sur le serveur
+                                Wazuh afin d'être analysés, corrélés et présentés depuis le
+                                dashboard SOC.
+                            </p>
+
+
+                            <!-- Detection-->
+                            <h4 class="text-secondary text-uppercase mb-3">
+                                Detection & Investigation
+                            </h4>
+
+                            <img class="img-fluid rounded shadow mb-4"
+                                style="max-width: 900px;"
+                                src="assets/img/wazuh-alert.png"
+                                alt="Wazuh Security Alert" />
+
+                            <p class="mb-5" style="text-align: justify;">
+                                Plusieurs scénarios sont exécutés dans le laboratoire afin de
+                                générer des événements de sécurité observables depuis Wazuh.
+                                L'objectif est de reproduire un workflow de triage SOC en
+                                identifiant la source de l'événement, son contexte, sa sévérité
+                                ainsi que les éléments utiles à une investigation plus approfondie.
+                            </p>
+
+
+                            <!-- AI Integration-->
+                            <h4 class="text-secondary text-uppercase mb-3">
+                                AI-Assisted Triage
+                            </h4>
+
+                            <img class="img-fluid rounded shadow mb-4"
+                                style="max-width: 900px;"
+                                src="assets/img/ai-alert-analysis.png"
+                                alt="AI Assisted SOC Alert Analysis" />
+
+                            <p class="mb-4" style="text-align: justify;">
+                                Une couche d'intelligence artificielle est intégrée au workflow
+                                afin d'assister l'analyse des alertes remontées par le SOC.
+                                Les événements peuvent être transmis à un modèle de langage local
+                                via un pipeline automatisé afin de produire une synthèse exploitable
+                                par l'analyste.
+                            </p>
+
+                            <p class="mb-5" style="text-align: justify;">
+                                Le modèle peut notamment aider à identifier les informations
+                                importantes d'une alerte, résumer le comportement observé,
+                                contextualiser l'événement et proposer des pistes
+                                d'investigation complémentaires.
+                            </p>
+
+
+                            <!-- Key Implementations-->
+                            <h4 class="text-secondary text-uppercase mb-3">
+                                Key Implementations
+                            </h4>
+
+                            <ul class="text-start mb-5"
+                                style="max-width: 750px; margin-left: auto; margin-right: auto;">
+
+                                <li class="mb-2">
+                                    Déploiement et configuration d'une plateforme Wazuh SIEM/XDR
+                                </li>
+
+                                <li class="mb-2">
+                                    Supervision d'endpoints Windows et Linux
+                                </li>
+
+                                <li class="mb-2">
+                                    Centralisation et analyse des événements système et sécurité
+                                </li>
+
+                                <li class="mb-2">
+                                    Création de scénarios permettant de générer des alertes de sécurité
+                                </li>
+
+                                <li class="mb-2">
+                                    Analyse et triage d'alertes depuis le dashboard Wazuh
+                                </li>
+
+                                <li class="mb-2">
+                                    Utilisation du framework MITRE ATT&CK pour contextualiser les détections
+                                </li>
+
+                                <li class="mb-2">
+                                    Intégration d'un LLM local dans le workflow d'analyse
+                                </li>
+
+                                <li class="mb-2">
+                                    Automatisation de l'enrichissement des alertes via Python et API
+                                </li>
+
+                            </ul>
+
+
+                            <!-- Technologies-->
+                            <p class="text-lead mb-4">
+                                <b>Technologies :</b>
+                                Wazuh, Windows, Linux, Sysmon, MITRE ATT&CK,
+                                Python, PowerShell, REST API, Local LLM, Virtualisation
+                            </p>
+
+
+                            <!-- Github Button-->
+                            <a class="btn btn-dark me-2"
+                                href="TON-LIEN-GITHUB"
+                                target="_blank">
+
+                                <i class="fab fa-github fa-fw"></i>
+                                GitHub
+                            </a>
+
+
+                            <!-- Close Button-->
+                            <button class="btn btn-primary"
+                                data-bs-dismiss="modal">
+
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Fermer
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Licenses-->
     <div class="portfolio-modal modal fade" id="Licenses" tabindex="-1" aria-labelledby="Licenses" aria-hidden="true">
