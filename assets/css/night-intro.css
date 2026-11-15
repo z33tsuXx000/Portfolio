@@ -1,0 +1,314 @@
+/* Art-direction study: Introduction and persistent navigation only.
+   Source images and the other five scene compositions remain untouched. */
+.scene-home {
+    color: #d9e5e8;
+    background: #081820;
+}
+
+.scene-home .scene-background {
+    background: #081820;
+}
+
+.scene-home .scene-image {
+    filter: saturate(.38) brightness(.58) contrast(1.22);
+    object-position: 57% center;
+}
+
+/* Directional shadows leave the right-hand chrome and aqua seats exposed.
+   No blend mode or uniform black layer is used. */
+.scene-home .scene-background::after {
+    background:
+        linear-gradient(90deg, rgba(4, 17, 25, .94) 0%, rgba(7, 25, 35, .79) 26%, rgba(9, 31, 41, .44) 52%, rgba(9, 28, 36, .04) 83%),
+        linear-gradient(0deg, rgba(4, 15, 23, .8), transparent 38%, transparent 72%, rgba(5, 17, 28, .45));
+}
+
+.scene-home .arrival {
+    max-width: 670px;
+    padding: 55px 20px 45px 0;
+}
+
+.scene-home .arrival::before {
+    content: none;
+}
+
+.scene-home .eyebrow {
+    color: #a7c4cb;
+    font-size: 11px;
+    letter-spacing: .15em;
+    margin-bottom: 30px;
+}
+
+.scene-home h1 {
+    font-size: clamp(43px, 3.8vw, 63px);
+    font-weight: 350;
+    letter-spacing: -.045em;
+    line-height: 1.14;
+    margin-bottom: 34px;
+}
+
+.scene-home h1 em {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #afcdd0;
+    letter-spacing: -.055em;
+}
+
+.scene-home .home-role {
+    font-size: 17px;
+    color: #d1dfe3;
+    line-height: 1.8;
+}
+
+.scene-home .home-role strong {
+    font-weight: 450;
+}
+
+.scene-home .availability {
+    color: #a9c0c6;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+.scene-home .availability i {
+    background: #9fcac7;
+    box-shadow: 0 0 8px rgba(159, 202, 199, .25);
+}
+
+.scene-home .actions {
+    margin-top: 35px;
+    gap: 18px;
+}
+
+.scene-home .action {
+    color: #c6dadd;
+    border: 0;
+    border-bottom: 1px solid #76999f;
+    padding: 12px 0;
+    gap: 32px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.scene-home .action.primary {
+    color: #e4f1f0;
+    border: 1px solid #698d94;
+    background: rgba(29, 57, 66, .6);
+    padding-inline: 18px;
+}
+
+.scene-home .action:hover {
+    color: #fff;
+    border-color: #bbdfdc;
+    background: rgba(52, 88, 97, .55);
+}
+
+.scene-home .scene-caption {
+    background: transparent;
+    color: #9ab8c0;
+    border-left: 1px solid #658c95;
+    padding: 0 0 0 12px;
+}
+
+/* Shared wayfinding: no white banner or boxed navigation. */
+.masthead {
+    color: #d4e2e6;
+    background: linear-gradient(180deg, rgba(5, 17, 25, .96), rgba(7, 22, 31, .83) 50%, rgba(7, 22, 31, 0));
+    height: 112px;
+    align-items: flex-start;
+    padding-top: 29px;
+}
+
+.signature {
+    font-size: 18px;
+    letter-spacing: -.035em;
+}
+
+.signature span {
+    color: #a8bec5;
+}
+
+.header-links a:hover,
+.signature:hover {
+    color: #e7ffff;
+}
+
+.scene-nav {
+    color: #bfced3;
+}
+
+.scene-nav::before {
+    background: rgba(7, 23, 32, .89);
+    border: 0;
+    backdrop-filter: none;
+}
+
+html.enhanced[data-scene="home"] .scene-nav::before {
+    background: transparent;
+}
+
+.nav-caption,
+.scene-nav > a > span {
+    color: #99b5bd;
+}
+
+.nav-caption {
+    font-size: 10px;
+    margin-bottom: 26px;
+}
+
+.scene-nav > a,
+.scene-nav > a:last-child {
+    border-color: rgba(154, 186, 193, .2);
+    font-size: 14px;
+    padding-block: 15px;
+}
+
+.scene-nav > a:hover,
+.scene-nav > a[aria-current] {
+    color: #e4f2f3;
+}
+
+.scene-nav > a[aria-current] i {
+    background: #aedbd7;
+    box-shadow: 0 0 10px rgba(148, 218, 212, .5);
+}
+
+.journey-controls {
+    color: #c6d9de;
+    border: 0;
+    border-top: 1px solid rgba(152, 185, 195, .45);
+    background: rgba(6, 21, 30, .88);
+    padding: 6px 0 0 14px;
+}
+
+html.enhanced[data-scene="home"] .journey-controls {
+    background: transparent;
+}
+
+.journey-controls .control-rule {
+    background: rgba(152, 185, 195, .35);
+}
+
+.journey-controls button:hover:not(:disabled) {
+    color: #e7ffff;
+    background: rgba(50, 82, 93, .6);
+}
+
+.scene-home :focus-visible,
+.masthead :focus-visible,
+.scene-nav :focus-visible,
+.journey-controls :focus-visible {
+    outline-color: #b4e0dc;
+}
+
+@media (max-width: 999px) {
+    .masthead {
+        height: 78px;
+        padding: 16px 22px;
+        align-items: center;
+        background: #091c26;
+    }
+
+    .scene-nav {
+        background: #0c212c;
+        border-bottom: 1px solid rgba(151, 187, 197, .25);
+    }
+
+    .scene-nav > a {
+        font-size: 13px;
+        padding: 13px 12px;
+    }
+
+    .scene-nav > a[aria-current] {
+        box-shadow: inset 0 -1px #aedbd7;
+    }
+
+    .scene-home .scene-image {
+        object-position: 66% center;
+        filter: saturate(.38) brightness(.62) contrast(1.18);
+    }
+
+    .scene-home .scene-background::after {
+        background:
+            linear-gradient(90deg, rgba(4, 17, 25, .87), rgba(7, 25, 35, .55) 55%, rgba(9, 28, 36, .16)),
+            linear-gradient(0deg, rgba(4, 15, 23, .94), rgba(5, 19, 28, .44) 30%, transparent 68%, rgba(5, 17, 28, .25));
+    }
+
+    .scene-home .scene-scroll {
+        padding-top: 190px;
+        padding-bottom: 140px;
+        align-items: center;
+    }
+
+    .scene-home .arrival {
+        padding: 20px 0;
+        max-width: 630px;
+    }
+
+    .scene-home h1 {
+        font-size: clamp(42px, 6.5vw, 59px);
+    }
+
+    .journey-controls,
+    html.enhanced[data-scene="home"] .journey-controls {
+        background: rgba(6, 21, 30, .94);
+    }
+}
+
+@media (max-width: 600px) {
+    .masthead {
+        padding-inline: 18px;
+    }
+
+    .signature {
+        font-size: 17px;
+    }
+
+    .scene-home .eyebrow {
+        font-size: 10px;
+        letter-spacing: .07em;
+        margin-bottom: 27px;
+    }
+
+    .scene-home h1 {
+        font-size: 43px;
+        line-height: 1.13;
+        margin-bottom: 30px;
+    }
+
+    .scene-home .home-role {
+        font-size: 16px;
+    }
+
+    .scene-home .availability {
+        font-size: 11px;
+    }
+
+    .scene-home .actions {
+        gap: 16px;
+        margin-top: 30px;
+    }
+
+    .scene-home .action {
+        font-size: 12px;
+        gap: 16px;
+    }
+
+    .scene-home .action.primary {
+        padding-inline: 14px;
+    }
+}
+
+@media print {
+    .scene-home {
+        color: #193b45;
+        background: white;
+    }
+    .scene-home h1 em,
+    .scene-home .home-role,
+    .scene-home .availability,
+    .scene-home .eyebrow {
+        color: #193b45;
+    }
+}

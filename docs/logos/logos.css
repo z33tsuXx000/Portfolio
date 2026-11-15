@@ -1,0 +1,26 @@
+.organization-logo {
+  display: block;
+  width: clamp(88px, 10vw, 128px);
+  height: 56px;
+  object-fit: contain;
+  object-position: left center;
+  flex: 0 0 auto;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.organization-logo--emblem { width: 64px; height: 72px; }
+/* Optional single-colour silhouette for dark layouts. Original geometry retained.
+   Use only where a monochrome treatment is appropriate; not an official variant. */
+.organization-logo--mono {
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+  background-color: #e6f0f4;
+  -webkit-mask: var(--logo-url) left center / contain no-repeat;
+  mask: var(--logo-url) left center / contain no-repeat;
+}
+@media (max-width: 600px) {
+  .organization-logo { width: 96px; height: 48px; }
+  .organization-logo--emblem { width: 52px; height: 62px; }
+}

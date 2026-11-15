@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Étude typographique — Adam Laaouane</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#071923;color:#dae7ea;font:14px/1.5 'Segoe UI',sans-serif}header{padding:14px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;border-bottom:1px solid #547780}h1{font-size:16px;font-weight:400;margin:0}fieldset{border:0;padding:0;margin:0;display:flex;gap:16px;flex-wrap:wrap}legend{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}label{cursor:pointer;display:flex;align-items:center;gap:7px;min-height:40px}select,a{color:inherit;background:#102a36;border:1px solid #547780;padding:9px;font:inherit}a{text-decoration:none}p{margin:0;padding:10px 24px;color:#b2cbd0;font-size:13px}iframe{display:block;width:100%;height:calc(100dvh - 140px);min-height:650px;border:0}input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid #bee5df;outline-offset:3px}@media(max-width:650px){header{padding:10px 16px;gap:10px}p{padding:10px 16px}iframe{height:844px}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Archive · deux traitements de l’ancien accueil</h1>
+    <fieldset><legend>Traitement typographique</legend>
+      <label><input type="radio" name="variant" value="a" checked>A — Signal fluide</label>
+      <label><input type="radio" name="variant" value="b">B — Index décalé</label>
+    </fieldset>
+    <label>Langue <select id="language"><option value="docs/typography/index.html">FR</option><option value="docs/typography/en.html">EN</option></select></label>
+    <a id="full" href="docs/typography/index.html?type=a#home" target="_blank" rel="noopener">Ouvrir en plein écran ↗</a>
+  </header>
+  <p id="description">A : Barlow Semi Condensed Light, lignes ouvertes et léger décalage. Texte courant Barlow Regular ; repères monospace.</p>
+  <iframe id="preview" src="docs/typography/index.html?type=a#home" title="Accueil — traitement A"></iframe>
+  <script>
+    const frame=document.getElementById('preview');
+    function update(){const v=document.querySelector('[name=variant]:checked').value;const url=document.getElementById('language').value+'?type='+v+'#home';frame.src=url;frame.title='Accueil — traitement '+v.toUpperCase();document.getElementById('full').href=url;document.getElementById('description').textContent=v==='a'?'A : Barlow Semi Condensed Light, lignes ouvertes et léger décalage. Texte courant Barlow Regular ; repères monospace.':'B : IBM Plex Sans Condensed Light, contraste d’échelle et composition en retrait. Texte courant Barlow Regular ; repères monospace.';}
+    document.querySelectorAll('input,select').forEach(el=>el.addEventListener('change',update));
+  </script>
+</body>
+</html>

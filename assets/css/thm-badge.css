@@ -1,0 +1,5 @@
+.thm-profile-badge { margin-top: 24px; width: 100%; background: transparent; }
+.thm-badge-viewport { width: min(329px, 100%); aspect-ratio: 329 / 88; background: transparent; }
+.thm-badge-viewport iframe { display: block; width: 329px; height: 88px; max-width: none; border: 0; background: transparent; transform: scale(var(--thm-scale, 1)); transform-origin: top left; opacity: 1; visibility: visible; }
+.skill-body .thm-badge-fallback { display: inline-block; min-height: 44px; margin: 5px 0 0; padding: 10px 0; font-size: 13px; color: var(--muted); }
+.thm-badge-viewport iframe { color-scheme: normal; }

@@ -1,0 +1,55 @@
+/* Monochrome UI icons only: keep their original alpha geometry.
+   These styles must never be applied to institutional logos or flags. */
+.portfolio-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  background-color: currentColor;
+  -webkit-mask-image: var(--icon-url);
+  mask-image: var(--icon-url);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  vertical-align: middle;
+}
+.portfolio-icon-img { display:inline-block; width:24px; height:24px; object-fit:contain; vertical-align:middle; }
+.anssi-logo { width:76px; height:76px; object-fit:contain; background:transparent; filter:none; opacity:1; }
+.icon-action { display:inline-flex; gap:10px; align-items:center; min-height:44px; color:inherit; }
+/* Preserve the project's existing visible keyboard focus styles. */
+
+/* URLs are relative to this stylesheet, including in the standalone preview. */
+.portfolio-icon--android { --icon-url: url('../icons/android.png'); }
+.portfolio-icon--web { --icon-url: url('../icons/web.png'); }
+.portfolio-icon--shield { --icon-url: url('../icons/shield.png'); }
+.portfolio-icon--image { --icon-url: url('../icons/image.png'); }
+.skill-label { display: inline-flex; align-items: center; gap: 12px; }
+.skill-index button { align-items: center; min-height: 48px; }
+.skill-panel h3, .index-title { display: flex; align-items: center; gap: 12px; }
+.header-links .icon-action, .languages a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; }
+.languages { align-items: center; }
+.languages a { min-width: 54px; }
+.language-flag { width: 20px; height: 20px; object-fit: contain; }
+.credential summary > .anssi-logo {
+  width: 76px;
+  height: 76px;
+  max-height: none;
+  padding: 0;
+  object-fit: contain;
+  background: transparent;
+  filter: none;
+  mask: none;
+  -webkit-mask: none;
+  opacity: 1;
+}
+@media (max-width: 999px) {
+  .header-links .header-linkedin { display: none; }
+}
+@media (max-width: 600px) {
+  .credential summary > .anssi-logo { width: 72px; height: 72px; }
+  .languages { gap: 6px; }
+  .languages a { gap: 5px; min-width: 46px; }
+}

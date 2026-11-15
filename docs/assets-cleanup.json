@@ -1,0 +1,404 @@
+[
+  {
+    "path": "assets/img/Anssi.png",
+    "bytes": 129932,
+    "sha256": "6a99a013748f5f47fbc2889ba081050c0f35f05594116be446d0e30d947215d9",
+    "reason": "Doublon exact de assets/logos/anssi.png"
+  },
+  {
+    "path": "assets/img/er.png",
+    "bytes": 55470,
+    "sha256": "4643d502b5638096226299334022790f28241c85f6918d150bc89bb29868de6b",
+    "reason": "Doublon exact de assets/img/logos/originals/er.png"
+  },
+  {
+    "path": "assets/img/esaip-robotics.png",
+    "bytes": 697033,
+    "sha256": "2e79fab05eba4f829ff901f1e8714fc92fff13179ead17e45862c2141377a04f",
+    "reason": "Doublon exact de assets/img/logos/esaip-robotics.png"
+  },
+  {
+    "path": "assets/img/esaip.png",
+    "bytes": 19356,
+    "sha256": "56965793e0094bff27233e376abafef55e2bd6645c11f1f5c5485a9dc857958f",
+    "reason": "Doublon exact de assets/img/logos/originals/esaip.png"
+  },
+  {
+    "path": "assets/img/ets-toeic-logo.png",
+    "bytes": 123623,
+    "sha256": "719fe5b7c2e7153161cfd1dc936171f42bf08c0e72fa11253c9c7778b85e562c",
+    "reason": "Doublon exact de assets/img/logos-v2/originals/ets-toeic-logo(1).png"
+  },
+  {
+    "path": "assets/img/HAN.png",
+    "bytes": 5457,
+    "sha256": "203d71e17debd5e71aef1706862c705f2c3b7fb1752903006044fa380c0c0e56",
+    "reason": "Doublon exact de assets/img/logos/originals/HAN.png"
+  },
+  {
+    "path": "assets/img/happy-babees.png",
+    "bytes": 12189,
+    "sha256": "abb6d60036eac1300d6ec21fcac0d138d5714d50f673c8801af9dec0be666bfa",
+    "reason": "Doublon exact de assets/img/logos/originals/happybabees.png"
+  },
+  {
+    "path": "assets/img/happybabees.png",
+    "bytes": 12189,
+    "sha256": "abb6d60036eac1300d6ec21fcac0d138d5714d50f673c8801af9dec0be666bfa",
+    "reason": "Doublon exact de assets/img/logos/originals/happybabees.png"
+  },
+  {
+    "path": "assets/img/icon-inv.png",
+    "bytes": 65287,
+    "sha256": "f5f833c5fb37f24c8916a4c3a640e77d619e9f78f8b54fa6dc361b054ed15250",
+    "reason": "Doublon exact de assets/img/logos-v2/originals/icon-inv.png"
+  },
+  {
+    "path": "assets/img/icons8-android-50.png",
+    "bytes": 676,
+    "sha256": "e86ad5d6d58dc009542587bae6547d931cf7b0c4ea546241cae5eeb8f2440f09",
+    "reason": "Doublon exact de assets/icons/android.png"
+  },
+  {
+    "path": "assets/img/icons8-domaine-50.png",
+    "bytes": 1711,
+    "sha256": "a0d0614eec2efe994dfec83c54f2c59749ebac80187ad0e50bf995f9388af778",
+    "reason": "Doublon exact de assets/icons/web.png"
+  },
+  {
+    "path": "assets/img/icons8-grande-bretagne-48.png",
+    "bytes": 4690,
+    "sha256": "1e04d255d0b6ccf5632d5921b054fca2eee0cef2536e2e0f62c8c9c9dde98fec",
+    "reason": "Doublon exact de assets/icons/flag-en.png"
+  },
+  {
+    "path": "assets/img/icons8-image-50.png",
+    "bytes": 799,
+    "sha256": "b58524fd6945a53e9f5be3897c4a5da4aac982fdab3812993e16bb2a91946bd6",
+    "reason": "Doublon exact de assets/icons/image.png"
+  },
+  {
+    "path": "assets/img/icons8-instagram-white.png",
+    "bytes": 2096,
+    "sha256": "c26db0c276e921fd13bedf0acf225458d5626dec82ca617ad973c15c9a0f5d21",
+    "reason": "Doublon exact de assets/icons/instagram-light.png"
+  },
+  {
+    "path": "assets/img/icons8-instagram.png",
+    "bytes": 1187,
+    "sha256": "b11d53eac92cefb61826d4178106909d6b8fb2cf7f1dc133622c327b719ed511",
+    "reason": "Doublon exact de assets/icons/instagram-dark.png"
+  },
+  {
+    "path": "assets/img/icons8-la-france-48.png",
+    "bytes": 1552,
+    "sha256": "11a3ea03f7df3acafda9eb615825af1f41738cb3770080c40416a36a8a2374d8",
+    "reason": "Doublon exact de assets/icons/flag-fr.png"
+  },
+  {
+    "path": "assets/img/icons8-linkedin-white.png",
+    "bytes": 2365,
+    "sha256": "a0ed9c3fe378433539afec95ee6fe692e7dbdb10cff1227126b995aef8306bef",
+    "reason": "Doublon exact de assets/icons/linkedin-light.png"
+  },
+  {
+    "path": "assets/img/icons8-linkedin.png",
+    "bytes": 1406,
+    "sha256": "67cc62019a171a158a2d5039f913f97e93168d59c2d44f9c0950f35d066b6d59",
+    "reason": "Doublon exact de assets/icons/linkedin-dark.png"
+  },
+  {
+    "path": "assets/img/icons8-microsoft-admin-50.png",
+    "bytes": 894,
+    "sha256": "8c887c8aa898ed13406e3f6ac19565a591edf38188094b8b6f0702d3a096590d",
+    "reason": "Doublon exact de assets/icons/shield.png"
+  },
+  {
+    "path": "assets/img/Microsoft.png",
+    "bytes": 57324,
+    "sha256": "0946576359ce5b2a24aa221a60393e4ca0debe8bb10580b18369a1b5eaca2aef",
+    "reason": "Doublon exact de assets/img/logos-v2/originals/Microsoft(1).png"
+  },
+  {
+    "path": "assets/img/thm.png",
+    "bytes": 740788,
+    "sha256": "b005e4239e5914c8b27503d63c2b65674e2b5833dff120b08898f5598eed8b2f",
+    "reason": "Ancien logo remplacé par logos-v2/tryhackme-dark.svg ; source du pack conservée dans logos-v2/originals/thm(1).png"
+  },
+  {
+    "path": "assets/img/wilaya-emblem.png",
+    "bytes": 1542134,
+    "sha256": "11668874bac69a9393a9a1a757f20eac622dc72488ed1a4171f18d345f9cf693",
+    "reason": "Doublon exact de assets/img/logos/wilaya-emblem.png"
+  },
+  {
+    "path": "assets/img/wilaya.png",
+    "bytes": 408002,
+    "sha256": "272c7bff12d784949beb26e5ccc35edc8edbc6bc0fdc371f3dbb00ee1b9571ee",
+    "reason": "Doublon exact de assets/img/logos/originals/wilaya.png"
+  },
+  {
+    "path": "assets/img/logos/adam-al.svg",
+    "bytes": 87652,
+    "sha256": "02c0e9b91b10edfe53ec06187ea8a36dfbbdce60c198440527b66767daf47a7c",
+    "reason": "Doublon exact de assets/img/logos-v2/adam-al.svg"
+  },
+  {
+    "path": "assets/img/logos/adam-monogram.svg",
+    "bytes": 87664,
+    "sha256": "4ea8e62e63f813509aeadcf3a835cae87708d723fcc848b04dbb7e0665863b43",
+    "reason": "Doublon exact de assets/img/logos-v2/adam-monogram.svg"
+  },
+  {
+    "path": "assets/img/logos/esaip-dark.svg",
+    "bytes": 26923,
+    "sha256": "d698ee72f8bfb56ead58b94f7889936318455c77e4c065f2485200a5728aa2bd",
+    "reason": "Doublon exact de assets/img/logos-v2/esaip-dark.svg"
+  },
+  {
+    "path": "assets/img/logos/esaip-original.svg",
+    "bytes": 26032,
+    "sha256": "44e8d28f621116f4c2d2f6973ca036cf07b427fbdb0eb979535a450208bac5a4",
+    "reason": "Doublon exact de assets/img/logos-v2/esaip-original.svg"
+  },
+  {
+    "path": "assets/img/logos/microsoft-dark.svg",
+    "bytes": 78320,
+    "sha256": "930e7ebbfb96d89c038e930f55a4f59dc64506f62037cc6151af46884a0895a4",
+    "reason": "Doublon exact de assets/img/logos-v2/microsoft-dark.svg"
+  },
+  {
+    "path": "assets/img/logos/microsoft-original.svg",
+    "bytes": 77660,
+    "sha256": "dc0fa1f1b73b0e8947d41ed29015f0495ccbe84a9aa95af44bf31e9b3b78ae1c",
+    "reason": "Doublon exact de assets/img/logos-v2/microsoft-original.svg"
+  },
+  {
+    "path": "assets/img/logos/toeic-dark.svg",
+    "bytes": 166350,
+    "sha256": "05b543bc7d233e4aef24a72164ddd5ec5de0e34786d1a4c88dc8475f1c1c20be",
+    "reason": "Doublon exact de assets/img/logos-v2/toeic-dark.svg"
+  },
+  {
+    "path": "assets/img/logos/toeic-original.svg",
+    "bytes": 166050,
+    "sha256": "e213a7a51f0cf058d0559f678605ed7f418d1b270b3aeddceee4d9ee35690a4b",
+    "reason": "Doublon exact de assets/img/logos-v2/toeic-original.svg"
+  },
+  {
+    "path": "assets/img/logos/tryhackme-dark.svg",
+    "bytes": 30047,
+    "sha256": "621e840e78af371514cd250788efe21ec683e283d24be482c3f91a2d64fefeb5",
+    "reason": "Doublon exact de assets/img/logos-v2/tryhackme-dark.svg"
+  },
+  {
+    "path": "assets/img/logos/tryhackme-original.svg",
+    "bytes": 29156,
+    "sha256": "471984f890a11b76716e2120571e529624defed380c6f5f93b55979c9f72cc58",
+    "reason": "Doublon exact de assets/img/logos-v2/tryhackme-original.svg"
+  },
+  {
+    "path": "assets/webp/Anssi.webp",
+    "bytes": 43452,
+    "sha256": "910faff2743c01ff5098f14602d300a9d635223e1ecc7385b3146702e9465511",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/er.webp",
+    "bytes": 35820,
+    "sha256": "50d82d3e75888534176eed51bcb8d6c175cfb5c15546b87693912466ad6f6e58",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/esaip.webp",
+    "bytes": 9586,
+    "sha256": "1d8dc12db64afe37441c3e6cea5d8ed0bda2796035b9010d86056a2134d72bcf",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/ets-toeic-logo.webp",
+    "bytes": 22416,
+    "sha256": "c9d40e770828fd2104f98e81bfa460863c1bad27856164caa558b3c0c3f4ade7",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/HAN.webp",
+    "bytes": 4468,
+    "sha256": "a5e00dca47e36c5a2b16448a1ea84c79371ec504768d5466ee9fb0e8c1325166",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/happybabees.webp",
+    "bytes": 7586,
+    "sha256": "581ec6102e573e82bc5f9be5e3262301da1f743095c300e5ec1221e4f115d9ab",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icon-inv.webp",
+    "bytes": 10976,
+    "sha256": "9895f7c5ad269612c161c4e19c7db6aca71ee45d7ef247c72ae71302eea090b2",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-android-50.webp",
+    "bytes": 414,
+    "sha256": "278bd0fd57c8e96fcb4adfbd2675d2f95314b30a623162a1df99e4f50c8f5a26",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-base-de-données-50.webp",
+    "bytes": 440,
+    "sha256": "41eb735082bd715b5590004194e805e6cdf105d86d624755ce2041689899af19",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-domaine-50.webp",
+    "bytes": 1088,
+    "sha256": "5c429ceb962e9502af2358359bf0affd60455b917a504d3573e6583d12812feb",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-epingle-de-carte-30.png",
+    "bytes": 475,
+    "sha256": "e0d40745733f088c9a3bc2c88228205257bf6f716c16e7f4eb95932d03be2863",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-epingle-de-carte-30.webp",
+    "bytes": 208,
+    "sha256": "72c2eb8a307d908747150005ae2c0f3b7b4bec774fba8e934291144516bcce33",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-facebook-50-white.png",
+    "bytes": 4007,
+    "sha256": "4111becf9fca38835c5fcfc4ec29c976d91fa9cdd09d4f4be3966400f32676d0",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-facebook-50-white.webp",
+    "bytes": 1050,
+    "sha256": "960179894ee908e435ec289abcb2cf2ef115f5677c0c4887a50ca8b50a4a2077",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-google-code-50.webp",
+    "bytes": 356,
+    "sha256": "8762f775ac2e05eeab3819c1618bdcfb8cd113e7d1aa1023e498fba403e88726",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-grande-bretagne-48.webp",
+    "bytes": 1008,
+    "sha256": "4f9e91a96b8b9599e06d8ecff3a9d364a343c9bf542b33cdbd9884c1a9c29c9d",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-image-50.webp",
+    "bytes": 356,
+    "sha256": "0b251fc9476eba353ae8ae13d9ae94da72b81a07303b1e052ba005b7fd39ec06",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-instagram-white.webp",
+    "bytes": 1218,
+    "sha256": "4688d6a05492b86d0523b55a63dadbc4d2eb0092ef68b902d55371b46c46c5ed",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-instagram.webp",
+    "bytes": 610,
+    "sha256": "2f453efd92a424b368bad468a3c411d8904b118c0dddd6b64849227af1412a65",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-la-france-48.webp",
+    "bytes": 230,
+    "sha256": "e4d9b02835409e0686923ebac671aace762a99b781d292f62e605fa9ff0d7473",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-linkedin-white.webp",
+    "bytes": 1394,
+    "sha256": "e349e9f1e382ef1be6d30d09afa57c1d721250b197cf63e7e4fb3ba3c3f2120a",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-linkedin.webp",
+    "bytes": 776,
+    "sha256": "a2139c82976bbdef8ff352d1ab1e5ad43fa01b83d416ea7cd8c7456854de0f8a",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-microsoft-admin-50.webp",
+    "bytes": 576,
+    "sha256": "2de48a2f6966260c4d6bdefdf78fa91a733fbb788162b2b2e6512a423c63cbff",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-outils-administratifs-50.webp",
+    "bytes": 882,
+    "sha256": "ad0c66e364e8454ff446c01312f0464081038c4a686dbfbe7836a8e47cd1a8ad",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/icons8-webdev.webp",
+    "bytes": 856,
+    "sha256": "1e169c89e3802c19e880577456c96f226ada3a578422161e40dd027553abbed9",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/maroc.webp",
+    "bytes": 92966,
+    "sha256": "ddc68f42aafe48073df4cedd7cd0cbaba2bcede4a3f4a2cfeb43ed8a51619dba",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/Microsoft.webp",
+    "bytes": 13718,
+    "sha256": "548d4d1c7de996cf667f335ba47f84d148eed67c0e3c4ccd94f1329c83fc28a4",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/PSIR.webp",
+    "bytes": 257806,
+    "sha256": "c9dbc32519670fa48bfc7d474b52ed9e7679e1d7875630eb0be1fa07f1c3e853",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/ss.webp",
+    "bytes": 323910,
+    "sha256": "ce25f5dac0b329d883c5aa34169f61c6c68a384f8f05f127fdac08b333f7afa8",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/thm.webp",
+    "bytes": 14358,
+    "sha256": "1b6f0154e1923ab59420a9ac5521dc33255022cb7a5b880ee9bc22f29ed9768a",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/tournoi.webp",
+    "bytes": 84930,
+    "sha256": "9cd51a8bae0aeb7e3e509484ea550911880f8a6895282d7ae017aef7c628c6db",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/uemc.webp",
+    "bytes": 7066,
+    "sha256": "c8a44e67157b05c3b4cfb91c3f856a1d82b1dd23332dd215904999ac4b553ea0",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/webp/wilaya.webp",
+    "bytes": 177076,
+    "sha256": "43ade1cb5454b1800391fd5cb86da397083f3310365c11e802a24503db763997",
+    "reason": "Ancienne variante non référencée par le site ou les aperçus"
+  },
+  {
+    "path": "assets/img/logos/thm.png",
+    "bytes": 21691,
+    "sha256": "f64e8e18aa28ecdd53aff23dfaf1f6c6f897487d1de0311d26f22e92c80c6eff",
+    "reason": "Doublon exact de assets/img/logos-v2/originals/thm(1).png"
+  }
+]

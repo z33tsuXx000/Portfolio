@@ -1,0 +1,32 @@
+[
+  {
+    "file": "esaip-robotics.png",
+    "width": 1802,
+    "height": 873,
+    "transparent": true
+  },
+  {
+    "file": "esaip.png",
+    "width": 334,
+    "height": 165,
+    "transparent": true
+  },
+  {
+    "file": "han.png",
+    "width": 276,
+    "height": 183,
+    "transparent": false
+  },
+  {
+    "file": "happy-babees.png",
+    "width": 279,
+    "height": 120,
+    "transparent": true
+  },
+  {
+    "file": "wilaya-emblem.png",
+    "width": 1295,
+    "height": 1214,
+    "transparent": true
+  }
+]

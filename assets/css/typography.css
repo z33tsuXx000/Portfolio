@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Barlow Text';
+  src: url('../fonts/barlow-400-latin.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Barlow Display';
+  src: url('../fonts/barlowsemicondensed-300-latin.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plex Display';
+  src: url('../fonts/ibmplexsanscondensed-300-latin.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/* Metrics-aligned local fallback for the regular reading face. */
+@font-face {
+  font-family: 'Barlow Fallback';
+  src: local('Arial');
+  size-adjust: 97.04%;
+  ascent-override: 103.05%;
+  descent-override: 20.61%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Barlow Display Fallback';
+  src: local('Arial Narrow');
+  size-adjust: 103.9%;
+  ascent-override: 96.25%;
+  descent-override: 19.25%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Plex Display Fallback';
+  src: local('Arial Narrow');
+  size-adjust: 108.65%;
+  ascent-override: 94.8%;
+  descent-override: 25.77%;
+  line-gap-override: 0%;
+}
+.arrival h1 .headline-line { display: block; }
+html[data-type] #home,
+html[data-type] .masthead,
+html[data-type] .scene-nav {
+  font-family: 'Barlow Text', 'Barlow Fallback', 'Segoe UI', sans-serif;
+  font-weight: 400;
+}
+html[data-type] #home .arrival {
+  max-width: 950px;
+  min-height: calc(100svh - 180px);
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+html[data-type] #home .arrival h1 {
+  font-style: normal;
+  font-weight: 300;
+  font-kerning: normal;
+  font-synthesis: none;
+  line-height: 1.05;
+  margin: 0 0 36px;
+  width: 100%;
+}
+html[data-type] #home .eyebrow,
+html[data-type] .nav-caption,
+html[data-type] .scene-nav>a>span {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+html[data-type] #home .home-role {
+  font-size: 19px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+html[data-type] #home .home-role strong { font-weight: 400; }
+html[data-type] #home .availability { font-size: 13px; }
+html[data-type] #home .action { font-size: 15px; font-weight: 400; }
+html[data-type] #home .intro-story p { font-size: 19px; line-height: 1.85; }
+html[data-type] .scene-nav>a { font-size: 14px; }
+html[data-type] .signature { font-size: 19px; }
+html[data-type] .signature span { font-size: 12px; }
+
+/* A: one continuous light silhouette; the second phrase moves into the space. */
+html[data-type='a'] #home h1,
+html[data-type='a'] #home h2 {
+  font-family: 'Barlow Display', 'Barlow Display Fallback', 'Arial Narrow', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  letter-spacing: -.012em;
+}
+html[data-type='a'] #home .arrival h1 { font-size: clamp(54px, 5.1vw, 80px); }
+html[data-type='a'] #home .headline-line--second {
+  font-size: .94em;
+  color: #b7d6d7;
+  margin-top: 10px;
+  margin-left: 54px;
+  max-width: calc(100% - 54px);
+}
+html[data-type='a'] #home .eyebrow { margin-bottom: 32px; }
+
+/* B: a smaller opening line followed by a narrow, vertically stacked phrase. */
+html[data-type='b'] #home h1,
+html[data-type='b'] #home h2 {
+  font-family: 'Plex Display', 'Plex Display Fallback', 'Arial Narrow', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  letter-spacing: -.008em;
+}
+html[data-type='b'] #home .arrival h1 { font-size: clamp(46px, 4vw, 60px); }
+html[data-type='b'] #home .headline-line--second {
+  font-size: 1.23em;
+  color: #b7d6d7;
+  margin-top: 16px;
+  margin-left: 110px;
+  max-width: 570px;
+  text-wrap: balance;
+}
+html[data-type='b'] #home .eyebrow {
+  margin-left: 110px;
+  margin-bottom: 30px;
+}
+html[data-type='b'] #home .home-role,
+html[data-type='b'] #home .availability,
+html[data-type='b'] #home .actions { margin-left: 110px; }
+html[data-type='b'] #home .scroll-invitation { margin-top: 32px; }
+
+@media (max-width: 999px) {
+  html[data-type] #home .arrival { min-height: calc(100svh - 155px); padding: 36px 0 60px; }
+  html[data-type] .scene-nav>a { font-size: 13px; }
+}
+@media (max-width: 600px) {
+  html[data-type] #home .arrival { justify-content: flex-start; padding-top: 35px; }
+  html[data-type] #home .eyebrow { font-size: 10px; letter-spacing: .06em; }
+  html[data-type] #home .home-role { font-size: 17px; }
+  html[data-type] #home .availability { font-size: 12px; }
+  html[data-type] #home .action { font-size: 13px; }
+  html[data-type] .signature { font-size: 17px; }
+  html[data-type] .signature span { font-size: 10px; }
+  html[data-type='a'] #home .arrival h1 { font-size: clamp(44px, 12vw, 58px); line-height: 1.08; }
+  html[data-type='a'] #home .headline-line--second { margin-left: 22px; max-width: calc(100% - 22px); margin-top: 20px; }
+  html[data-type='b'] #home .arrival h1 { font-size: 36px; line-height: 1.08; }
+  html[data-type='b'] #home .headline-line--second { font-size: 1.32em; margin-left: 26px; max-width: calc(100% - 26px); margin-top: 20px; }
+  html[data-type='b'] #home .eyebrow { margin-left: 0; }
+  html[data-type='b'] #home .home-role,
+  html[data-type='b'] #home .availability,
+  html[data-type='b'] #home .actions { margin-left: 0; }
+}

@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Barlow Text';
+  src: url('../fonts/barlow-400-latin.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Barlow Display';
+  src: url('../fonts/barlowsemicondensed-300-latin.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plex Display';
+  src: url('../fonts/ibmplexsanscondensed-300-latin.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/* Metrics-aligned local fallback for the regular reading face. */
+@font-face {
+  font-family: 'Barlow Fallback';
+  src: local('Arial');
+  size-adjust: 97.04%;
+  ascent-override: 103.05%;
+  descent-override: 20.61%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Barlow Display Fallback';
+  src: local('Arial Narrow');
+  size-adjust: 103.9%;
+  ascent-override: 96.25%;
+  descent-override: 19.25%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Plex Display Fallback';
+  src: local('Arial Narrow');
+  size-adjust: 108.65%;
+  ascent-override: 94.8%;
+  descent-override: 25.77%;
+  line-gap-override: 0%;
+}

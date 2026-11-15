@@ -1,0 +1,26 @@
+[
+  {
+    "family": "Barlow",
+    "weight": "400",
+    "file": "barlow-400-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlow/OFL.txt",
+    "bytes": 22196
+  },
+  {
+    "family": "Barlow Semi Condensed",
+    "weight": "300",
+    "file": "barlowsemicondensed-300-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/barlowsemicondensed/v16/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRf06i_B2sl.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowsemicondensed/OFL.txt",
+    "bytes": 22116
+  },
+  {
+    "family": "IBM Plex Sans Condensed",
+    "weight": "300",
+    "file": "ibmplexsanscondensed-300-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexsanscondensed/v15/Gg8gN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHY4C6rvspYY.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsanscondensed/OFL.txt",
+    "bytes": 19840
+  }
+]

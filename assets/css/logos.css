@@ -1,0 +1,109 @@
+.organization-logo {
+  display: block;
+  width: clamp(88px, 10vw, 128px);
+  height: 56px;
+  object-fit: contain;
+  object-position: left center;
+  flex: 0 0 auto;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.organization-logo--emblem { width: 64px; height: 72px; }
+/* Optional single-colour silhouette for dark layouts. Original geometry retained.
+   Use only where a monochrome treatment is appropriate; not an official variant. */
+.organization-logo--mono {
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+  background-color: #e6f0f4;
+  -webkit-mask: var(--logo-url) left center / contain no-repeat;
+  mask: var(--logo-url) left center / contain no-repeat;
+}
+@media (max-width: 600px) {
+  .organization-logo { width: 96px; height: 48px; }
+  .organization-logo--emblem { width: 52px; height: 62px; }
+}
+
+/* Portfolio integration. The PNGs are unmodified; masks are graphic treatments,
+   never official white variants. The adjacent HTML name stays readable. */
+.journey-stop header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.organization {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 8px;
+}
+.organization-name {
+  min-width: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.journey-stop .organization-logo,
+.dialog-content .organization-logo {
+  display: block;
+  width: 128px;
+  height: 64px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left center;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  filter: none;
+  opacity: 1;
+}
+.journey-stop .organization-logo--emblem { width: 72px; height: 80px; }
+.journey-stop .organization-logo--slogan { width: 150px; height: 72px; }
+.journey-stop .organization-logo--han { width: 128px; height: 85px; }
+.organization-logo-mask {
+  display: block;
+  flex: 0 0 128px;
+  width: 128px;
+  height: 64px;
+}
+/* If masks are unsupported, keep the original colours on a soft local light
+   area, without adding a badge or cropping the source. */
+.organization-logo-mask {
+  background: radial-gradient(ellipse, #edf3f6 50%, transparent 75%);
+}
+.organization-logo-mask--esaip-robotics {
+  --logo-url: url('../img/logos/esaip-robotics.png');
+}
+@supports (mask-image: url('')) or (-webkit-mask-image: url('')) {
+  .organization-logo-mask {
+    background: #e6f0f4;
+    -webkit-mask: var(--logo-url) left center / contain no-repeat;
+    mask: var(--logo-url) left center / contain no-repeat;
+  }
+  .organization-logo-mask .organization-logo { visibility: hidden; }
+}
+.journey-stop header > img {
+  width: 64px;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  object-fit: contain;
+}
+.dialog-content .organization { margin: 30px 0; }
+@media (max-width: 600px) {
+  .organization { flex-wrap: wrap; gap: 12px 20px; }
+  .organization-name { flex: 1 1 160px; font-size: 14px; }
+  .journey-stop .organization-logo,
+  .dialog-content .organization-logo { width: 112px; height: 56px; }
+  .organization-logo-mask { width: 112px; height: 56px; flex-basis: 112px; }
+  .journey-stop .organization-logo--emblem { width: 62px; height: 70px; }
+  .journey-stop .organization-logo--slogan { width: 140px; height: 66px; }
+  .journey-stop .organization-logo--han { width: 112px; height: 75px; }
+}

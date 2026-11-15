@@ -1,0 +1,26 @@
+.keep-together{white-space:nowrap}
+.cover-identity{position:absolute;top:19%;left:6%;max-width:650px;color:#e5f3f3;text-shadow:0 2px 18px #0a2d3f}
+.cover-identity h1{font:400 clamp(33px,3.2vw,49px)/1.15 'Barlow Text',sans-serif;letter-spacing:.01em;margin-bottom:14px}
+.cover-identity>p{font-size:23px;line-height:1.4;letter-spacing:0}.cover-identity .identity-domains{font-size:15px;color:#cce9eb;margin-top:12px}
+.cover-line{top:37%;left:6%;font:400 21px/1.45 'Barlow Text',sans-serif;letter-spacing:0;max-width:600px;padding:0;background:none;border:0}
+.cover-line:after{margin-top:14px;width:35px;height:2px}
+.cover-tracklist,.album-motion .cover-tracklist{top:51%}
+.cover-preview figcaption{font:400 14px/1.5 'Barlow Text',sans-serif;letter-spacing:0;color:#f0f7f8;background:linear-gradient(90deg,#092b3ee8,#092b3eb5);text-shadow:0 1px 4px #061c29;padding:12px 15px}
+.is-cover .back-cover{visibility:hidden;pointer-events:none}
+.opening-note h2{font:400 clamp(28px,2.65vw,41px)/1.22 'Barlow Text',sans-serif;letter-spacing:0;margin-bottom:25px}
+.profile-introduction{font-size:18px;line-height:1.8;max-width:650px}.opening-note .availability{font-size:17px;color:var(--accent);margin:22px 0}.opening-note .actions{gap:15px 25px}
+.opening-story{grid-template-columns:.65fr 1.4fr}.profile-extra{grid-column:2;font-size:17px;line-height:1.8}.profile-extra summary{padding:12px 0;min-height:44px;border-bottom:1px solid var(--line);color:var(--accent)}.profile-extra p{margin-top:20px}.profile-project{grid-column:2;margin-top:15px;border-left:1px solid var(--line);padding-left:20px}.profile-project .eyebrow{margin-bottom:8px!important}.profile-project a{min-height:44px}
+.album-motion .cover-identity,.album-motion .cover-line{opacity:calc(1 - var(--intro-exit));transform:translateX(calc(var(--intro-exit)*-65px))}
+.album-motion .cover-tracklist{left:calc(4% + var(--opening)*44%);top:calc(51% - var(--opening)*31%);width:calc(53% - var(--opening)*10%)}
+.album-motion .cover-tracklist>a:first-child{border:0;background:none!important;padding-left:0}
+.album-motion .cover-tracklist>a:first-child .track-label{font-size:calc(26px - var(--opening)*12px);letter-spacing:calc(.04em - var(--opening)*.04em)}
+.album-motion .cover-tracklist>a:first-child .track-number{font-size:12px}
+.album-motion .cover-tracklist>a:first-child .track-number:after{content:' /';opacity:var(--opening)}
+.album-motion .opening-note{top:28%}.album-motion .opening-note .eyebrow{display:none}
+.album-motion .cover-stage:after{top:28%}
+.album-motion .cover-strip{opacity:calc(.52*(1 - var(--intro-exit)))}
+.album-motion .cover-tracklist>a:first-child{text-shadow:0 1px 5px #082333,0 0 12px #082333}
+@media(max-height:800px) and (min-width:901px){.cover-identity{top:17%}.cover-identity h1{font-size:36px}.cover-line{top:36%;font-size:18px}.opening-note h2{font-size:29px}.profile-introduction{font-size:16px;line-height:1.6}.opening-note .availability{margin:14px 0}}
+@media(max-width:900px){.cover-identity{top:17%;max-width:80%}.cover-line{top:35%;font-size:20px}.opening-story{display:block}.profile-extra{margin-top:25px}.profile-project{margin-top:30px}.opening-note h2{font-size:35px}}
+@media(max-width:600px){.cover-face{height:900px;min-height:900px}.cover-identity{top:125px;left:6%;max-width:88%;background:linear-gradient(90deg,#0c3345b8,transparent);padding:10px 0}.cover-identity h1{font-size:32px;margin-bottom:12px}.cover-identity>p{font-size:19px;max-width:300px}.cover-identity .identity-domains{font-size:13px;margin-top:12px}.cover-line{top:310px;left:6%;right:6%;font-size:18px;line-height:1.5;max-width:none}.cover-tracklist{top:435px;left:6%;width:88%}.cover-tracklist>a{min-height:51px}.cover-scroll{bottom:44px}.track-label{font-size:22px;letter-spacing:.01em}.opening-note h2{font-size:29px;line-height:1.3}.profile-introduction{font-size:17px;line-height:1.75}.opening-note .actions{align-items:flex-start;gap:8px 20px}.opening-note{padding-top:90px}.opening-story{padding-top:45px}.cover-line:after{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.cover-identity,.cover-line{transform:none!important;opacity:1!important}}

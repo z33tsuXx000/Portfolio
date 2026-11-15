@@ -1,933 +1,1698 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta
-        content="Portfolio de Adam LAAOUANE, étudiant ingénieur à ESAIP Angers en Informatique et Réseaux, spécialisé en cybersécurité"
-        name="description">
-    <meta name="keywords"
-        content="étudiant, ingénieur, , informatique, réseaux, cybersécurité,ESAIP, esaip, Adam, LAAOUANE">
-    <meta name="news_keywords" content="Adam, laaouane,esaip, Informatique, réseaux, ESAIP">
-    <meta name="description" content="Portfolio ADAM LAAOUANE - Étudiant ingénieur à l'ESAIP">
-    <meta name="author" content="Adam LAAOUANE">
-    <meta name="robots" content="index, noimageindex">
-
-    <title>Portfolio Adam </title>
-    <link rel="icon" type="image/png" href="assets/img/icon-inv.png">
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-
-<body data-bs-spy="scroll" data-bs-target="#navbar">
-    <!-- Preloader -->
-    <div id="preloader">
-        <!-- séparer le spinner et le texte pour avoir le spinner et le texte en dessous-->
-        <div class="d-flex flex-column align-items-center">
-            <div class="spinner"></div>
-            <div class="text-light mt-2">
-                <p class="span-title">Chargement...</p>
-            </div>
-        </div>
+<html data-scene="home" lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Portfolio de Adam LAAOUANE, étudiant ingénieur à ESAIP Angers en Informatique et Réseaux, spécialisé en cybersécurité" name="description"/>
+  <meta content="étudiant, ingénieur, , informatique, réseaux, cybersécurité,ESAIP, esaip, Adam, LAAOUANE" name="keywords"/>
+  <meta content="Adam, laaouane,esaip, Informatique, réseaux, ESAIP" name="news_keywords"/>
+  <meta content="Portfolio ADAM LAAOUANE - Étudiant ingénieur à l'ESAIP" name="description"/>
+  <meta content="Adam LAAOUANE" name="author"/>
+  <meta content="index, noimageindex" name="robots"/>
+  <title>
+   Adam Laaouane — Cybersécurité &amp; Réseaux
+  </title>
+  <link href="assets/img/logos-v2/adam-monogram.svg" rel="icon" type="image/svg+xml"/>
+  <link as="image" href="assets/scenes/Présentation-1672.webp" imagesizes="100vw" imagesrcset="assets/scenes/Présentation-800.webp 800w, assets/scenes/Présentation-1672.webp 1000w" rel="preload"/>
+  <script defer="" src="assets/js/album.js">
+  </script>
+  <link href="assets/css/fonts.css" rel="stylesheet"/>
+  <link href="assets/css/album.css" rel="stylesheet"/>
+  <link href="assets/css/icons.css" rel="stylesheet"/>
+  <link as="font" crossorigin="" href="assets/fonts/barlow-400-latin.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="assets/fonts/barlowsemicondensed-300-latin.woff2" rel="preload" type="font/woff2"/>
+  <link href="assets/css/cover-photo.css" rel="stylesheet"/>
+  <link href="assets/css/thm-badge.css" rel="stylesheet"/>
+  <script defer="" src="assets/js/thm-badge.js">
+  </script>
+  <link href="assets/css/reference-layouts.css" rel="stylesheet"/>
+  <script defer="" src="assets/js/project-preview.js">
+  </script>
+  <link href="assets/css/immersive-layout.css" rel="stylesheet"/>
+  <link href="assets/css/home-polish.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#home">
+   Aller au contenu
+  </a>
+  <header class="masthead">
+   <a class="signature" href="#cover">
+    <img alt="" class="personal-mark" decoding="async" height="730" src="assets/img/logos-v2/adam-monogram.svg" width="840"/>
+    Adam Laaouane
+    <span>
+     Ingénieur · Cybersécurité
+    </span>
+   </a>
+   <a class="back-cover" href="#cover">
+    <span aria-hidden="true">
+     ↖
+    </span>
+    Accueil
+   </a>
+   <div class="header-links">
+    <a class="header-contact" href="#contact">
+     Contact →
+    </a>
+    <a download="" href="assets/files/CV_Adam_Laaouane.pdf">
+     CV ↓
+    </a>
+    <div aria-label="Langue" class="languages">
+     <a aria-current="true" data-language="" href="index.html#home" hreflang="fr" lang="fr">
+      <img alt="" class="language-flag" decoding="async" height="48" src="assets/icons/flag-fr.png" width="48"/>
+      FR
+     </a>
+     <span>
+      /
+     </span>
+     <a data-language="" href="en.html#home" hreflang="en" lang="en">
+      <img alt="" class="language-flag" decoding="async" height="48" src="assets/icons/flag-en.png" width="48"/>
+      EN
+     </a>
     </div>
-
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo-icon" id="logo-icon" data-aos="fade-down"
-                    data-aos-delay="50" src="assets/img/icon-inv.png"
-                    srcset="assets/webp/icon-inv.webp, assets/img/icon-inv.png" alt="logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                data-aos="fade-left" data-aos-delay="150" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation"
-                style="color:black; border: var(--bs-border-width) solid rgb(0, 0, 0); background-color:#fff ;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" data-aos="fade-down" data-aos-delay="100" id="nav-link"
-                            href="#home">Présentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-aos="fade-down" data-aos-delay="150" id="nav-link"
-                            href="#services">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-aos="fade-down" data-aos-delay="200" id="nav-link"
-                            href="#parcours">Parcours</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-aos="fade-down" data-aos-delay="175" id="nav-link"
-                            href="#certifications">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-aos="fade-down" data-aos-delay="250" id="nav-link"
-                            href="#portfolio">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-aos="fade-down" data-aos-delay="300" id="nav-link"
-                            href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav flex-row" id="nav-icon">
-                    <li class="nav-item">
-                        <a class="navbar-brand" data-aos="fade-down" target="_blank" data-aos-delay="350"
-                            href="https://www.linkedin.com/in/adam-laa"><img class="social-icon" id="linkedin-icon"
-                                src="assets/img/icons8-linkedin.png"
-                                srcset="assets/webp/icons8-linkedin.webp, assets/img/icons8-linkedin.png"
-                                alt="linkedin-icon" /> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-brand" data-aos="fade-down" data-aos-delay="450" href="/index.html"><img
-                                class="social-icon" id="social-icon" src="assets/img/icons8-la-france-48.png"
-                                srcset="assets/webp/icons8-la-france-48.webp, assets/img/icons8-la-france-48.png"
-                                alt="french-icon" /> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-brand" data-aos="fade-down" data-aos-delay="500" href="/en.html"><img
-                                class="social-icon" id="social-icon" src="assets/img/icons8-grande-bretagne-48.png"
-                                srcset="assets/webp/icons8-grande-bretagne-48.webp, assets/img/icons8-grande-bretagne-48.png"
-                                alt="english-icon" /> </a>
-                    </li>
-                </ul>
-            </div>
+   </div>
+  </header>
+  <nav aria-label="Navigation des rubriques" class="album-index">
+   <a aria-label="Retour à l'accueil" class="index-cover" href="#cover">
+    <span aria-hidden="true">
+     ▧
+    </span>
+    Accueil
+   </a>
+   <a data-scene-link="home" href="#home">
+    <span>
+     01
+    </span>
+    Présentation
+    <i aria-hidden="true">
+    </i>
+   </a>
+   <a data-scene-link="services" href="#services">
+    <span>
+     02
+    </span>
+    Compétences
+    <i aria-hidden="true">
+    </i>
+   </a>
+   <a data-scene-link="parcours" href="#parcours">
+    <span>
+     03
+    </span>
+    Parcours
+    <i aria-hidden="true">
+    </i>
+   </a>
+   <a data-scene-link="certifications" href="#certifications">
+    <span>
+     04
+    </span>
+    Certifications
+    <i aria-hidden="true">
+    </i>
+   </a>
+   <a data-scene-link="portfolio" href="#portfolio">
+    <span>
+     05
+    </span>
+    Projets
+    <i aria-hidden="true">
+    </i>
+   </a>
+   <a data-scene-link="contact" href="#contact">
+    <span>
+     06
+    </span>
+    Contact
+    <i aria-hidden="true">
+    </i>
+   </a>
+  </nav>
+  <main>
+   <div class="album-opening" id="cover" tabindex="-1">
+    <div class="cover-stage">
+     <div class="cover-face">
+      <div aria-hidden="true" class="cover-art">
+       <img alt="" fetchpriority="high" height="563" sizes="(max-width: 700px) 100vw, 65vw" src="assets/scenes/Présentation-1672.webp" srcset="assets/scenes/Présentation-800.webp 800w, assets/scenes/Présentation-1672.webp 1000w" width="1000"/>
+      </div>
+      <div aria-hidden="true" class="cover-strip">
+       <img alt="" height="563" src="assets/scenes/Présentation-800.webp" width="1000"/>
+      </div>
+      <div class="cover-identity">
+       <h1>
+        Adam Laaouane
+       </h1>
+       <p>
+        Ingénieur en informatique et réseaux
+       </p>
+       <p class="identity-domains">
+        Cybersécurité / Systèmes / Réseaux
+       </p>
+      </div>
+      <p class="cover-line">
+       Suivre les traces.
+       <br/>
+       Apprendre à voir
+       <span class="keep-together">
+        au-delà.
+       </span>
+      </p>
+      <nav aria-label="Choisir une rubrique" class="cover-tracklist">
+       <a data-hint="Ingénieur en informatique et réseaux · Analyste SOC" data-image="assets/scenes/Présentation-800.webp" data-preview="0" href="#home">
+        <span class="track-number">
+         01
+        </span>
+        <span class="track-label">
+         Présentation
+        </span>
+        <span aria-hidden="true" class="track-arrow">
+         →
+        </span>
+       </a>
+       <a data-hint="Cybersécurité · Systèmes · Développement" data-image="assets/scenes/Compétences-800.webp" data-preview="1" href="#services">
+        <span class="track-number">
+         02
+        </span>
+        <span class="track-label">
+         Compétences
+        </span>
+        <span aria-hidden="true" class="track-arrow">
+         →
+        </span>
+       </a>
+       <a data-hint="Agadir · Angers · Arnhem · Valladolid · Nantes" data-image="assets/scenes/parcours-800.webp" data-preview="2" href="#parcours">
+        <span class="track-number">
+         03
+        </span>
+        <span class="track-label">
+         Parcours
+        </span>
+        <span aria-hidden="true" class="track-arrow">
+         →
+        </span>
+       </a>
+       <a data-hint="TryHackMe · ANSSI · Microsoft · TOEIC" data-image="assets/scenes/Certifications-800.webp" data-preview="3" href="#certifications">
+        <span class="track-number">
+         04
+        </span>
+        <span class="track-label">
+         Certifications
+        </span>
+        <span aria-hidden="true" class="track-arrow">
+         →
+        </span>
+       </a>
+       <a data-hint="SOC · Recherche · Jeu · Robotique · Esport" data-image="assets/scenes/Projets-800.webp" data-preview="4" href="#portfolio">
+        <span class="track-number">
+         05
+        </span>
+        <span class="track-label">
+         Projets
+        </span>
+        <span aria-hidden="true" class="track-arrow">
+         →
+        </span>
+       </a>
+       <a data-hint="Email · LinkedIn · CV" data-image="assets/scenes/Contact-800.webp" data-preview="5" href="#contact">
+        <span class="track-number">
+         06
+        </span>
+        <span class="track-label">
+         Contact
+        </span>
+        <span aria-hidden="true" class="track-arrow">
+         →
+        </span>
+       </a>
+      </nav>
+      <figure class="cover-preview">
+       <div class="preview-window">
+        <img alt="" height="563" src="assets/scenes/Présentation-800.webp" width="1000"/>
+       </div>
+       <figcaption>
+        <span id="preview-number">
+         01
+        </span>
+        <span id="preview-hint">
+         Ingénieur en informatique et réseaux · Analyste SOC
+        </span>
+       </figcaption>
+      </figure>
+      <a class="cover-scroll" href="#home">
+       <span aria-hidden="true">
+        ↓
+       </span>
+       Défiler pour découvrir
+      </a>
+      <span aria-hidden="true" class="print-marks">
+       <i>
+       </i>
+       <i>
+       </i>
+       <i>
+       </i>
+      </span>
+     </div>
+     <section aria-label="Présentation" class="scene opening-note" id="home" tabindex="-1">
+      <div class="scene-scroll">
+       <div class="scene-content">
+        <div class="arrival">
+         <p class="eyebrow">
+          01 / Présentation
+         </p>
+         <h2>
+          Ingénieur en informatique et réseaux
+          <br/>
+          Spécialisé en cybersécurité
+         </h2>
+         <p class="profile-introduction">
+          Mon parcours relie administration du SI, sécurisation réseau et analyse des événements de sécurité. J'aime comprendre comment les outils fonctionnent ensemble, puis les mettre à l'épreuve dans des projets concrets.
+         </p>
+         <p class="availability">
+          Disponible pour un CDI
+         </p>
+         <div class="actions">
+          <a class="action primary" href="#portfolio">
+           Voir mes projets →
+          </a>
+          <a class="action" href="#parcours">
+           Découvrir mon parcours →
+          </a>
+         </div>
         </div>
-    </nav>
-    <!-- Home -->
-    <section id="home" class="d-flex align-items-center min-vh-100 pt-5 ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-7 mt-5">
-                    <a href="assets/files/CV_Adam_Laaouane.pdf" target="_blank">
-                        <h1 class="display-3 fw-bold" id="title-home" data-aos="fade-up">Adam<br>LAAOUANE</h1>
-                    </a>
-                    <h3 data-aos="fade-up" data-aos-delay="100" class="mt-3 mb-0">Ingénieur en<span
-                            id="span-title"></span>
-                        informatique et réseaux | <span id="span-title">Analyste SOC</span></span></h3>
-                    <div data-aos="fade-up" data-aos-delay="300"><a href="assets/files/CV_Adam_Laaouane.pdf"
-                            target="_blank" id="btn-jello" class="btn btn-brand">CV</a></div>
-                </div>
-                <div class="col-md-4 mt-5 mb-3 m-sm-1 d-flex flex-column" id="intro-photo">
-                    <img data-aos="flip-down" src="assets/img/CV3.png" srcset="assets/webp/CV3.webp, assets/img/CV3.png"
-                        class="img-fluid rounded-circle d-block shadow" alt="photo" />
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services -->
-    <section id="services" data-aos="fade-up" data-aos-delay="100" class="section-padding section-connector">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title text-center" data-aos="fade-up" data-aos-delay="100">
-                        <h1>Qui suis-je ?</h1>
-                        <p>
-                            Ingénieur diplômé en informatique, spécialisé en cybersécurité, je suis passionné par la
+       </div>
+      </div>
+     </section>
+    </div>
+   </div>
+   <div class="intro-story opening-story" id="intro-story">
+    <span class="eyebrow">
+     01
+    </span>
+    <h2>
+     Qui suis-je ?
+    </h2>
+    <details class="profile-extra">
+     <summary>
+      Informations complémentaires
+     </summary>
+     <p>
+      Ingénieur diplômé en informatique, spécialisé en cybersécurité, je suis passionné par la
                             protection des systèmes d’information et les infrastructures réseau. Grâce à mes expériences
                             en administration systèmes, sécurité, supervision et développement, j’ai acquis une vision
                             polyvalente des environnements IT. Disponible immédiatement, je recherche un CDI afin de
                             contribuer à des projets techniques ambitieux et poursuivre ma carrière dans la
                             cybersécurité, notamment en tant qu’analyste SOC ou ingénieur sécurité.
-                        </p>
-                        <div class="line"></div>
-                    </div>
-                </div>
+     </p>
+     <p class="home-role">
+      Ingénieur en informatique et réseaux
+      <br/>
+      <strong>
+       Analyste SOC
+      </strong>
+     </p>
+     <p class="availability">
+      <i>
+      </i>
+      Disponible immédiatement · À la recherche d’un CDI
+     </p>
+    </details>
+    <div class="profile-project">
+     <p class="eyebrow">
+      AI-Augmented SOC Homelab
+     </p>
+     <a class="action text-action" href="#portfolioModal5">
+      Ouvrir le lab SOC →
+     </a>
+    </div>
+   </div>
+   <section aria-label="Compétences" class="scene scene-services" data-track="02" id="services" tabindex="-1">
+    <div aria-hidden="true" class="chapter-art" data-chapter="services">
+     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/Compétences.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/Compétences-1672.webp" srcset="assets/scenes/Compétences-800.webp 800w, assets/scenes/Compétences-1672.webp 1672w"/>
+    </div>
+    <div class="scene-scroll">
+     <div class="scene-content">
+      <div class="section-heading">
+       <p class="eyebrow">
+        02
+       </p>
+       <h2>
+        Compétences
+       </h2>
+      </div>
+      <p class="interaction-note">
+       Sélectionnez un domaine. Les outils et leurs usages se lisent à côté.
+      </p>
+      <div class="explorer">
+       <div aria-label="Domaines de compétences" class="skill-index" role="group">
+        <button aria-controls="skill-0" aria-pressed="false" type="button">
+         <span class="skill-label">
+          <span aria-hidden="true" class="portfolio-icon portfolio-icon--shield">
+          </span>
+          Cybersécurité
+         </span>
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </button>
+        <button aria-controls="skill-1" aria-pressed="false" type="button">
+         Administration système
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </button>
+        <button aria-controls="skill-2" aria-pressed="false" type="button">
+         <span class="skill-label">
+          <span aria-hidden="true" class="portfolio-icon portfolio-icon--web">
+          </span>
+          Développement web
+         </span>
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </button>
+        <button aria-controls="skill-3" aria-pressed="false" type="button">
+         Développement logiciel
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </button>
+        <button aria-controls="skill-4" aria-pressed="false" type="button">
+         <span class="skill-label">
+          <span aria-hidden="true" class="portfolio-icon portfolio-icon--android">
+          </span>
+          Développement Android
+         </span>
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </button>
+        <button aria-controls="skill-5" aria-pressed="false" type="button">
+         <span class="skill-label">
+          <span aria-hidden="true" class="portfolio-icon portfolio-icon--web">
+          </span>
+          Backend
+         </span>
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </button>
+        <button aria-controls="skill-6" aria-pressed="false" type="button">
+         Outils &amp; gestion
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </button>
+       </div>
+       <div class="skill-panels">
+        <article class="skill-panel" id="skill-0">
+         <h3>
+          <span aria-hidden="true" class="portfolio-icon portfolio-icon--shield">
+          </span>
+          Cybersécurité
+         </h3>
+         <div class="skill-body">
+          <div>
+           <ul>
+            <li>
+             Pentesting &amp; Ethical Hacking (Nmap, Nessus, Burp Suite, Metasploit, Wireshark)
+            </li>
+            <li>
+             Attaques &amp; contre-mesures : SQLi, XSS, MITM, brute force
+            </li>
+            <li>
+             Supervision &amp; défense : SIEM (Splunk/ELK), EDR/XDR, réponse aux incidents
+            </li>
+            <li>
+             Gestion des accès : Entra ID, MFA, Zero Trust
+            </li>
+            <li>
+             Sécurité messagerie : SPF, DKIM, DMARC, TLS/SSL
+            </li>
+            <li>
+             Normes &amp; conformité : Autodiagnostic ANSSI, PCA/PRA, ISO 27001
+            </li>
+           </ul>
+           <a href="https://www.root-me.org/Zetsu-794769">
+            Mon
+                            profil Root-Me
+           </a>
+           <a href="https://tryhackme.com/p/Z33tsu">
+            Mon profil
+                            TryHackMe
+           </a>
+           <p>
+            <em>
+             Certification CEH en préparation
+            </em>
+           </p>
+           <div class="thm-profile-badge">
+            <div class="thm-badge-viewport">
+             <iframe height="88" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1918814" title="Badge TryHackMe de Z33tsu" width="329">
+             </iframe>
             </div>
-            <div class="row align-items-stretch gy-5 text-center">
-
-                <!-- Développement web -->
-                <div class="col-lg-3 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service py-5 px-4 border bord d-flex flex-column w-100">
-                        <div class="service-icon">
-                            <img class="img-fluid m-2" src="assets/img/icons8-webdev.png"
-                                srcset="assets/webp/icons8-webdev.webp, assets/img/icons8-webdev.png" alt="icon-web"
-                                loading="lazy" />
-                        </div>
-                        <h5 class="mt-4">Développement web</h5>
-                        <ul class="text-start mx-auto" style="max-width: 95%;">
-                            <li>HTML5, CSS3, JavaScript, PHP</li>
-                            <li>Frameworks: Bootstrap, React, Symfony</li>
-                            <li>Apps robustes, évolutives, bonnes pratiques</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Administration système -->
-                <div class="col-lg-3 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service py-5 px-4 border bord d-flex flex-column w-100">
-                        <div class="service-icon">
-                            <img class="img-fluid m-2" src="assets/img/icons8-microsoft-admin-50.png"
-                                srcset="assets/webp/icons8-microsoft-admin-50.webp, assets/img/icons8-microsoft-admin-50.png"
-                                alt="icon-admin" loading="lazy" />
-                        </div>
-                        <h5 class="mt-4">Administration système</h5>
-                        <ul class="text-start mx-auto" style="max-width: 95%;">
-                            <li>Windows Server, Linux (Debian/Ubuntu)</li>
-                            <li>Active Directory, GPO, comptes & accès</li>
-                            <li>Monitoring, sauvegardes, continuité (PCA)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Développement logiciel -->
-                <div class="col-lg-3 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service py-5 px-4 border d-flex flex-column w-100">
-                        <div class="service-icon">
-                            <img class="img-fluid m-2" src="assets/img/icons8-google-code-50.png"
-                                srcset="assets/webp/icons8-google-code-50.webp, assets/img/icons8-google-code-50.png"
-                                alt="icon-logiciel" loading="lazy" />
-                        </div>
-                        <h5 class="mt-4">Développement logiciel</h5>
-                        <ul class="text-start mx-auto" style="max-width: 95%;">
-                            <li>Langages: Java, Python, C, C++, C#</li>
-                            <li>Unity 3D, Git/GitHub, patterns & tests</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Développement Android -->
-                <div class="col-lg-3 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service py-5 px-4 border d-flex flex-column w-100">
-                        <div class="service-icon">
-                            <img class="img-fluid m-2" src="assets/img/icons8-android-50.png"
-                                srcset="assets/webp/icons8-android-50.webp, assets/img/icons8-android-50.png"
-                                alt="icon-android" loading="lazy" />
-                        </div>
-                        <h5 class="mt-4">Développement Android</h5>
-                        <ul class="text-start mx-auto" style="max-width: 95%;">
-                            <li>Java & Kotlin, Android Studio</li>
-                            <li>UI XML, navigation, gestion réseau/DB</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Cybersécurité -->
-                <div class="col-lg-3 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service py-5 px-4 border d-flex flex-column w-100">
-                        <div class="service-icon">
-                            <img class="img-fluid m-2" src="assets/img/icons8-base-de-données-50.png"
-                                srcset="assets/webp/icons8-base-de-données-50.webp, assets/img/icons8-base-de-données-50.png"
-                                alt="icon-cyber" loading="lazy" />
-                        </div>
-                        <h5 class="mt-4">Cybersécurité</h5>
-                        <ul class="text-start mx-auto" style="max-width: 95%;">
-                            <li>Pentesting & Ethical Hacking (Nmap, Nessus, Burp Suite, Metasploit, Wireshark)</li>
-                            <li>Attaques & contre-mesures : SQLi, XSS, MITM, brute force</li>
-                            <li>Supervision & défense : SIEM (Splunk/ELK), EDR/XDR, réponse aux incidents</li>
-                            <li>Gestion des accès : Entra ID, MFA, Zero Trust</li>
-                            <li>Sécurité messagerie : SPF, DKIM, DMARC, TLS/SSL</li>
-                            <li>Normes & conformité : Autodiagnostic ANSSI, PCA/PRA, ISO 27001</li>
-                        </ul>
-
-                        <a class="mt-2" href="https://www.root-me.org/Zetsu-794769" aria-label="Profil Root-Me">Mon
-                            profil Root-Me</a>
-                        <a class="mt-2" href="https://tryhackme.com/p/Z33tsu" aria-label="Profil THM">Mon profil
-                            TryHackMe</a>
-                        <p class="mt-2 text-muted"><em>Certification CEH en préparation</em></p>
-
-                        <!-- ===== TryHackMe badge (insère ici) ===== -->
-                        <div class="thm-badge-wrapper mt-3" aria-label="Badge TryHackMe - profil Z33tsu">
-                            <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1918814"
-                                title="Badge TryHackMe de Z33tsu" loading="lazy" referrerpolicy="no-referrer"
-                                sandbox="allow-scripts allow-same-origin allow-popups"
-                                style="border:none;display:block;width:100%;height:140px;"></iframe>
-
-                            <noscript>
-                                <p class="mb-0">
-                                    <a href="https://tryhackme.com/p/Z33tsu" target="_blank" rel="noopener">Voir mon
-                                        profil TryHackMe</a>
-                                </p>
-                            </noscript>
-                        </div>
-                        <!-- ===== fin badge ===== -->
-
-                    </div>
-                </div>
-
-
-
-                <!-- Outils bureautique -->
-                <div class="col-lg-3 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service py-5 px-4 border d-flex flex-column w-100">
-                        <div class="service-icon">
-                            <img class="img-fluid m-2" src="assets/img/icons8-outils-administratifs-50.png"
-                                srcset="assets/webp/icons8-outils-administratifs-50.webp, assets/img/icons8-outils-administratifs-50.png"
-                                alt="icon-office" loading="lazy" />
-                        </div>
-                        <h5 class="mt-4">Outils & gestion</h5>
-                        <ul class="text-start mx-auto" style="max-width: 95%;">
-                            <li>Office: Word, Excel, PowerPoint, Outlook</li>
-                            <li>Projet & collab: MS Project, Trello, Notion</li>
-                            <li>Versioning: Git/GitHub</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="col-lg-3 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service py-5 px-4 border d-flex flex-column w-100">
-                        <div class="service-icon">
-                            <img class="img-fluid m-2" src="assets/img/icons8-domaine-50.png"
-                                srcset="assets/webp/icons8-domaine-50.webp, assets/img/icons8-domaine-50.png"
-                                alt="icon-backend" loading="lazy" />
-                        </div>
-                        <h5 class="mt-4">Backend</h5>
-                        <ul class="text-start mx-auto" style="max-width: 95%;">
-                            <li>PHP, Symfony, APIs REST</li>
-                            <li>Sécu applicative: OWASP basics</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-    </section>
-    <!-- About-->
-    <section class="section-padding section-connector" data-aos="fade-up" data-aos-delay="100" id="parcours">
-        <div class="container">
-            <div class="text-center">
-                <br><br>
-                <h2 class="section-heading text-uppercase">Parcours</h2>
-                <br><br>
-            </div>
-            <ul class="timeline">
-                <!-- Ingénieur Réseaux et Sécurité -->
-                <li class="timeline-inverted">
-                    <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
-                        <img class="rounded-circle img-fluid" src="assets/img/wilaya.png" alt="wilaya-image"
-                            style="height: 100%; width: 100%;"
-                            srcset="assets/webp/wilaya.webp, assets/img/wilaya.png" />
-                    </div>
-
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>2026</h3>
-                            <h4 class="subheading">Ingénieur Réseaux et Sécurité</h4>
-                        </div>
-
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                Expérience internationale de 2 mois au sein de la
-                                <strong>Préfecture d'Agadir Ida-Outanane - Région Souss-Massa
-                                    (Ministère de l'Intérieur du Royaume du Maroc)</strong>.
+            <a class="thm-badge-fallback" href="https://tryhackme.com/p/Z33tsu" rel="noopener noreferrer" target="_blank">
+             Profil TryHackMe ? ouvrir directement ?
+            </a>
+           </div>
+          </div>
+         </div>
+        </article>
+        <article class="skill-panel" id="skill-1">
+         <h3>
+          Administration système
+         </h3>
+         <div class="skill-body">
+          <div>
+           <ul>
+            <li>
+             Windows Server, Linux (Debian/Ubuntu)
+            </li>
+            <li>
+             Active Directory, GPO, comptes &amp; accès
+            </li>
+            <li>
+             Monitoring, sauvegardes, continuité (PCA)
+            </li>
+           </ul>
+          </div>
+         </div>
+        </article>
+        <article class="skill-panel" id="skill-2">
+         <h3>
+          <span aria-hidden="true" class="portfolio-icon portfolio-icon--web">
+          </span>
+          Développement web
+         </h3>
+         <div class="skill-body">
+          <div>
+           <ul>
+            <li>
+             HTML5, CSS3, JavaScript, PHP
+            </li>
+            <li>
+             Frameworks: Bootstrap, React, Symfony
+            </li>
+            <li>
+             Apps robustes, évolutives, bonnes pratiques
+            </li>
+           </ul>
+          </div>
+         </div>
+        </article>
+        <article class="skill-panel" id="skill-3">
+         <h3>
+          Développement logiciel
+         </h3>
+         <div class="skill-body">
+          <div>
+           <ul>
+            <li>
+             Langages: Java, Python, C, C++, C#
+            </li>
+            <li>
+             Unity 3D, Git/GitHub, patterns &amp; tests
+            </li>
+           </ul>
+          </div>
+         </div>
+        </article>
+        <article class="skill-panel" id="skill-4">
+         <h3>
+          <span aria-hidden="true" class="portfolio-icon portfolio-icon--android">
+          </span>
+          Développement Android
+         </h3>
+         <div class="skill-body">
+          <div>
+           <ul>
+            <li>
+             Java &amp; Kotlin, Android Studio
+            </li>
+            <li>
+             UI XML, navigation, gestion réseau/DB
+            </li>
+           </ul>
+          </div>
+         </div>
+        </article>
+        <article class="skill-panel" id="skill-5">
+         <h3>
+          <span aria-hidden="true" class="portfolio-icon portfolio-icon--web">
+          </span>
+          Backend
+         </h3>
+         <div class="skill-body">
+          <div>
+           <ul>
+            <li>
+             PHP, Symfony, APIs REST
+            </li>
+            <li>
+             Sécu applicative: OWASP basics
+            </li>
+           </ul>
+          </div>
+         </div>
+        </article>
+        <article class="skill-panel" id="skill-6">
+         <h3>
+          Outils &amp; gestion
+         </h3>
+         <div class="skill-body">
+          <div>
+           <ul>
+            <li>
+             Office: Word, Excel, PowerPoint, Outlook
+            </li>
+            <li>
+             Projet &amp; collab: MS Project, Trello, Notion
+            </li>
+            <li>
+             Versioning: Git/GitHub
+            </li>
+           </ul>
+          </div>
+         </div>
+        </article>
+       </div>
+      </div>
+      <details class="domains-overview">
+       <summary>
+        Vue d’ensemble des domaines
+        <span aria-hidden="true">
+         +
+        </span>
+       </summary>
+       <div class="connections">
+        <article class="connection reveal">
+         <h3>
+          <span>
+           01
+          </span>
+          Cybersécurité · Détection · Investigation
+         </h3>
+         <ul>
+          <li>
+           <strong>
+            Cybersécurité
+           </strong>
+           <span>
+            Pentesting &amp; Ethical Hacking (Nmap, Nessus, Burp Suite, Metasploit, Wireshark)
+           </span>
+          </li>
+         </ul>
+        </article>
+        <article class="connection reveal">
+         <h3>
+          <span>
+           02
+          </span>
+          Systèmes · Réseaux · Identités
+         </h3>
+         <ul>
+          <li>
+           <strong>
+            Administration système
+           </strong>
+           <span>
+            Windows Server, Linux (Debian/Ubuntu)
+           </span>
+          </li>
+         </ul>
+        </article>
+        <article class="connection reveal">
+         <h3>
+          <span>
+           03
+          </span>
+          Développement · Automatisation · Données
+         </h3>
+         <ul>
+          <li>
+           <strong>
+            Développement web
+           </strong>
+           <span>
+            HTML5, CSS3, JavaScript, PHP
+           </span>
+          </li>
+          <li>
+           <strong>
+            Développement logiciel
+           </strong>
+           <span>
+            Langages: Java, Python, C, C++, C#
+           </span>
+          </li>
+          <li>
+           <strong>
+            Développement Android
+           </strong>
+           <span>
+            Java &amp; Kotlin, Android Studio
+           </span>
+          </li>
+          <li>
+           <strong>
+            Backend
+           </strong>
+           <span>
+            PHP, Symfony, APIs REST
+           </span>
+          </li>
+          <li>
+           <strong>
+            Outils &amp; gestion
+           </strong>
+           <span>
+            Office: Word, Excel, PowerPoint, Outlook
+           </span>
+          </li>
+         </ul>
+        </article>
+       </div>
+      </details>
+     </div>
+    </div>
+   </section>
+   <section aria-label="Parcours" class="scene scene-parcours" data-track="03" id="parcours" tabindex="-1">
+    <div aria-hidden="true" class="chapter-art" data-chapter="parcours">
+     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/parcours.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/parcours-1672.webp" srcset="assets/scenes/parcours-800.webp 800w, assets/scenes/parcours-1672.webp 1672w"/>
+    </div>
+    <div class="scene-scroll">
+     <div class="scene-content">
+      <div class="section-heading">
+       <p class="eyebrow">
+        03
+       </p>
+       <div aria-hidden="true" class="route-fragment">
+        <img alt="" height="941" loading="lazy" src="assets/scenes/parcours-800.webp" width="1672"/>
+       </div>
+       <h2>
+        Parcours
+       </h2>
+       <p class="route">
+        Agadir · Angers · Arnhem
+        <br/>
+        Valladolid · Nantes
+       </p>
+      </div>
+      <nav aria-label="Étapes du parcours" class="route-index">
+       <a href="#stop-0">
+        <span>
+         2026
+        </span>
+        Ingénieur Réseaux et Sécurité
+       </a>
+       <a href="#stop-1">
+        <span>
+         2026
+        </span>
+        Data Analyst
+       </a>
+       <a href="#stop-2">
+        <span>
+         2024 - 2025
+        </span>
+        Contrat de professionnalisation
+       </a>
+       <a href="#stop-3">
+        <span>
+         2023 - 2025
+        </span>
+        Cycle ingénieur à l'ESAIP
+       </a>
+       <a href="#stop-4">
+        <span>
+         janvier - juin 2024
+        </span>
+        Deuxième Séjour d'études à l'étranger
+       </a>
+       <a href="#stop-5">
+        <span>
+         janvier - juin 2022
+        </span>
+        Premier Séjour d'études à l'étranger
+       </a>
+       <a href="#stop-6">
+        <span>
+         2020 - 2022
+        </span>
+        Classe préparatoire à l'ESAIP Angers
+       </a>
+       <a href="#stop-7">
+        <span>
+         2020
+        </span>
+        Baccalauréat Scientifique
+       </a>
+      </nav>
+      <div class="journey-list">
+       <article class="journey-stop reveal" id="stop-0">
+        <header>
+         <span class="stop-date">
+          2026
+         </span>
+         <div class="organization">
+          <img alt="" class="organization-logo organization-logo--emblem" decoding="async" height="1214" loading="lazy" src="assets/img/logos/wilaya-emblem.png" width="1295"/>
+          <p class="organization-name">
+           Préfecture d’Agadir Ida-Outanane — Région Souss-Massa
+          </p>
+         </div>
+         <h3>
+          Ingénieur Réseaux et Sécurité
+         </h3>
+        </header>
+        <div class="stop-body">
+         <div>
+          <p>
+           Expérience internationale de 2 mois au sein de la
+           <strong>
+            Préfecture d'Agadir Ida-Outanane - Région Souss-Massa
+                                    (Ministère de l'Intérieur du Royaume du Maroc)
+           </strong>
+           .
                                 Déploiement et sécurisation d'une infrastructure réseau avec
                                 pare-feu, segmentation et filtrage, mise en place
                                 d'un portail captif et de la protection DNS/IP ainsi que développement d'une solution de
-                                supervision basée sur <strong>Grafana, InfluxDB et
-                                    Telegraf</strong> pour le monitoring des performances réseau.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <!-- Data Analyst -->
-                <li>
-                    <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
-                        <img class="rounded-circle img-fluid" src="assets/img/esaip.png" alt="esaip-image
-                            style=" height: 100%; width: 100%;"
-                            srcset="assets/webp/esaip.webp, assets/img/esaip.png" />
-                    </div>
-
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>2026</h3>
-                            <h4 class="subheading">Data Analyst</h4>
-                        </div>
-
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                Stage de 3 mois au sein de <strong>l'ESAIP (Angers, France)</strong> en tant que
-                                <strong>Data Analyst</strong>. Développement de tableaux de bord interactifs sous
-                                <strong>Power BI</strong> pour le pilotage pédagogique, avec modélisation et
-                                normalisation des données, création de mesures <strong>DAX</strong> et d'indicateurs
-                                <strong>KPI</strong>. Structuration, automatisation et centralisation des traitements
+                                supervision basée sur
+           <strong>
+            Grafana, InfluxDB et
+                                    Telegraf
+           </strong>
+           pour le monitoring des performances réseau.
+          </p>
+         </div>
+        </div>
+       </article>
+       <article class="journey-stop reveal" id="stop-1">
+        <header>
+         <span class="stop-date">
+          2026
+         </span>
+         <div class="organization">
+          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-dark.svg" width="334"/>
+          <p class="organization-name">
+           ESAIP · Angers
+          </p>
+         </div>
+         <h3>
+          Data Analyst
+         </h3>
+        </header>
+        <div class="stop-body">
+         <div>
+          <p>
+           Stage de 3 mois au sein de
+           <strong>
+            l'ESAIP (Angers, France)
+           </strong>
+           en tant que
+           <strong>
+            Data Analyst
+           </strong>
+           . Développement de tableaux de bord interactifs sous
+           <strong>
+            Power BI
+           </strong>
+           pour le pilotage pédagogique, avec modélisation et
+                                normalisation des données, création de mesures
+           <strong>
+            DAX
+           </strong>
+           et d'indicateurs
+           <strong>
+            KPI
+           </strong>
+           . Structuration, automatisation et centralisation des traitements
                                 de données afin de transformer des rapports Excel complexes en tableaux de bord
                                 dynamiques (Sunburst, graphiques interactifs, visualisations avancées) facilitant
                                 l'analyse et la prise de décision.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-
-                <!-- Contrat de professionnalisation -->
-                <li class="timeline-inverted">
-                    <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
-                        <img class="rounded-circle img-fluid" src="assets/img/happybabees.png" alt="happybabees-image"
-                            style="height: 100%; width: 100%;"
-                            srcset="assets/webp/happybabees.webp, assets/img/happybabees.png" />
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>2024 - 2025</h3>
-                            <h4 class="subheading">Contrat de professionnalisation</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                Chargé de systèmes d'information opérationnel chez <strong>Happy Babees
-                                    (Nantes)</strong>,
+          </p>
+         </div>
+        </div>
+       </article>
+       <article class="journey-stop reveal" id="stop-2">
+        <header>
+         <span class="stop-date">
+          2024 - 2025
+         </span>
+         <div class="organization">
+          <img alt="" class="organization-logo organization-logo--slogan" decoding="async" height="120" loading="lazy" src="assets/img/logos/happy-babees.png" width="279"/>
+          <p class="organization-name">
+           Happy Babees · Nantes
+          </p>
+         </div>
+         <h3>
+          Contrat de professionnalisation
+         </h3>
+        </header>
+        <div class="stop-body">
+         <div>
+          <p>
+           Chargé de systèmes d'information opérationnel chez
+           <strong>
+            Happy Babees
+                                    (Nantes)
+           </strong>
+           ,
                                 dans le cadre de ma 5ème et dernière année d’études d’ingénieur.
                                 Gestion et optimisation du SI, automatisation de processus SaaS,
                                 cybersécurité (autodiagnostic ANSSI, PCA/PRA, gestion des accès, protocoles de
                                 messagerie sécurisés).
-
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- École d’ingénieurs -->
-                <li>
-                    <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
-                        <img class="rounded-circle img-fluid" src="assets/img/esaip.png" alt="esaip-image"
-                            style="height: 100%; width: 99%;" srcset="assets/webp/esaip.webp, assets/img/esaip.png" />
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>2023 - 2025</h3>
-                            <h4 class="subheading">Cycle ingénieur à l'ESAIP</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                Cycle ingénieur en informatique et réseaux à l'ESAIP, avec spécialisation en
+          </p>
+         </div>
+        </div>
+       </article>
+       <article class="journey-stop reveal" id="stop-3">
+        <header>
+         <span class="stop-date">
+          2023 - 2025
+         </span>
+         <div class="organization">
+          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-dark.svg" width="334"/>
+          <p class="organization-name">
+           ESAIP · Angers
+          </p>
+         </div>
+         <h3>
+          Cycle ingénieur à l'ESAIP
+         </h3>
+        </header>
+        <div class="stop-body">
+         <div>
+          <p>
+           Cycle ingénieur en informatique et réseaux à l'ESAIP, avec spécialisation en
                                 cybersécurité.
                                 Formation mêlant théorie et projets concrets dans un contexte international.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- Séjour 2024 -->
-                <li class="timeline-inverted">
-                    <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
-                        <img class="rounded-circle img-fluid" src="assets/img/uemc.jpg" alt="uemc-image"
-                            style="height: 100%; width: 99%;" srcset="assets/webp/uemc.webp, assets/img/uemc.jpg" />
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>janvier - juin 2024</h3>
-                            <h4 class="subheading">Deuxième Séjour d'études à l'étranger</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                Séjour Erasmus à Valladolid (UEMC, Espagne).
+          </p>
+         </div>
+        </div>
+       </article>
+       <article class="journey-stop reveal" id="stop-4">
+        <header>
+         <span class="stop-date">
+          janvier - juin 2024
+         </span>
+         <div class="organization">
+          <img alt="" class="organization-logo" decoding="async" height="155" loading="lazy" src="assets/img/logos/uemc.jpg" width="252"/>
+          <p class="organization-name">
+           UEMC · Valladolid
+          </p>
+         </div>
+         <h3>
+          Deuxième Séjour d'études à l'étranger
+         </h3>
+        </header>
+        <div class="stop-body">
+         <div>
+          <p>
+           Séjour Erasmus à Valladolid (UEMC, Espagne).
                                 Renforcement des compétences en cybersécurité et en informatique dans un environnement
                                 multiculturel.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- Séjour 2022 -->
-                <li>
-                    <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
-                        <img class="rounded-circle img-fluid" src="assets/img/HAN.png" alt="han-image"
-                            style="height: 100%; width: 100%;" srcset="assets/webp/HAN.webp, assets/img/HAN.png" />
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>janvier - juin 2022</h3>
-                            <h4 class="subheading">Premier Séjour d'études à l'étranger</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                Séjour Erasmus à Arnhem (Pays-Bas), au sein de la HAN University of Applied Sciences.
+          </p>
+         </div>
+        </div>
+       </article>
+       <article class="journey-stop reveal" id="stop-5">
+        <header>
+         <span class="stop-date">
+          janvier - juin 2022
+         </span>
+         <div class="organization">
+          <img alt="" class="organization-logo organization-logo--han" decoding="async" height="183" loading="lazy" src="assets/img/logos/han.png" width="276"/>
+          <p class="organization-name">
+           HAN University of Applied Sciences · Arnhem
+          </p>
+         </div>
+         <h3>
+          Premier Séjour d'études à l'étranger
+         </h3>
+        </header>
+        <div class="stop-body">
+         <div>
+          <p>
+           Séjour Erasmus à Arnhem (Pays-Bas), au sein de la HAN University of Applied Sciences.
                                 Découverte de nouvelles approches pédagogiques et techniques.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- Prépa -->
-                <li class="timeline-inverted">
-                    <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
-                        <img class="rounded-circle img-fluid" src="assets/img/esaip.png" alt="esaip"
-                            style="height: 100%; width: 99%;" srcset="assets/webp/esaip.webp, assets/img/esaip.png" />
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>2020 - 2022</h3>
-                            <h4 class="subheading">Classe préparatoire à l'ESAIP Angers</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                Cycle préparatoire intégré à l'école d'ingénieurs ESAIP à Angers.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- Bac -->
-                <li>
-                    <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
-                        <img class="rounded-circle img-fluid timeline-img" src="assets/img/maroc.png" alt="maroc-image"
-                            style="height: 100%; width: 100%;" srcset="assets/webp/maroc.webp, assets/img/maroc.png" />
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>2020</h3>
-                            <h4 class="subheading">Baccalauréat Scientifique</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                Baccalauréat scientifique option Physique-Chimie (BFI) – Agadir, Maroc.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
+          </p>
+         </div>
         </div>
-    </section>
-    <!-- Licences et certifications -->
-    <section id="certifications" class="section-padding section-connector" data-aos="fade-up" data-aos-delay="100">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1>Licences et certifications</h1>
-                <div class="line"></div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="certification-card">
-                        <img src="assets/img/thm.png" srcset="assets/webp/thm.webp, assets/img/thm.png" alt="TryHackMe"
-                            class="certification-logo">
-
-                        <div class="certification-content">
-                            <h5>SOC Level 1</h5>
-                            <p class="certification-issuer">TryHackMe</p>
-                            <p class="text-muted mb-1">Émise en juillet 2026</p>
-                            <p class="text-muted mb-2">Identifiant du diplôme : THM-HOP2UNZ6FI</p>
-                            <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HOP2UNZ6FI.pdf"
-                                target="_blank" class="certification-link">Afficher le diplôme ↗</a>
-                        </div>
-                    </div>
-
-                    <div class="certification-card">
-                        <img src="assets/img/thm.png" srcset="assets/webp/thm.webp, assets/img/thm.png" alt="TryHackMe"
-                            class="certification-logo">
-
-                        <div class="certification-content">
-                            <h5>Pre Security Certificate</h5>
-                            <p class="certification-issuer">TryHackMe</p>
-                            <p class="text-muted mb-1">Émise en février 2026</p>
-                            <p class="text-muted mb-2">Identifiant du diplôme : THM-9AQQVFHQ4K</p>
-                            <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-9AQQVFHQ4K.pdf"
-                                target="_blank" class="certification-link">Afficher le diplôme ↗</a>
-                        </div>
-                    </div>
-
-                    <div class="certification-card">
-                        <img src="assets/img/Anssi.png" srcset="assets/webp/Anssi.webp, assets/img/Anssi.png"
-                            alt="ANSSI" class="certification-logo">
-
-                        <div class="certification-content">
-                            <h5>MOOC ANSSI</h5>
-                            <p class="certification-issuer">ANSSI - Agence nationale de la sécurité des systèmes
-                                d'information</p>
-                        </div>
-                    </div>
-
-                    <div class="certification-card">
-                        <img src="assets/img/Microsoft.png"
-                            srcset="assets/webp/Microsoft.webp, assets/img/Microsoft.png" alt="Microsoft"
-                            class="certification-logo">
-
-                        <div class="certification-content">
-                            <h5>Microsoft Certified: Azure AI Fundamentals</h5>
-                            <p class="certification-issuer">Microsoft</p>
-                            <p class="text-muted mb-0">Émise en octobre 2023</p>
-                        </div>
-                    </div>
-
-                    <div class="certification-card">
-                        <img src="assets/img/ets-toeic-logo.png"
-                            srcset="assets/webp/ets-toeic-logo.webp, assets/img/ets-toeic-logo.png" alt="TOEIC"
-                            class="certification-logo">
-
-                        <div class="certification-content">
-                            <h5>Test of English for International Communication (TOEIC)</h5>
-                            <p class="certification-issuer">ETS</p>
-                            <p class="text-muted mb-1">Émise en septembre 2023</p>
-                            <p class="mb-0"><strong>Compétence : CEFR Level C1</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+       </article>
+       <article class="journey-stop reveal" id="stop-6">
+        <header>
+         <span class="stop-date">
+          2020 - 2022
+         </span>
+         <div class="organization">
+          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-dark.svg" width="334"/>
+          <p class="organization-name">
+           ESAIP · Angers
+          </p>
+         </div>
+         <h3>
+          Classe préparatoire à l'ESAIP Angers
+         </h3>
+        </header>
+        <div class="stop-body">
+         <div>
+          <p>
+           Cycle préparatoire intégré à l'école d'ingénieurs ESAIP à Angers.
+          </p>
+         </div>
         </div>
-    </section>
-
-    <!-- Work -->
-    <section class="page-section portfolio section-padding section-connector" data-aos="fade-up" data-aos-delay="100"
-        id="portfolio">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Portfolio</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-
-                <!-- Portfolio Item 5 - AI-Augmented SOC Homelab-->
-                <div class="col-md-9 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5"
-                        id="div-moove">
-
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <p class="h4 portfolio-item-texte">AI-Augmented SOC Homelab</p>
-                                <p class="lead" style="color:white;">Blue Team / SIEM / AI</p>
-                                <p><b>2026</b></p>
-                            </div>
-                        </div>
-
-                        <img class="img-fluid" src="assets/img/ai-soc-homelab.png" alt="AI-Augmented SOC Homelab" />
-                    </div>
-                </div>
-
-
-                <!-- Portfolio Item 4 - PSIR-->
-                <div class="col-md-9 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4"
-                        id="div-moove">
-
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <p class="h4 portfolio-item-texte">
-                                    Projet Scientifique d'Initiation à la Recherche
-                                </p>
-                                <p class="lead" style="color:white;">IA & Cyber-résilience</p>
-                                <p><b>2023-2024</b></p>
-                            </div>
-                        </div>
-
-                        <img class="img-fluid" src="assets/img/PSIR.jpg"
-                            alt="Projet Scientifique d'Initiation à la Recherche"
-                            srcset="assets/webp/PSIR.webp, assets/img/PSIR.jpg" />
-                    </div>
-                </div>
-
-
-                <!-- Portfolio Item 1 - Sticks & Stones-->
-                <div class="col-md-9 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1"
-                        id="div-moove">
-
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <p class="h4 portfolio-item-texte">Sticks & Stones</p>
-                                <p class="lead" style="color:white;">Unity 3D</p>
-                                <p><b>2022</b></p>
-                            </div>
-                        </div>
-
-                        <img class="img-fluid" src="assets/img/ss.png" alt="Sticks & Stones"
-                            srcset="assets/webp/ss.webp, assets/img/ss.png" />
-                    </div>
-                </div>
-
-
-                <!-- Portfolio Item 2 - Esaip Robotics-->
-                <div class="col-md-9 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2"
-                        id="div-moove">
-
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <p class="h4 portfolio-item-texte">Esaip Robotics</p>
-                                <p class="lead" style="color:white;">Python, C</p>
-                                <p><b>2022</b></p>
-                            </div>
-                        </div>
-
-                        <img class="img-fluid" src="assets/img/er.png" alt="Esaip Robotics"
-                            srcset="assets/webp/er.webp, assets/img/er.png" />
-                    </div>
-                </div>
-
-
-                <!-- Portfolio Item 3 - Esaip Rivals-->
-                <div class="col-md-9 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3"
-                        id="div-moove">
-
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <p class="h4 portfolio-item-texte">Tournoi d'esport</p>
-                                <p class="lead" style="color:white;">Esaip Rivals</p>
-                                <p><b>2021</b></p>
-                            </div>
-                        </div>
-
-                        <img class="img-fluid" src="assets/img/tournoi.png" alt="Esaip Rivals"
-                            srcset="assets/webp/tournoi.webp, assets/img/tournoi.png" />
-                    </div>
-                </div>
-
-            </div>
+       </article>
+       <article class="journey-stop reveal" id="stop-7">
+        <header>
+         <span class="stop-date">
+          2020
+         </span>
+         <img alt="maroc-image" decoding="async" height="740" loading="lazy" src="assets/img/logos/maroc.png" width="1040"/>
+         <h3>
+          Baccalauréat Scientifique
+         </h3>
+        </header>
+        <div class="stop-body">
+         <div>
+          <p>
+           Baccalauréat scientifique option Physique-Chimie (BFI) – Agadir, Maroc.
+          </p>
+         </div>
         </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- Contact -->
-    <section id="contact" class="section-connector">
-        <section class="page-section bg">
-            <br>
-            <div class="container text-center mt-5">
-                <h2 class="mb-4" style="color: black;">Vous souhaitez me contacter ?</h2>
-                <a class="btn btn-light btn-xl btn-brand" id="btn-jello"
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=adam.laaouane.pro@gmail.com" target="_blank"
-                    rel="noopener noreferrer">
-                    E-mail
-                </a>
-            </div>
-            <br>
-        </section>
-        <footer class="footer text-center" id="footer">
-            <div class="container">
-                <ul class="list-inline mb-3">
-                    <li class="list-inline-item">
-                        <a href="#home">
-                            <img class="social-icon" src="assets/img/icon-inv.png" alt="accueil"
-                                srcset="assets/webp/icon-inv.webp, assets/img/icon-inv.png" />
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="logo-icon shadow-drop-center" target="_blank"
-                            href="https://www.linkedin.com/in/adam-laa">
-                            <img class="social-icon" src="assets/img/icons8-linkedin-white.png" alt="linkedin"
-                                srcset="assets/webp/icons8-linkedin-white.webp, assets/img/icons8-linkedin-white.png" />
-                        </a>
-                    </li>
-                </ul>
-                <img class="social-icon" data-aos="fade-down" data-aos-delay="100"
-                    src="assets/img/icons8-epingle-de-carte-30.png" style="filter : invert(1);" alt="localisation"
-                    srcset="assets/webp/icons8-epingle-de-carte-30.webp ,assets/img/icons8-epingle-de-carte-30.png" />
-                <p class=" lead"> France</p>
-                <p class="text-lead small mb-3">
-                    Copyright <b>&copy;</b> Portfolio, logo pensé et réalisé par LAAOUANE Adam 2023 | <b>Version -
-                        0.9</b>
-                </p>
-                <br>
-                <p class="text-lead small mb-0" style="color:rgb(130, 130, 130); cursor: pointer;"
-                    data-bs-toggle="modal" data-bs-target="#Licenses"><u>Licences</u></p>
-            </div>
-    </section>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Sticks & Stones
-                                </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/ss.png"
-                                    style="max-width: 400px; max-height: 400px;" alt="ss-img"
-                                    srcset="assets/webp/ss.webp, assets/img/ss.png" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4" style="text-align: justify;">
-                                    Durant mon séjour d'études aux Pays-Bas, j'ai eu l'occasion de réaliser un projet
-                                    passionnant. J'ai participé activement au développement d'un jeu vidéo en tant
-                                    qu'Unity integrator, un rôle polyvalent qui exige à la fois des compétences en
-                                    programmation en C# et une maîtrise de l'outil Unity 3D. Mon travail consistait à
-                                    intégrer toutes les fonctionnalités du jeu, à optimiser les performances, et à
-                                    veiller à ce
-                                    que tous les composants fonctionnent de manière fluide.</p>
-                                <p>
-                                    En plus de mes responsabilités en tant qu'Unity integrator, j'ai également géré le
-                                    dépôt GitHub du projet, assurant une collaboration efficace entre les membres de
-                                    l'équipe de développement. Cette expérience m'a permis de perfectionner mes
-                                    compétences techniques, ma compréhension des processus de développement de jeux
-                                    vidéo, et ma capacité à travailler en équipe pour atteindre des objectifs communs.
-                                    Cela a renforcé ma passion pour la programmation et la création de jeux vidéo, et a
-                                    élargi mes horizons en tant que professionnel du domaine.
-
-
-                                </p>
-                                <p class="text-lead">
-                                    <b>Compétences/logiciels utilisées :</b>
-                                    Unity 3D , C# , Git , Scrum
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Fermer
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       </article>
+      </div>
+     </div>
     </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Membre actif de
-                                    esaip robotics</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" style="max-width: 400px; max-height: 400px;"
-                                    src="assets/img/er.png" alt="leds" srcset="assets/webp/er.webp, assets/img/er.png"
-                                    alt="Esaip Robotics" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4" style="text-align: justify;">
-                                    Pendant ma première année en cycle ingénieur à l'ESAIP, j'ai saisi
-                                    l'opportunité de devenir membre actif du club ESAIP Robotics. Notre club avait pour
-                                    objectif de créer un robot autonome pour participer à une compétition de robotique.
-                                    Mon rôle au sein de l'équipe comprenait la conception et la programmation du robot
-                                    pour qu'il puisse accomplir des tâches spécifiques de manière autonome.
-                                </p>
-                                <p class="text-lead">
-                                    <b>Compétences/logiciels utilisé(e)s :</b>
-                                    Python , C
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Fermer
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+   </section>
+   <section aria-label="Certifications" class="scene scene-certifications" data-track="04" id="certifications" tabindex="-1">
+    <div aria-hidden="true" class="chapter-art" data-chapter="certifications">
+     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/Certifications.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/Certifications-1672.webp" srcset="assets/scenes/Certifications-800.webp 800w, assets/scenes/Certifications-1672.webp 1672w"/>
     </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Esaip Rivals
-                                </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" style="max-width: 400px; max-height: 400px;"
-                                    src="assets/img/tournoi.png" alt="Esaip Rivals"
-                                    srcset="assets/webp/tournoi.webp, assets/img/tournoi.png" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4" style="text-align: justify;">
-                                    Durant ma deuxième année en cycle préparatoire à l'ESAIP, j'ai eu l'opportunité
-                                    d'organiser un tournoi d'e-sport. Cette initiative a été une occasion exceptionnelle
-                                    de réunir la communauté étudiante passionnée par les jeux vidéo, de promouvoir la
-                                    compétition amicale et de créer un environnement convivial pour les participants.
-                                </p>
-                                <p>
-                                    En tant qu'organisateur du tournoi, j'ai coordonné tous les aspects de l'événement,
-                                    depuis la planification jusqu'à la mise en œuvre. Cela incluait la sélection des
-                                    jeux, la création des règles du tournoi, la gestion des inscriptions des équipes, la
-                                    configuration des serveurs de jeu, et la coordination des horaires. J'ai également
-                                    veillé à ce que le tournoi se déroule en douceur et que les participants aient une
-                                    expérience mémorable.
-                                </p>
-                                <p>
-                                    Cette expérience m'a permis de développer mes compétences en gestion de projets, en
-                                    communication, et en organisation d'événements. Elle a renforcé ma passion pour les
-                                    jeux vidéo en tant que moyen de rassembler des personnes autour d'une passion
-                                    commune. Organiser ce tournoi a été une expérience gratifiante qui a laissé une
-                                    empreinte positive au sein de la communauté étudiante.
-
-                                </p>
-                                <p class="text-lead">
-                                    <b> Soft-Skills :</b>
-                                    Gestion de projet , Communication , Planification et organisation , Gestion du temps
-                                    , Résolution de problèmes , Travail en équipe , Adaptabilité
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Fermer
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="scene-scroll">
+     <div class="scene-content">
+      <div class="section-heading">
+       <p class="eyebrow">
+        04
+       </p>
+       <h2>
+        Certifications
+       </h2>
+      </div>
+      <div class="credentials">
+       <details class="credential" open="">
+        <summary>
+         <img alt="" class="org-logo" decoding="async" height="461" loading="lazy" src="assets/img/logos-v2/tryhackme-dark.svg" width="824"/>
+         <span class="credential-name">
+          <h3>
+           SOC Level 1
+          </h3>
+          <p>
+           TryHackMe
+          </p>
+         </span>
+         <span aria-hidden="true" class="expand">
+          +
+         </span>
+        </summary>
+        <div class="credential-detail">
+         <p>
+          Émise en juillet 2026
+         </p>
+         <p>
+          Identifiant du diplôme : THM-HOP2UNZ6FI
+         </p>
+         <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HOP2UNZ6FI.pdf" rel="noopener noreferrer" target="_blank">
+          Afficher le diplôme ↗
+         </a>
         </div>
+       </details>
+       <details class="credential">
+        <summary>
+         <img alt="" class="org-logo" decoding="async" height="461" loading="lazy" src="assets/img/logos-v2/tryhackme-dark.svg" width="824"/>
+         <span class="credential-name">
+          <h3>
+           Pre Security Certificate
+          </h3>
+          <p>
+           TryHackMe
+          </p>
+         </span>
+         <span aria-hidden="true" class="expand">
+          +
+         </span>
+        </summary>
+        <div class="credential-detail">
+         <p>
+          Émise en février 2026
+         </p>
+         <p>
+          Identifiant du diplôme : THM-9AQQVFHQ4K
+         </p>
+         <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-9AQQVFHQ4K.pdf" rel="noopener noreferrer" target="_blank">
+          Afficher le diplôme ↗
+         </a>
+        </div>
+       </details>
+       <details class="credential">
+        <summary>
+         <img alt="" class="org-logo anssi-logo" decoding="async" height="1000" loading="lazy" src="assets/logos/anssi.png" width="1000"/>
+         <span class="credential-name">
+          <h3>
+           MOOC ANSSI
+          </h3>
+          <p>
+           ANSSI - Agence nationale de la sécurité des systèmes
+                                d'information
+          </p>
+         </span>
+         <span aria-hidden="true" class="expand">
+          +
+         </span>
+        </summary>
+        <div class="credential-detail">
+        </div>
+       </details>
+       <details class="credential">
+        <summary>
+         <img alt="" class="org-logo org-logo--vertical" decoding="async" height="305" loading="lazy" src="assets/img/logos-v2/microsoft-dark.svg" width="420"/>
+         <span class="credential-name">
+          <h3>
+           Microsoft Certified: Azure AI Fundamentals
+          </h3>
+          <p>
+           Microsoft
+          </p>
+         </span>
+         <span aria-hidden="true" class="expand">
+          +
+         </span>
+        </summary>
+        <div class="credential-detail">
+         <p>
+          Émise en octobre 2023
+         </p>
+        </div>
+       </details>
+       <details class="credential">
+        <summary>
+         <img alt="" class="org-logo org-logo--toeic" decoding="async" height="340" loading="lazy" src="assets/img/logos-v2/toeic-dark.svg" width="510"/>
+         <span class="credential-name">
+          <h3>
+           Test of English for International Communication (TOEIC)
+          </h3>
+          <p>
+           ETS
+          </p>
+         </span>
+         <span aria-hidden="true" class="expand">
+          +
+         </span>
+        </summary>
+        <div class="credential-detail">
+         <p>
+          Émise en septembre 2023
+         </p>
+         <p>
+          <strong>
+           Compétence : CEFR Level C1
+          </strong>
+         </p>
+        </div>
+       </details>
+      </div>
+     </div>
     </div>
-    <!-- Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Projet Scientifique
+   </section>
+   <section aria-label="Projets" class="scene scene-portfolio" data-track="05" id="portfolio" tabindex="-1">
+    <div aria-hidden="true" class="chapter-art" data-chapter="portfolio">
+     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/Projets.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/Projets-1672.webp" srcset="assets/scenes/Projets-800.webp 800w, assets/scenes/Projets-1672.webp 1672w"/>
+    </div>
+    <div class="scene-scroll">
+     <div class="scene-content">
+      <div class="section-heading">
+       <p class="eyebrow">
+        05
+       </p>
+       <h2>
+        Projets
+       </h2>
+      </div>
+      <div class="project-spread">
+       <div aria-label="Aperçu du projet" class="project-selection">
+        <img alt="Wazuh Security Alert" height="422" loading="lazy" src="assets/img/projects/wazuh-alert.png" width="473"/>
+        <h3 id="selected-project-title">
+         AI-Augmented SOC Homelab
+        </h3>
+        <a class="action selected-project-open" href="#portfolioModal5">
+         Ouvrir le projet →
+        </a>
+       </div>
+       <div class="project-shelf">
+        <h3 class="index-title">
+         <span aria-hidden="true" class="portfolio-icon portfolio-icon--image">
+         </span>
+         Explorer les cinq projets
+        </h3>
+        <div class="departure-board">
+         <div class="board-heading">
+          <span>
+           TABLEAU DES PROJETS
+          </span>
+          <span>
+           2021 — 2026
+          </span>
+         </div>
+         <a class="departure featured" data-project-preview="0" href="#portfolioModal5">
+          <span class="ref">
+           P / 01
+          </span>
+          <span class="project-name">
+           AI-Augmented SOC Homelab
+           <small>
+            Blue Team / SIEM / AI
+           </small>
+          </span>
+          <span class="project-year">
+           2026
+          </span>
+          <span aria-hidden="true" class="departure-arrow">
+           →
+          </span>
+         </a>
+         <button aria-label="Afficher l’aperçu : AI-Augmented SOC Homelab Blue Team / SIEM / AI" aria-pressed="true" class="project-select" data-project-index="0" type="button">
+          Aperçu
+         </button>
+         <a class="departure" data-project-preview="1" href="#portfolioModal4">
+          <span class="ref">
+           P / 02
+          </span>
+          <span class="project-name">
+           Projet Scientifique d'Initiation à la Recherche
+           <small>
+            IA &amp; Cyber-résilience
+           </small>
+          </span>
+          <span class="project-year">
+           2023-2024
+          </span>
+          <span aria-hidden="true" class="departure-arrow">
+           →
+          </span>
+         </a>
+         <button aria-label="Afficher l’aperçu : Projet Scientifique d'Initiation à la Recherche IA &amp; Cyber-résilience" aria-pressed="false" class="project-select" data-project-index="1" type="button">
+          Aperçu
+         </button>
+         <a class="departure" data-project-preview="2" href="#portfolioModal1">
+          <span class="ref">
+           P / 03
+          </span>
+          <span class="project-name">
+           Sticks &amp; Stones
+           <small>
+            Unity 3D
+           </small>
+          </span>
+          <span class="project-year">
+           2022
+          </span>
+          <span aria-hidden="true" class="departure-arrow">
+           →
+          </span>
+         </a>
+         <button aria-label="Afficher l’aperçu : Sticks &amp; Stones Unity 3D" aria-pressed="false" class="project-select" data-project-index="2" type="button">
+          Aperçu
+         </button>
+         <a class="departure" data-project-preview="3" href="#portfolioModal2">
+          <span class="ref">
+           P / 04
+          </span>
+          <span class="project-name">
+           Esaip Robotics
+           <small>
+            Python, C
+           </small>
+          </span>
+          <span class="project-year">
+           2022
+          </span>
+          <span aria-hidden="true" class="departure-arrow">
+           →
+          </span>
+         </a>
+         <button aria-label="Afficher l’aperçu : Esaip Robotics Python, C" aria-pressed="false" class="project-select" data-project-index="3" type="button">
+          Aperçu
+         </button>
+         <a class="departure" data-project-preview="4" href="#portfolioModal3">
+          <span class="ref">
+           P / 05
+          </span>
+          <span class="project-name">
+           Tournoi d'esport
+           <small>
+            Esaip Rivals
+           </small>
+          </span>
+          <span class="project-year">
+           2021
+          </span>
+          <span aria-hidden="true" class="departure-arrow">
+           →
+          </span>
+         </a>
+         <button aria-label="Afficher l’aperçu : Tournoi d'esport Esaip Rivals" aria-pressed="false" class="project-select" data-project-index="4" type="button">
+          Aperçu
+         </button>
+         <p class="board-foot">
+          Sélectionnez une ligne pour ouvrir le carnet du projet.
+         </p>
+        </div>
+       </div>
+       <div class="soc-sequence">
+        <article class="soc-step reveal" id="soc-step-0" tabindex="-1">
+         <img alt="AI-Augmented SOC Homelab" decoding="async" height="1024" loading="lazy" src="assets/img/projects/ai-soc-homelab.png" width="1536"/>
+         <div class="soc-copy">
+          <span class="eyebrow">
+           SOC / 01
+          </span>
+          <h3>
+           Vue d’ensemble
+          </h3>
+          <p>
+           Conception et déploiement d'un homelab SOC virtualisé visant à
+                                    reproduire les principales fonctions d'un environnement Blue Team.
+                                    Le laboratoire centralise les événements de sécurité provenant de
+                                    différents systèmes afin de permettre leur supervision, leur
+                                    détection et leur analyse depuis une plateforme SIEM/XDR.
+          </p>
+          <p>
+           Le projet permet également de générer différents scénarios de
+                                    sécurité contrôlés afin d'obtenir des alertes réalistes et de
+                                    reproduire les premières étapes du travail d'un analyste SOC :
+                                    collecte de télémétrie, qualification d'événements, analyse,
+                                    contextualisation et investigation.
+          </p>
+         </div>
+        </article>
+        <article class="soc-step reveal" id="soc-step-1" tabindex="-1">
+         <img alt="SOC Homelab Architecture" decoding="async" height="1024" loading="lazy" src="assets/img/projects/soc-architecture.png" width="1536"/>
+         <div class="soc-copy">
+          <span class="eyebrow">
+           SOC / 02
+          </span>
+          <h3>
+           Architecture du SOC
+          </h3>
+          <p>
+           L'environnement repose sur plusieurs machines virtuelles,
+                                    comprenant notamment des endpoints Windows et Linux supervisés par
+                                    des agents Wazuh. Les événements sont centralisés sur le serveur
+                                    Wazuh afin d'être analysés, corrélés et présentés depuis le
+                                    dashboard SOC.
+          </p>
+         </div>
+        </article>
+        <article class="soc-step reveal" id="soc-step-2" tabindex="-1">
+         <img alt="Wazuh Security Alert" decoding="async" height="422" loading="lazy" src="assets/img/projects/wazuh-alert.png" width="473"/>
+         <div class="soc-copy">
+          <span class="eyebrow">
+           SOC / 03
+          </span>
+          <h3>
+           Détection &amp; investigation
+          </h3>
+          <p>
+           Plusieurs scénarios sont exécutés dans le laboratoire afin de
+                                    générer des événements de sécurité observables depuis Wazuh.
+                                    L'objectif est de reproduire un workflow de triage SOC en
+                                    identifiant la source de l'événement, son contexte, sa sévérité
+                                    ainsi que les éléments utiles à une investigation plus approfondie.
+          </p>
+         </div>
+        </article>
+        <article class="soc-step reveal" id="soc-step-3" tabindex="-1">
+         <div class="soc-copy">
+          <span class="eyebrow">
+           SOC / 04
+          </span>
+          <h3>
+           Triage assisté par IA
+          </h3>
+          <p>
+           Une couche d'intelligence artificielle est intégrée au workflow
+                                    afin d'assister l'analyse des alertes remontées par le SOC.
+                                    Les événements peuvent être transmis à un modèle de langage local
+                                    via un pipeline automatisé afin de produire une synthèse exploitable
+                                    par l'analyste.
+          </p>
+          <p>
+           Le modèle peut notamment aider à identifier les informations
+                                    importantes d'une alerte, résumer le comportement observé,
+                                    contextualiser l'événement et proposer des pistes
+                                    d'investigation complémentaires.
+          </p>
+         </div>
+        </article>
+        <article class="soc-step reveal" id="soc-step-4" tabindex="-1">
+         <div class="soc-copy">
+          <span class="eyebrow">
+           SOC / 05
+          </span>
+          <h3>
+           Mise en œuvre
+          </h3>
+          <ul>
+           <li>
+            Déploiement et configuration d'une plateforme Wazuh SIEM/XDR
+           </li>
+           <li>
+            Supervision d'endpoints Windows et Linux
+           </li>
+           <li>
+            Centralisation et analyse des événements système et sécurité
+           </li>
+           <li>
+            Création de scénarios permettant de générer des alertes de sécurité
+           </li>
+           <li>
+            Analyse et triage d'alertes depuis le dashboard Wazuh
+           </li>
+           <li>
+            Utilisation du framework MITRE ATT&amp;CK pour contextualiser les détections
+           </li>
+           <li>
+            Intégration d'un LLM local dans le workflow d'analyse
+           </li>
+           <li>
+            Automatisation de l'enrichissement des alertes via Python et API
+           </li>
+          </ul>
+          <p>
+           <b>
+            Technologies :
+           </b>
+           Wazuh, Windows, Linux, Sysmon, MITRE ATT&amp;CK,
+                                    Python, PowerShell, REST API, Local LLM, Virtualisation
+          </p>
+         </div>
+        </article>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section aria-label="Contact" class="scene scene-contact" data-track="06" id="contact" tabindex="-1">
+    <div aria-hidden="true" class="chapter-art" data-chapter="contact">
+     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/Contact.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/Contact-1672.webp" srcset="assets/scenes/Contact-800.webp 800w, assets/scenes/Contact-1672.webp 1672w"/>
+    </div>
+    <div class="scene-scroll">
+     <div class="scene-content">
+      <div class="contact-copy">
+       <p class="eyebrow">
+        06
+       </p>
+       <h2>
+        Contact
+       </h2>
+       <a class="email" href="mailto:adam.laaouane.pro@gmail.com">
+        adam.laaouane.pro@gmail.com
+        <span>
+         ↗
+        </span>
+       </a>
+       <div class="actions">
+        <button class="action" id="copy-email">
+         Copier l’adresse
+         <span>
+          ⧉
+         </span>
+        </button>
+        <a class="action icon-action" href="https://www.linkedin.com/in/adam-laa" rel="noopener noreferrer" target="_blank">
+         <img alt="" class="portfolio-icon-img" decoding="async" height="50" src="assets/icons/linkedin-light.png" width="50"/>
+         LinkedIn ↗
+        </a>
+        <a class="action" download="" href="assets/files/CV_Adam_Laaouane.pdf">
+         Télécharger le CV ↓
+        </a>
+       </div>
+       <p aria-live="polite" id="copy-status" role="status">
+       </p>
+       <p class="contact-location">
+        France
+       </p>
+       <details class="credits">
+        <summary>
+         Crédits &amp; historique
+        </summary>
+        <p>
+         Copyright
+         <b>
+          ©
+         </b>
+         Portfolio, logo pensé et réalisé par LAAOUANE Adam 2023 |
+         <b>
+          Version -
+                        0.9
+         </b>
+        </p>
+        <div>
+         <div>
+          <h2>
+           Licences
+          </h2>
+          <ul>
+           <li>
+            Bootstrap v5.2
+           </li>
+           <li>
+            Font Awesome v5.15.4
+           </li>
+           <li>
+            Google Fonts
+           </li>
+           <li>
+            jQuery v3.6.1
+           </li>
+           <li>
+            icons8
+           </li>
+           <li>
+            Favicon
+           </li>
+           <li>
+            AOS css/js
+           </li>
+           <li>
+            Animista css
+           </li>
+          </ul>
+          <hr/>
+          <p>
+           Version du site : 0.9
+          </p>
+          <ul>
+           <li>
+            - Ajout de la page "Licenses"
+           </li>
+           <li>
+            - Ajout de la page "Contact"
+           </li>
+           <li>
+            - Ajout de la page "A propos"
+           </li>
+           <li>
+            - Ajout de la page "Projets"
+           </li>
+           <li>
+            - Ajout de la page "Compétences"
+           </li>
+           <li>
+            - Ajout de la page "Accueil"
+           </li>
+           <li>
+            - Ajout de la page "404"
+           </li>
+          </ul>
+         </div>
+        </div>
+       </details>
+       <a class="return-cover" href="#cover">
+        Retour à l'accueil
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <div class="booklet-controls">
+   <span id="scene-counter">
+    01 / 06
+   </span>
+   <span class="control-rule">
+   </span>
+   <button aria-label="Scène précédente" id="previous-scene">
+    ←
+   </button>
+   <button aria-label="Scène suivante" id="next-scene">
+    →
+   </button>
+  </div>
+  <dialog aria-labelledby="portfolioModal5-title" class="project-detail" id="portfolioModal5" open="">
+   <div class="dialog-toolbar">
+    <span aria-hidden="true" class="detail-mark">
+     ▧
+    </span>
+    <span>
+     CARNET DE PROJET / 01
+    </span>
+    <form method="dialog">
+     <button aria-label="Fermer" class="close-dialog">
+      Fermer
+      <span aria-hidden="true">
+       ×
+      </span>
+     </button>
+    </form>
+   </div>
+   <div class="dialog-content">
+    <div>
+     <div>
+      <div>
+       <div>
+        <h2 id="portfolioModal5-title">
+         AI-Augmented SOC Homelab
+        </h2>
+        <img alt="AI-Augmented SOC Homelab" decoding="async" height="1024" loading="lazy" src="assets/img/projects/ai-soc-homelab.png" width="1536"/>
+        <h4>
+         Vue d’ensemble
+        </h4>
+        <p>
+         Conception et déploiement d'un homelab SOC virtualisé visant à
+                                    reproduire les principales fonctions d'un environnement Blue Team.
+                                    Le laboratoire centralise les événements de sécurité provenant de
+                                    différents systèmes afin de permettre leur supervision, leur
+                                    détection et leur analyse depuis une plateforme SIEM/XDR.
+        </p>
+        <p>
+         Le projet permet également de générer différents scénarios de
+                                    sécurité contrôlés afin d'obtenir des alertes réalistes et de
+                                    reproduire les premières étapes du travail d'un analyste SOC :
+                                    collecte de télémétrie, qualification d'événements, analyse,
+                                    contextualisation et investigation.
+        </p>
+        <h4>
+         Architecture du SOC
+        </h4>
+        <img alt="SOC Homelab Architecture" decoding="async" height="1024" loading="lazy" src="assets/img/projects/soc-architecture.png" width="1536"/>
+        <p>
+         L'environnement repose sur plusieurs machines virtuelles,
+                                    comprenant notamment des endpoints Windows et Linux supervisés par
+                                    des agents Wazuh. Les événements sont centralisés sur le serveur
+                                    Wazuh afin d'être analysés, corrélés et présentés depuis le
+                                    dashboard SOC.
+        </p>
+        <h4>
+         Détection &amp; investigation
+        </h4>
+        <img alt="Wazuh Security Alert" decoding="async" height="422" loading="lazy" src="assets/img/projects/wazuh-alert.png" width="473"/>
+        <p>
+         Plusieurs scénarios sont exécutés dans le laboratoire afin de
+                                    générer des événements de sécurité observables depuis Wazuh.
+                                    L'objectif est de reproduire un workflow de triage SOC en
+                                    identifiant la source de l'événement, son contexte, sa sévérité
+                                    ainsi que les éléments utiles à une investigation plus approfondie.
+        </p>
+        <h4>
+         Triage assisté par IA
+        </h4>
+        <p>
+         Une couche d'intelligence artificielle est intégrée au workflow
+                                    afin d'assister l'analyse des alertes remontées par le SOC.
+                                    Les événements peuvent être transmis à un modèle de langage local
+                                    via un pipeline automatisé afin de produire une synthèse exploitable
+                                    par l'analyste.
+        </p>
+        <p>
+         Le modèle peut notamment aider à identifier les informations
+                                    importantes d'une alerte, résumer le comportement observé,
+                                    contextualiser l'événement et proposer des pistes
+                                    d'investigation complémentaires.
+        </p>
+        <h4>
+         Mise en œuvre
+        </h4>
+        <ul>
+         <li>
+          Déploiement et configuration d'une plateforme Wazuh SIEM/XDR
+         </li>
+         <li>
+          Supervision d'endpoints Windows et Linux
+         </li>
+         <li>
+          Centralisation et analyse des événements système et sécurité
+         </li>
+         <li>
+          Création de scénarios permettant de générer des alertes de sécurité
+         </li>
+         <li>
+          Analyse et triage d'alertes depuis le dashboard Wazuh
+         </li>
+         <li>
+          Utilisation du framework MITRE ATT&amp;CK pour contextualiser les détections
+         </li>
+         <li>
+          Intégration d'un LLM local dans le workflow d'analyse
+         </li>
+         <li>
+          Automatisation de l'enrichissement des alertes via Python et API
+         </li>
+        </ul>
+        <p>
+         <b>
+          Technologies :
+         </b>
+         Wazuh, Windows, Linux, Sysmon, MITRE ATT&amp;CK,
+                                    Python, PowerShell, REST API, Local LLM, Virtualisation
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <form class="dialog-bottom" method="dialog">
+    <button>
+     Fermer ×
+    </button>
+   </form>
+  </dialog>
+  <dialog aria-labelledby="portfolioModal4-title" class="project-detail" id="portfolioModal4" open="">
+   <div class="dialog-toolbar">
+    <span aria-hidden="true" class="detail-mark">
+     ▧
+    </span>
+    <span>
+     CARNET DE PROJET / 02
+    </span>
+    <form method="dialog">
+     <button aria-label="Fermer" class="close-dialog">
+      Fermer
+      <span aria-hidden="true">
+       ×
+      </span>
+     </button>
+    </form>
+   </div>
+   <div class="dialog-content">
+    <div>
+     <div>
+      <div>
+       <div>
+        <h2 id="portfolioModal4-title">
+         Projet Scientifique
                                     d'Initiation à la Recherche
-                                </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/PSIR.jpg"
-                                    style="max-width: 400px; max-height: 400px;" alt="PSIR"
-                                    srcset="assets/webp/PSIR.webp, assets/img/PSIR.jpg" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4" style="text-align: justify;"></p>
-                                Durant mon cursus d'ingénieur, j'ai eu l'opportunité de diriger un Projet Scientifique
+        </h2>
+        <img alt="PSIR" decoding="async" height="804" loading="lazy" src="assets/img/projects/PSIR.jpg" width="1024"/>
+        <p>
+        </p>
+        Durant mon cursus d'ingénieur, j'ai eu l'opportunité de diriger un Projet Scientifique
                                 d'Initiation à la Recherche (PSIR), axé sur l'utilisation de l'intelligence artificielle
                                 pour améliorer la cyber résilience dans le secteur bancaire.
                                 En tant que chef de projet, j'ai défini l'objectif de développer un système d'IA capable
@@ -935,261 +1700,204 @@
                                 Nous en sommes actuellement à la phase de recherche, avec des étapes à venir incluant le
                                 développement et les tests en conditions réelles.
                                 Cette expérience renforce mes compétences en IA, cybersécurité et gestion de projet.
-                                <p>
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Fermer
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <form class="dialog-bottom" method="dialog">
+    <button>
+     Fermer ×
+    </button>
+   </form>
+  </dialog>
+  <dialog aria-labelledby="portfolioModal1-title" class="project-detail" id="portfolioModal1" open="">
+   <div class="dialog-toolbar">
+    <span aria-hidden="true" class="detail-mark">
+     ▧
+    </span>
+    <span>
+     CARNET DE PROJET / 03
+    </span>
+    <form method="dialog">
+     <button aria-label="Fermer" class="close-dialog">
+      Fermer
+      <span aria-hidden="true">
+       ×
+      </span>
+     </button>
+    </form>
+   </div>
+   <div class="dialog-content">
+    <div>
+     <div>
+      <div>
+       <div>
+        <h2 id="portfolioModal1-title">
+         Sticks &amp; Stones
+        </h2>
+        <img alt="ss-img" decoding="async" height="899" loading="lazy" src="assets/img/projects/ss.png" width="720"/>
+        <p>
+         Durant mon séjour d'études aux Pays-Bas, j'ai eu l'occasion de réaliser un projet
+                                    passionnant. J'ai participé activement au développement d'un jeu vidéo en tant
+                                    qu'Unity integrator, un rôle polyvalent qui exige à la fois des compétences en
+                                    programmation en C# et une maîtrise de l'outil Unity 3D. Mon travail consistait à
+                                    intégrer toutes les fonctionnalités du jeu, à optimiser les performances, et à
+                                    veiller à ce
+                                    que tous les composants fonctionnent de manière fluide.
+        </p>
+        <p>
+         En plus de mes responsabilités en tant qu'Unity integrator, j'ai également géré le
+                                    dépôt GitHub du projet, assurant une collaboration efficace entre les membres de
+                                    l'équipe de développement. Cette expérience m'a permis de perfectionner mes
+                                    compétences techniques, ma compréhension des processus de développement de jeux
+                                    vidéo, et ma capacité à travailler en équipe pour atteindre des objectifs communs.
+                                    Cela a renforcé ma passion pour la programmation et la création de jeux vidéo, et a
+                                    élargi mes horizons en tant que professionnel du domaine.
+        </p>
+        <p>
+         <b>
+          Compétences/logiciels utilisées :
+         </b>
+         Unity 3D , C# , Git , Scrum
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <form class="dialog-bottom" method="dialog">
+    <button>
+     Fermer ×
+    </button>
+   </form>
+  </dialog>
+  <dialog aria-labelledby="portfolioModal2-title" class="project-detail" id="portfolioModal2" open="">
+   <div class="dialog-toolbar">
+    <span aria-hidden="true" class="detail-mark">
+     ▧
+    </span>
+    <span>
+     CARNET DE PROJET / 04
+    </span>
+    <form method="dialog">
+     <button aria-label="Fermer" class="close-dialog">
+      Fermer
+      <span aria-hidden="true">
+       ×
+      </span>
+     </button>
+    </form>
+   </div>
+   <div class="dialog-content">
+    <div>
+     <div>
+      <div>
+       <div>
+        <h2 id="portfolioModal2-title">
+         Membre actif de
+                                    esaip robotics
+        </h2>
+        <div class="organization organization-light">
+         <img alt="" class="organization-logo" decoding="async" height="873" loading="lazy" src="assets/img/logos/esaip-robotics.png" width="1802"/>
+         <p class="organization-name">
+          ESAIP Robotics
+         </p>
         </div>
+        <p>
+         Pendant ma première année en cycle ingénieur à l'ESAIP, j'ai saisi
+                                    l'opportunité de devenir membre actif du club ESAIP Robotics. Notre club avait pour
+                                    objectif de créer un robot autonome pour participer à une compétition de robotique.
+                                    Mon rôle au sein de l'équipe comprenait la conception et la programmation du robot
+                                    pour qu'il puisse accomplir des tâches spécifiques de manière autonome.
+        </p>
+        <p>
+         <b>
+          Compétences/logiciels utilisé(e)s :
+         </b>
+         Python , C
+        </p>
+       </div>
+      </div>
+     </div>
     </div>
-    <!-- Portfolio Modal 5-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
-        aria-hidden="true">
-
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-
-                <div class="modal-header border-0">
-                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body text-center pb-5">
-
-                    <div class="container">
-                        <div class="row justify-content-center">
-
-                            <div class="col-lg-10">
-
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4">
-                                    AI-Augmented SOC Homelab
-                                </h2>
-
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-shield-halved"></i>
-                                    </div>
-
-                                    <div class="divider-custom-line"></div>
-                                </div>
-
-
-                                <!-- Hero Image-->
-                                <img class="img-fluid rounded shadow mb-5" style="max-width: 900px;"
-                                    src="assets/img/ai-soc-homelab.png" alt="AI-Augmented SOC Homelab" />
-
-
-                                <!-- Project Overview-->
-                                <h4 class="text-secondary text-uppercase mb-3">
-                                    Project Overview
-                                </h4>
-
-                                <p class="mb-4" style="text-align: justify;">
-                                    Conception et déploiement d'un homelab SOC virtualisé visant à
-                                    reproduire les principales fonctions d'un environnement Blue Team.
-                                    Le laboratoire centralise les événements de sécurité provenant de
-                                    différents systèmes afin de permettre leur supervision, leur
-                                    détection et leur analyse depuis une plateforme SIEM/XDR.
-                                </p>
-
-                                <p class="mb-5" style="text-align: justify;">
-                                    Le projet permet également de générer différents scénarios de
-                                    sécurité contrôlés afin d'obtenir des alertes réalistes et de
-                                    reproduire les premières étapes du travail d'un analyste SOC :
-                                    collecte de télémétrie, qualification d'événements, analyse,
-                                    contextualisation et investigation.
-                                </p>
-
-
-                                <!-- Architecture-->
-                                <h4 class="text-secondary text-uppercase mb-3">
-                                    SOC Architecture
-                                </h4>
-
-                                <img class="img-fluid rounded shadow mb-4" style="max-width: 900px;"
-                                    src="assets/img/soc-architecture.png" alt="SOC Homelab Architecture" />
-
-                                <p class="mb-5" style="text-align: justify;">
-                                    L'environnement repose sur plusieurs machines virtuelles,
-                                    comprenant notamment des endpoints Windows et Linux supervisés par
-                                    des agents Wazuh. Les événements sont centralisés sur le serveur
-                                    Wazuh afin d'être analysés, corrélés et présentés depuis le
-                                    dashboard SOC.
-                                </p>
-
-
-                                <!-- Detection-->
-                                <h4 class="text-secondary text-uppercase mb-3">
-                                    Detection & Investigation
-                                </h4>
-
-                                <img class="img-fluid rounded shadow mb-4" style="max-width: 900px;"
-                                    src="assets/img/wazuh-alert.png" alt="Wazuh Security Alert" />
-
-                                <p class="mb-5" style="text-align: justify;">
-                                    Plusieurs scénarios sont exécutés dans le laboratoire afin de
-                                    générer des événements de sécurité observables depuis Wazuh.
-                                    L'objectif est de reproduire un workflow de triage SOC en
-                                    identifiant la source de l'événement, son contexte, sa sévérité
-                                    ainsi que les éléments utiles à une investigation plus approfondie.
-                                </p>
-
-
-                                <!-- AI Integration-->
-                                <h4 class="text-secondary text-uppercase mb-3">
-                                    AI-Assisted Triage
-                                </h4>
-
-                                <img class="img-fluid rounded shadow mb-4" style="max-width: 900px;"
-                                    src="assets/img/ai-alert-analysis.png" alt="AI Assisted SOC Alert Analysis" />
-
-                                <p class="mb-4" style="text-align: justify;">
-                                    Une couche d'intelligence artificielle est intégrée au workflow
-                                    afin d'assister l'analyse des alertes remontées par le SOC.
-                                    Les événements peuvent être transmis à un modèle de langage local
-                                    via un pipeline automatisé afin de produire une synthèse exploitable
-                                    par l'analyste.
-                                </p>
-
-                                <p class="mb-5" style="text-align: justify;">
-                                    Le modèle peut notamment aider à identifier les informations
-                                    importantes d'une alerte, résumer le comportement observé,
-                                    contextualiser l'événement et proposer des pistes
-                                    d'investigation complémentaires.
-                                </p>
-
-
-                                <!-- Key Implementations-->
-                                <h4 class="text-secondary text-uppercase mb-3">
-                                    Key Implementations
-                                </h4>
-
-                                <ul class="text-start mb-5"
-                                    style="max-width: 750px; margin-left: auto; margin-right: auto;">
-
-                                    <li class="mb-2">
-                                        Déploiement et configuration d'une plateforme Wazuh SIEM/XDR
-                                    </li>
-
-                                    <li class="mb-2">
-                                        Supervision d'endpoints Windows et Linux
-                                    </li>
-
-                                    <li class="mb-2">
-                                        Centralisation et analyse des événements système et sécurité
-                                    </li>
-
-                                    <li class="mb-2">
-                                        Création de scénarios permettant de générer des alertes de sécurité
-                                    </li>
-
-                                    <li class="mb-2">
-                                        Analyse et triage d'alertes depuis le dashboard Wazuh
-                                    </li>
-
-                                    <li class="mb-2">
-                                        Utilisation du framework MITRE ATT&CK pour contextualiser les détections
-                                    </li>
-
-                                    <li class="mb-2">
-                                        Intégration d'un LLM local dans le workflow d'analyse
-                                    </li>
-
-                                    <li class="mb-2">
-                                        Automatisation de l'enrichissement des alertes via Python et API
-                                    </li>
-
-                                </ul>
-
-
-                                <!-- Technologies-->
-                                <p class="text-lead mb-4">
-                                    <b>Technologies :</b>
-                                    Wazuh, Windows, Linux, Sysmon, MITRE ATT&CK,
-                                    Python, PowerShell, REST API, Local LLM, Virtualisation
-                                </p>
-
-
-                                <!-- Github Button (temporarily disabled)
-                                <a class="btn btn-dark me-2" href="TON-LIEN-GITHUB" target="_blank">
-
-                                    <i class="fab fa-github fa-fw"></i>
-                                    GitHub
-                                </a>
-                                -->
-
-
-                                <!-- Close Button-->
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Fermer
-                                </button>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+   </div>
+   <form class="dialog-bottom" method="dialog">
+    <button>
+     Fermer ×
+    </button>
+   </form>
+  </dialog>
+  <dialog aria-labelledby="portfolioModal3-title" class="project-detail" id="portfolioModal3" open="">
+   <div class="dialog-toolbar">
+    <span aria-hidden="true" class="detail-mark">
+     ▧
+    </span>
+    <span>
+     CARNET DE PROJET / 05
+    </span>
+    <form method="dialog">
+     <button aria-label="Fermer" class="close-dialog">
+      Fermer
+      <span aria-hidden="true">
+       ×
+      </span>
+     </button>
+    </form>
+   </div>
+   <div class="dialog-content">
+    <div>
+     <div>
+      <div>
+       <div>
+        <h2 id="portfolioModal3-title">
+         Esaip Rivals
+        </h2>
+        <img alt="Esaip Rivals" decoding="async" height="600" loading="lazy" src="assets/img/projects/tournoi.png" width="701"/>
+        <p>
+         Durant ma deuxième année en cycle préparatoire à l'ESAIP, j'ai eu l'opportunité
+                                    d'organiser un tournoi d'e-sport. Cette initiative a été une occasion exceptionnelle
+                                    de réunir la communauté étudiante passionnée par les jeux vidéo, de promouvoir la
+                                    compétition amicale et de créer un environnement convivial pour les participants.
+        </p>
+        <p>
+         En tant qu'organisateur du tournoi, j'ai coordonné tous les aspects de l'événement,
+                                    depuis la planification jusqu'à la mise en œuvre. Cela incluait la sélection des
+                                    jeux, la création des règles du tournoi, la gestion des inscriptions des équipes, la
+                                    configuration des serveurs de jeu, et la coordination des horaires. J'ai également
+                                    veillé à ce que le tournoi se déroule en douceur et que les participants aient une
+                                    expérience mémorable.
+        </p>
+        <p>
+         Cette expérience m'a permis de développer mes compétences en gestion de projets, en
+                                    communication, et en organisation d'événements. Elle a renforcé ma passion pour les
+                                    jeux vidéo en tant que moyen de rassembler des personnes autour d'une passion
+                                    commune. Organiser ce tournoi a été une expérience gratifiante qui a laissé une
+                                    empreinte positive au sein de la communauté étudiante.
+        </p>
+        <p>
+         <b>
+          Soft-Skills :
+         </b>
+         Gestion de projet , Communication , Planification et organisation , Gestion du temps
+                                    , Résolution de problèmes , Travail en équipe , Adaptabilité
+        </p>
+       </div>
+      </div>
+     </div>
     </div>
-
-    <!-- Licenses-->
-    <div class="portfolio-modal modal fade" id="Licenses" tabindex="-1" aria-labelledby="Licenses" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Licences</h2>
-                        <ul class="list-inline-item">
-                            <li>Bootstrap v5.2</li>
-                            <li>Font Awesome v5.15.4</li>
-                            <li>Google Fonts</li>
-                            <li>jQuery v3.6.1</li>
-                            <li>icons8</li>
-                            <li>Favicon</li>
-                            <li>AOS css/js</li>
-                            <li>Animista css</li>
-                        </ul>
-                        <hr>
-                        <p class="text-lead">
-                            Version du site : 0.9
-                        </p>
-                        <ul class="list-inline-item">
-                            <li>- Ajout de la page "Licenses"</li>
-                            <li>- Ajout de la page "Contact"</li>
-                            <li>- Ajout de la page "A propos"</li>
-                            <li>- Ajout de la page "Projets"</li>
-                            <li>- Ajout de la page "Compétences"</li>
-                            <li>- Ajout de la page "Accueil"</li>
-                            <li>- Ajout de la page "404"</li>
-                        </ul>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./assets/js/app.js"></script>
-</body>
-
+   </div>
+   <form class="dialog-bottom" method="dialog">
+    <button>
+     Fermer ×
+    </button>
+   </form>
+  </dialog>
+  <div aria-hidden="true" class="reading-progress">
+   <span>
+   </span>
+  </div>
+ </body>
 </html>
