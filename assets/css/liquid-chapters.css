@@ -1,0 +1,94 @@
+/* One visual system across the seven Liquid Index scenes. */
+html.liquid{color-scheme:light;--paper:#e9f0f1;--ink:#172e40;--muted:#3c5667;--accent:#164f67;--night:#d7e3e7;--line:#36546545;--display:'Barlow Display','Arial Narrow',sans-serif}
+.liquid body{background:#d7e3e7;color:var(--ink)}
+.liquid .masthead,.liquid.enhanced:not(.is-cover) .masthead{height:82px;background:#e8f0f0ed;color:#183849;border-bottom:1px solid var(--line);text-shadow:none;backdrop-filter:blur(12px)}
+.liquid .signature{display:block}.liquid .signature .personal-mark{display:none}.liquid .signature>span{display:block;color:var(--muted)}
+.liquid .album-index,.liquid.enhanced:not(.is-cover) .booklet-controls{background:#e6eef0f2;color:#213f50}
+.liquid .back-cover{background:transparent;color:var(--ink)}.liquid.is-cover .back-cover{visibility:hidden}
+.liquid .scene{position:relative;isolation:isolate;background:#d7e3e7!important;min-height:100svh;border-top:1px solid var(--line)}
+.liquid .scene:before,.liquid .chapter-art:after{display:none!important}
+.liquid .scene>.chapter-art{display:block;inset:0;width:100%;height:100%;border:0;opacity:1;mask:none;z-index:-2}
+.liquid .scene>.chapter-art img{width:100%;max-width:none;height:100%;object-fit:cover;filter:none;mask:none;object-position:center top}
+.liquid .scene-scroll{padding:130px 6% 120px}
+.liquid .section-heading{margin-bottom:46px}
+.liquid .section-heading h2,.liquid .scene-parcours .section-heading h2,.liquid .scene-certifications .section-heading h2,.liquid .contact-copy>h2{font:300 clamp(44px,5.5vw,78px)/1.08 var(--display);letter-spacing:.005em;margin:0 0 24px}
+.liquid .section-heading>.eyebrow,.liquid .contact-copy>.eyebrow{display:block;margin-bottom:15px;font-size:12px}
+.liquid .eyebrow{color:var(--accent)}.liquid .action{min-height:44px}
+/* Presentation: open type in the quiet right half, no image rectangle. */
+.liquid #home{padding:0;display:flex;align-items:center}
+.liquid #home .chapter-art img{object-position:27% center}
+.liquid #home .scene-scroll{width:100%;padding-block:150px}
+.liquid #home .scene-content{margin-left:46%;max-width:680px}
+.liquid #home h2{font:300 clamp(32px,3.3vw,50px)/1.18 var(--display);letter-spacing:0;margin-bottom:30px}
+.liquid .profile-introduction{font-size:18px;line-height:1.85}
+.liquid #home .availability{font-size:17px;color:var(--accent);margin:26px 0}
+.liquid #home .actions{gap:14px 25px}
+.liquid .opening-story{background:#e3ecee;color:var(--ink);padding:55px 6%;display:grid;grid-template-columns:.7fr 1.3fr;gap:18px 7%;border-top:1px solid var(--line)}
+.liquid .opening-story>.eyebrow{grid-column:1}.liquid .opening-story h2{grid-column:1;font-size:40px}.liquid .profile-extra{grid-column:2;grid-row:1/4;font-size:17px;line-height:1.8}
+.liquid .profile-extra summary{padding:12px 0;min-height:44px;border-bottom:1px solid var(--line);color:var(--accent)}.liquid .profile-extra p{margin-top:20px}.liquid .profile-project{grid-column:2;border-left:1px solid var(--line);padding-left:20px}.liquid .profile-project .eyebrow{margin-bottom:10px}
+/* Skills: index at left, a quiet reading surface under the branches. */
+.liquid #services .chapter-art img{object-position:75% top;height:min(100%,1100px);mask-image:linear-gradient(#000 70%,transparent)}
+.liquid .explorer{grid-template-columns:minmax(220px,.7fr) minmax(0,1.5fr);gap:8%;max-width:1250px}
+.liquid .interaction-note{font-size:16px;max-width:620px;margin-bottom:32px;color:var(--muted)}
+.liquid .skill-index{background:transparent}.liquid .skill-index button{background:transparent;min-height:62px;padding:14px 8px;font-size:17px}
+.liquid .skill-index button[aria-pressed=true]{color:#123d52;background:#eef5f3a6;border-left:2px solid var(--accent)}
+.liquid .skill-index button:focus-visible{outline-color:var(--accent)}
+.liquid .skill-panels{background:linear-gradient(110deg,#eef4f3e8,#eef4f3a0);border-left:1px solid var(--line);padding:28px 34px;min-height:430px;margin-top:55px}
+.liquid .skill-panel h3{font:300 42px/1.1 var(--display);margin-bottom:25px}
+.liquid .skill-body ul{display:grid;grid-template-columns:1fr 1fr;gap:16px 26px;padding-left:18px}.liquid .skill-body li{font-size:16px;line-height:1.8;margin:0}
+.liquid .domains-overview{background:#edf3f2b0;max-width:1250px;margin-top:40px;padding:0 20px}.liquid .connections{gap:25px}.liquid .connection strong{font-size:16px}
+/* Chronology follows the filament; all steps stay in the document. */
+.liquid #parcours .chapter-art img{height:1000px;object-position:60% top;mask-image:linear-gradient(#000 60%,transparent)}
+.liquid #parcours .scene-content{display:block}
+.liquid #parcours .section-heading{position:relative;top:0;max-width:750px}
+.liquid .route-fragment{display:none}.liquid .route{max-width:650px;color:#243f51}
+.liquid .scene-parcours .scene-content>.route-index{display:flex;flex-direction:row;max-height:none;overflow-x:auto;gap:0;padding:18px 0;margin:30px 0 65px;border-top:1px solid var(--line);background:transparent}
+.liquid .scene-parcours .scene-content>.route-index a{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;flex:1 0 140px;border-left:0;border-top:2px solid transparent;min-height:100px;padding:12px;font-size:14px}
+.liquid .route-index a:before{content:'';width:7px;height:7px;border:1px solid var(--accent);border-radius:50%;margin-bottom:12px}.liquid .route-index a[aria-current]{border-top-color:var(--accent);background:#f0f5f3a6}.liquid .route-index a[aria-current]:before{background:var(--accent)}
+.liquid .journey-list{width:78%;max-width:1000px;margin-left:auto;padding-left:35px}
+.liquid .journey-stop{min-height:0;padding:20px 0 65px}.liquid .journey-stop header{gap:24px}.liquid .journey-stop h3{font:300 35px/1.2 var(--display);color:var(--ink)}
+.liquid .stop-body{max-width:760px;font-size:17px;line-height:1.85}
+.liquid .journey-stop.is-reading{border-top:1px solid var(--line)}
+.liquid .organization-name{color:#294757;font-size:16px}.liquid .organization-logo--han{background:#050505}
+/* Credentials: the original colour logos on a light surface. */
+.liquid #certifications .chapter-art img{object-position:right top;height:1000px;mask-image:linear-gradient(#000 60%,transparent)}
+.liquid #certifications .scene-content{display:block}
+.liquid .credentials{position:relative;margin:0;max-width:none;padding-right:32%;background:none;border:0}
+.liquid .credential{padding-left:0;background:none}.liquid .credential summary{grid-template-columns:140px 1fr 24px;gap:24px;min-height:115px;padding:23px 10px}
+.liquid .credential-name{border-left:1px solid var(--line);padding-left:25px}.liquid .credential-name h3{font-size:23px}
+.liquid .credential[open]{background:linear-gradient(90deg,#f5f8f4c9,transparent);border-left:2px solid var(--accent)}
+.liquid .credential-detail{position:absolute;left:73%;right:0;top:20px;padding:20px 0 20px 24px;border-left:1px solid var(--line);margin:0;background:transparent}.liquid .credential-detail:empty{display:none}
+.liquid .credential img{filter:none;opacity:1;mask:none}.liquid .credential img[src*='anssi']{width:76px;max-height:80px}
+/* Project index, actual captures and long project sheets share the same palette. */
+.liquid .project-shelf{grid-column:1;grid-row:1}.liquid .project-selection{grid-column:2;grid-row:1}
+.liquid .project-select{display:none}.liquid.enhanced .project-select{display:block;font-size:13px;color:var(--accent);min-height:44px;padding:8px 12px;text-decoration:underline;margin-left:auto}
+.liquid .project-selection h3{font-size:25px;margin:20px 0 12px}.liquid .project-selection img{display:block;object-fit:contain}
+.liquid .soc-sequence{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}
+.liquid .soc-step{min-height:0;margin:0;padding:20px 0 30px;background:none}.liquid .soc-step:last-child{grid-column:1/-1}.liquid .soc-step:nth-child(2){background:none;padding:20px 0}.liquid .soc-step:nth-child(4){min-height:0;padding-top:20px}
+.liquid .project-detail{background:#edf2f2;color:var(--ink);border-color:#92a7b0}.liquid .dialog-toolbar{background:#e2ebedf5;border-color:var(--line)}.liquid .dialog-content h4{color:var(--accent)}.liquid .project-detail::backdrop{background:#182d3b60;backdrop-filter:blur(5px)}
+.liquid .organization-light{background:transparent;padding:15px 0}
+/* Contact: open space above the diagonal glass. */
+.liquid #contact .chapter-art img{object-position:center bottom}
+.liquid .contact-copy{max-width:1050px}.liquid .contact-copy>h2{font-size:clamp(48px,6vw,82px);margin-bottom:65px}
+.liquid .email{font:300 clamp(25px,3.5vw,52px)/1.2 var(--display);background:none;max-width:1050px;border-bottom:1px solid var(--accent)}
+.liquid .contact-copy .actions,.liquid .credits{background:none}.liquid .contact-copy .actions{gap:16px 30px}.liquid .contact-copy .action{font-size:17px}.liquid .contact-location{color:var(--muted)}
+.liquid .credits{margin-top:40px}.liquid .return-cover{color:var(--ink)}
+@media(max-width:1000px){
+ .liquid #home .scene-content{margin-left:36%;max-width:620px;background:linear-gradient(90deg,#edf4f2b0,transparent);padding:20px}
+ .liquid .skill-body ul{grid-template-columns:1fr}.liquid .explorer{gap:4%}.liquid .skill-panels{padding:25px}
+ .liquid .credentials{padding-right:0}.liquid .credential-detail{position:static;margin:0 20px 25px 160px;padding:10px 20px}
+ .liquid .scene-scroll{padding-bottom:140px}.liquid.enhanced:not(.is-cover) .booklet-controls{top:auto;bottom:66px;right:12px}
+}
+@media(max-width:600px){
+ .liquid .scene-scroll{padding:120px 22px 130px}.liquid .section-heading h2,.liquid .scene-parcours .section-heading h2,.liquid .scene-certifications .section-heading h2{font-size:44px}
+ .liquid .scene>.chapter-art img{height:640px;mask-image:linear-gradient(#000 45%,transparent)}
+ .liquid #home .chapter-art img{object-position:22% top;height:700px;opacity:.65}
+ .liquid #home .scene-scroll{padding:140px 22px 100px}.liquid #home .scene-content{margin:0;padding:0;background:none}.liquid #home h2{font-size:34px}.liquid .profile-introduction{font-size:17px;line-height:1.8}
+ .liquid .opening-story{display:block;padding:35px 22px}.liquid .profile-extra{margin-top:25px}.liquid .profile-project{margin-top:30px}.liquid .opening-story h2{font-size:34px}
+ .liquid #services .chapter-art img{height:600px;object-position:80% top;opacity:.65}.liquid .explorer{display:block}.liquid .skill-index{margin-bottom:26px;background:#edf4f260}.liquid .skill-index button{font-size:14px;min-height:70px;padding-inline:5px;min-width:0}.liquid .skill-label{min-width:0}.liquid .skill-index button>span[aria-hidden]{display:none}.liquid .skill-panels{margin-top:0;padding:24px 16px;min-height:0}.liquid .skill-panel h3{font-size:32px}.liquid .domains-overview{padding:0 12px}.liquid .connections{grid-template-columns:1fr}
+ .liquid #parcours .chapter-art img{height:650px;object-position:62% top;opacity:.65}.liquid .route{max-width:none}.liquid .journey-list{width:100%;padding-left:25px;margin:0}.liquid .journey-stop:before{left:-30px}.liquid .journey-stop h3{font-size:29px}.liquid .journey-stop{padding-bottom:45px}.liquid .scene-parcours .scene-content>.route-index{margin-bottom:35px}.liquid .scene-parcours .scene-content>.route-index a{flex-basis:140px}
+ .liquid #certifications .chapter-art img{height:650px;object-position:80% top}.liquid .credential summary{grid-template-columns:90px 1fr 18px;gap:14px;padding:22px 0}.liquid .credential-name{grid-column:2;grid-row:1;border:0;padding:0}.liquid .credential-name h3{font-size:19px}.liquid .credential .expand{grid-column:3;grid-row:1}.liquid .credential img{max-width:90px}.liquid .credential-detail{margin:0;padding:12px 15px 24px;font-size:16px}.liquid .credential img[src*='anssi']{width:72px}
+ .liquid .soc-sequence{display:block}.liquid .soc-step{margin-bottom:30px}.liquid #portfolio .project-spread{display:flex}.liquid .project-selection{width:100%}
+ .liquid .contact-copy>h2{font-size:48px;margin-bottom:40px}.liquid #contact .chapter-art img{height:100%;object-position:65% bottom;opacity:.6;mask:none}.liquid .email{font-size:24px;overflow-wrap:anywhere}.liquid .contact-copy .actions{gap:10px 20px}.liquid .contact-copy .action{font-size:16px}
+ .liquid .back-cover{background:#e8f0f0ed;border-color:var(--line)}.liquid .masthead{padding-inline:18px}.liquid .header-links{gap:10px}
+}

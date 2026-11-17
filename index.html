@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-scene="home" lang="fr">
+<html class="liquid project-home" data-scene="home" lang="fr">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -13,7 +13,7 @@
    Adam Laaouane — Cybersécurité &amp; Réseaux
   </title>
   <link href="assets/img/logos-v2/adam-monogram.svg" rel="icon" type="image/svg+xml"/>
-  <link as="image" href="assets/scenes/Présentation-1672.webp" imagesizes="100vw" imagesrcset="assets/scenes/Présentation-800.webp 800w, assets/scenes/Présentation-1672.webp 1000w" rel="preload"/>
+  <link as="image" href="assets/img/liquid-index/accueil-1672.webp" imagesizes="100vw" imagesrcset="assets/img/liquid-index/accueil-800.webp 800w, assets/img/liquid-index/accueil-1672.webp 1672w" rel="preload"/>
   <script defer="" src="assets/js/album.js">
   </script>
   <link href="assets/css/fonts.css" rel="stylesheet"/>
@@ -21,15 +21,17 @@
   <link href="assets/css/icons.css" rel="stylesheet"/>
   <link as="font" crossorigin="" href="assets/fonts/barlow-400-latin.woff2" rel="preload" type="font/woff2"/>
   <link as="font" crossorigin="" href="assets/fonts/barlowsemicondensed-300-latin.woff2" rel="preload" type="font/woff2"/>
-  <link href="assets/css/cover-photo.css" rel="stylesheet"/>
   <link href="assets/css/thm-badge.css" rel="stylesheet"/>
   <script defer="" src="assets/js/thm-badge.js">
   </script>
-  <link href="assets/css/reference-layouts.css" rel="stylesheet"/>
   <script defer="" src="assets/js/project-preview.js">
   </script>
-  <link href="assets/css/immersive-layout.css" rel="stylesheet"/>
-  <link href="assets/css/home-polish.css" rel="stylesheet"/>
+  <link href="assets/css/liquid-index.css" rel="stylesheet"/>
+  <script defer="" src="assets/js/liquid-index.js">
+  </script>
+  <link href="assets/css/liquid-chapters.css" rel="stylesheet"/>
+  <link href="assets/css/project-home.css" rel="stylesheet"/>
+  <link href="assets/css/motion-study.css" rel="stylesheet"/>
  </head>
  <body>
   <a class="skip-link" href="#home">
@@ -132,10 +134,7 @@
     <div class="cover-stage">
      <div class="cover-face">
       <div aria-hidden="true" class="cover-art">
-       <img alt="" fetchpriority="high" height="563" sizes="(max-width: 700px) 100vw, 65vw" src="assets/scenes/Présentation-1672.webp" srcset="assets/scenes/Présentation-800.webp 800w, assets/scenes/Présentation-1672.webp 1000w" width="1000"/>
-      </div>
-      <div aria-hidden="true" class="cover-strip">
-       <img alt="" height="563" src="assets/scenes/Présentation-800.webp" width="1000"/>
+       <img alt="" fetchpriority="high" height="941" sizes="100vw" src="assets/img/liquid-index/accueil-1672.webp" srcset="assets/img/liquid-index/accueil-800.webp 800w, assets/img/liquid-index/accueil-1672.webp 1672w" width="1672"/>
       </div>
       <div class="cover-identity">
        <h1>
@@ -148,6 +147,87 @@
         Cybersécurité / Systèmes / Réseaux
        </p>
       </div>
+      <svg aria-hidden="true" class="project-tethers">
+       <path data-tether="soc">
+       </path>
+       <circle data-anchor="soc" r="4">
+       </circle>
+       <path data-tether="game">
+       </path>
+       <circle data-anchor="game" r="3">
+       </circle>
+      </svg>
+      <p class="home-selection-label">
+       Sélection / Projets
+      </p>
+      <a class="home-project home-project--main" data-home-project="soc" href="#portfolioModal5" id="home-soc">
+       <span class="home-project-number">
+        01
+       </span>
+       <div class="home-project-heading">
+        <h2>
+         AI-Augmented
+         <br/>
+         SOC Homelab
+        </h2>
+        <p>
+         Wazuh / Windows / Python · 2026
+        </p>
+       </div>
+       <figure>
+        <img alt="Capture réelle du lab Wazuh" height="422" src="assets/img/projects/wazuh-alert.png" width="473"/>
+        <figcaption>
+         Explorer le lab
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </figcaption>
+       </figure>
+       <div aria-hidden="true" class="soc-peek">
+        <p>
+         Aperçu / SOC Homelab
+        </p>
+        <div class="soc-peek-nodes">
+         <span>
+          Windows / Linux
+         </span>
+         <span>
+          Wazuh
+         </span>
+         <span>
+          LLM local
+         </span>
+        </div>
+       </div>
+      </a>
+      <a class="home-project home-project--secondary" data-home-project="game" href="#portfolioModal1" id="home-game">
+       <span class="home-project-number">
+        02
+       </span>
+       <div class="home-project-heading">
+        <h2>
+         Sticks &amp; Stones
+        </h2>
+        <p>
+         Unity 3D · 2022
+        </p>
+       </div>
+       <figure>
+        <img alt="Visuel du jeu Sticks &amp; Stones" height="899" src="assets/img/projects/ss.png" width="720"/>
+        <figcaption>
+         Découvrir le projet
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </figcaption>
+       </figure>
+      </a>
+      <a class="home-discover" href="#home">
+       Défiler pour découvrir
+       <span aria-hidden="true">
+        ↓
+       </span>
+      </a>
       <p class="cover-line">
        Suivre les traces.
        <br/>
@@ -156,103 +236,11 @@
         au-delà.
        </span>
       </p>
-      <nav aria-label="Choisir une rubrique" class="cover-tracklist">
-       <a data-hint="Ingénieur en informatique et réseaux · Analyste SOC" data-image="assets/scenes/Présentation-800.webp" data-preview="0" href="#home">
-        <span class="track-number">
-         01
-        </span>
-        <span class="track-label">
-         Présentation
-        </span>
-        <span aria-hidden="true" class="track-arrow">
-         →
-        </span>
-       </a>
-       <a data-hint="Cybersécurité · Systèmes · Développement" data-image="assets/scenes/Compétences-800.webp" data-preview="1" href="#services">
-        <span class="track-number">
-         02
-        </span>
-        <span class="track-label">
-         Compétences
-        </span>
-        <span aria-hidden="true" class="track-arrow">
-         →
-        </span>
-       </a>
-       <a data-hint="Agadir · Angers · Arnhem · Valladolid · Nantes" data-image="assets/scenes/parcours-800.webp" data-preview="2" href="#parcours">
-        <span class="track-number">
-         03
-        </span>
-        <span class="track-label">
-         Parcours
-        </span>
-        <span aria-hidden="true" class="track-arrow">
-         →
-        </span>
-       </a>
-       <a data-hint="TryHackMe · ANSSI · Microsoft · TOEIC" data-image="assets/scenes/Certifications-800.webp" data-preview="3" href="#certifications">
-        <span class="track-number">
-         04
-        </span>
-        <span class="track-label">
-         Certifications
-        </span>
-        <span aria-hidden="true" class="track-arrow">
-         →
-        </span>
-       </a>
-       <a data-hint="SOC · Recherche · Jeu · Robotique · Esport" data-image="assets/scenes/Projets-800.webp" data-preview="4" href="#portfolio">
-        <span class="track-number">
-         05
-        </span>
-        <span class="track-label">
-         Projets
-        </span>
-        <span aria-hidden="true" class="track-arrow">
-         →
-        </span>
-       </a>
-       <a data-hint="Email · LinkedIn · CV" data-image="assets/scenes/Contact-800.webp" data-preview="5" href="#contact">
-        <span class="track-number">
-         06
-        </span>
-        <span class="track-label">
-         Contact
-        </span>
-        <span aria-hidden="true" class="track-arrow">
-         →
-        </span>
-       </a>
-      </nav>
-      <figure class="cover-preview">
-       <div class="preview-window">
-        <img alt="" height="563" src="assets/scenes/Présentation-800.webp" width="1000"/>
-       </div>
-       <figcaption>
-        <span id="preview-number">
-         01
-        </span>
-        <span id="preview-hint">
-         Ingénieur en informatique et réseaux · Analyste SOC
-        </span>
-       </figcaption>
-      </figure>
-      <a class="cover-scroll" href="#home">
-       <span aria-hidden="true">
-        ↓
-       </span>
-       Défiler pour découvrir
-      </a>
-      <span aria-hidden="true" class="print-marks">
-       <i>
-       </i>
-       <i>
-       </i>
-       <i>
-       </i>
-      </span>
      </div>
      <section aria-label="Présentation" class="scene opening-note" id="home" tabindex="-1">
+      <div aria-hidden="true" class="chapter-art">
+       <img alt="" data-fallback="assets/img/liquid-index/presentation.png" height="941" loading="lazy" sizes="100vw" src="assets/img/liquid-index/presentation-1672.webp" srcset="assets/img/liquid-index/presentation-800.webp 800w, assets/img/liquid-index/presentation-1672.webp 1672w" width="1672"/>
+      </div>
       <div class="scene-scroll">
        <div class="scene-content">
         <div class="arrival">
@@ -327,7 +315,7 @@
    </div>
    <section aria-label="Compétences" class="scene scene-services" data-track="02" id="services" tabindex="-1">
     <div aria-hidden="true" class="chapter-art" data-chapter="services">
-     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/Compétences.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/Compétences-1672.webp" srcset="assets/scenes/Compétences-800.webp 800w, assets/scenes/Compétences-1672.webp 1672w"/>
+     <img alt="" class="scene-image" data-fallback="assets/img/liquid-index/competences.png" height="941" loading="lazy" sizes="100vw" src="assets/img/liquid-index/competences-1672.webp" srcset="assets/img/liquid-index/competences-800.webp 800w, assets/img/liquid-index/competences-1672.webp 1672w" width="1672"/>
     </div>
     <div class="scene-scroll">
      <div class="scene-content">
@@ -677,7 +665,7 @@
    </section>
    <section aria-label="Parcours" class="scene scene-parcours" data-track="03" id="parcours" tabindex="-1">
     <div aria-hidden="true" class="chapter-art" data-chapter="parcours">
-     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/parcours.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/parcours-1672.webp" srcset="assets/scenes/parcours-800.webp 800w, assets/scenes/parcours-1672.webp 1672w"/>
+     <img alt="" class="scene-image" data-fallback="assets/img/liquid-index/parcours.png" height="941" loading="lazy" sizes="100vw" src="assets/img/liquid-index/parcours-1672.webp" srcset="assets/img/liquid-index/parcours-800.webp 800w, assets/img/liquid-index/parcours-1672.webp 1672w" width="1672"/>
     </div>
     <div class="scene-scroll">
      <div class="scene-content">
@@ -686,7 +674,7 @@
         03
        </p>
        <div aria-hidden="true" class="route-fragment">
-        <img alt="" height="941" loading="lazy" src="assets/scenes/parcours-800.webp" width="1672"/>
+        <img alt="" data-fallback="assets/img/liquid-index/parcours.png" height="941" loading="lazy" sizes="100vw" src="assets/img/liquid-index/parcours-1672.webp" srcset="assets/img/liquid-index/parcours-800.webp 800w, assets/img/liquid-index/parcours-1672.webp 1672w" width="1672"/>
        </div>
        <h2>
         Parcours
@@ -791,7 +779,7 @@
           2026
          </span>
          <div class="organization">
-          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-dark.svg" width="334"/>
+          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-original.svg" width="334"/>
           <p class="organization-name">
            ESAIP · Angers
           </p>
@@ -870,7 +858,7 @@
           2023 - 2025
          </span>
          <div class="organization">
-          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-dark.svg" width="334"/>
+          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-original.svg" width="334"/>
           <p class="organization-name">
            ESAIP · Angers
           </p>
@@ -944,7 +932,7 @@
           2020 - 2022
          </span>
          <div class="organization">
-          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-dark.svg" width="334"/>
+          <img alt="" class="org-logo" decoding="async" height="165" loading="lazy" src="assets/img/logos-v2/esaip-original.svg" width="334"/>
           <p class="organization-name">
            ESAIP · Angers
           </p>
@@ -985,7 +973,7 @@
    </section>
    <section aria-label="Certifications" class="scene scene-certifications" data-track="04" id="certifications" tabindex="-1">
     <div aria-hidden="true" class="chapter-art" data-chapter="certifications">
-     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/Certifications.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/Certifications-1672.webp" srcset="assets/scenes/Certifications-800.webp 800w, assets/scenes/Certifications-1672.webp 1672w"/>
+     <img alt="" class="scene-image" data-fallback="assets/img/liquid-index/certifications.png" height="941" loading="lazy" sizes="100vw" src="assets/img/liquid-index/certifications-1672.webp" srcset="assets/img/liquid-index/certifications-800.webp 800w, assets/img/liquid-index/certifications-1672.webp 1672w" width="1672"/>
     </div>
     <div class="scene-scroll">
      <div class="scene-content">
@@ -1000,7 +988,7 @@
       <div class="credentials">
        <details class="credential" open="">
         <summary>
-         <img alt="" class="org-logo" decoding="async" height="461" loading="lazy" src="assets/img/logos-v2/tryhackme-dark.svg" width="824"/>
+         <img alt="" class="org-logo" decoding="async" height="461" loading="lazy" src="assets/img/logos-v2/tryhackme-original.svg" width="824"/>
          <span class="credential-name">
           <h3>
            SOC Level 1
@@ -1027,7 +1015,7 @@
        </details>
        <details class="credential">
         <summary>
-         <img alt="" class="org-logo" decoding="async" height="461" loading="lazy" src="assets/img/logos-v2/tryhackme-dark.svg" width="824"/>
+         <img alt="" class="org-logo" decoding="async" height="461" loading="lazy" src="assets/img/logos-v2/tryhackme-original.svg" width="824"/>
          <span class="credential-name">
           <h3>
            Pre Security Certificate
@@ -1073,7 +1061,7 @@
        </details>
        <details class="credential">
         <summary>
-         <img alt="" class="org-logo org-logo--vertical" decoding="async" height="305" loading="lazy" src="assets/img/logos-v2/microsoft-dark.svg" width="420"/>
+         <img alt="" class="org-logo org-logo--vertical" decoding="async" height="305" loading="lazy" src="assets/img/logos-v2/microsoft-original.svg" width="420"/>
          <span class="credential-name">
           <h3>
            Microsoft Certified: Azure AI Fundamentals
@@ -1094,7 +1082,7 @@
        </details>
        <details class="credential">
         <summary>
-         <img alt="" class="org-logo org-logo--toeic" decoding="async" height="340" loading="lazy" src="assets/img/logos-v2/toeic-dark.svg" width="510"/>
+         <img alt="" class="org-logo org-logo--toeic" decoding="async" height="340" loading="lazy" src="assets/img/logos-v2/toeic-original.svg" width="510"/>
          <span class="credential-name">
           <h3>
            Test of English for International Communication (TOEIC)
@@ -1124,7 +1112,7 @@
    </section>
    <section aria-label="Projets" class="scene scene-portfolio" data-track="05" id="portfolio" tabindex="-1">
     <div aria-hidden="true" class="chapter-art" data-chapter="portfolio">
-     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/Projets.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/Projets-1672.webp" srcset="assets/scenes/Projets-800.webp 800w, assets/scenes/Projets-1672.webp 1672w"/>
+     <img alt="" class="scene-image" data-fallback="assets/img/liquid-index/projets.png" height="941" loading="lazy" sizes="100vw" src="assets/img/liquid-index/projets-1672.webp" srcset="assets/img/liquid-index/projets-800.webp 800w, assets/img/liquid-index/projets-1672.webp 1672w" width="1672"/>
     </div>
     <div class="scene-scroll">
      <div class="scene-content">
@@ -1401,7 +1389,7 @@
    </section>
    <section aria-label="Contact" class="scene scene-contact" data-track="06" id="contact" tabindex="-1">
     <div aria-hidden="true" class="chapter-art" data-chapter="contact">
-     <img alt="" class="scene-image" data-fallback="assets/img/backgrounds/Contact.png" loading="lazy" sizes="(max-width: 600px) 70vw, 45vw" src="assets/scenes/Contact-1672.webp" srcset="assets/scenes/Contact-800.webp 800w, assets/scenes/Contact-1672.webp 1672w"/>
+     <img alt="" class="scene-image" data-fallback="assets/img/liquid-index/contact.png" height="941" loading="lazy" sizes="100vw" src="assets/img/liquid-index/contact-1672.webp" srcset="assets/img/liquid-index/contact-800.webp 800w, assets/img/liquid-index/contact-1672.webp 1672w" width="1672"/>
     </div>
     <div class="scene-scroll">
      <div class="scene-content">
@@ -1426,7 +1414,7 @@
          </span>
         </button>
         <a class="action icon-action" href="https://www.linkedin.com/in/adam-laa" rel="noopener noreferrer" target="_blank">
-         <img alt="" class="portfolio-icon-img" decoding="async" height="50" src="assets/icons/linkedin-light.png" width="50"/>
+         <img alt="" class="portfolio-icon-img" decoding="async" height="50" src="assets/icons/linkedin-dark.png" width="50"/>
          LinkedIn ↗
         </a>
         <a class="action" download="" href="assets/files/CV_Adam_Laaouane.pdf">
@@ -1536,6 +1524,9 @@
    </button>
   </div>
   <dialog aria-labelledby="portfolioModal5-title" class="project-detail" id="portfolioModal5" open="">
+   <div aria-hidden="true" class="soc-decor">
+    <img alt="" height="941" src="assets/img/liquid-index/accueil-1672.webp" width="1672"/>
+   </div>
    <div class="dialog-toolbar">
     <span aria-hidden="true" class="detail-mark">
      ▧
@@ -1544,7 +1535,7 @@
      CARNET DE PROJET / 01
     </span>
     <form method="dialog">
-     <button aria-label="Fermer" class="close-dialog">
+     <button aria-label="Retour à l’accueil ou au projet sélectionné" class="close-dialog">
       Fermer
       <span aria-hidden="true">
        ×
@@ -1552,15 +1543,119 @@
      </button>
     </form>
    </div>
-   <div class="dialog-content">
+   <section aria-labelledby="portfolioModal5-title" class="soc-intro">
+    <p class="eyebrow">
+     01 / Projets / SOC Homelab
+    </p>
+    <h2 id="portfolioModal5-title">
+     AI-Augmented SOC Homelab
+    </h2>
+    <p class="soc-intro-meta">
+     Wazuh / Windows / Linux / Python / Local LLM
+    </p>
+    <p class="soc-architecture-label">
+     Architecture
+    </p>
+    <div aria-label="Architecture du laboratoire" class="soc-architecture">
+     <button aria-controls="soc-node-description" aria-pressed="false" class="soc-node" data-description="Des endpoints Windows et Linux supervisés par des agents Wazuh." type="button">
+      <span>
+       01
+      </span>
+      <strong>
+       Windows / Linux
+      </strong>
+      <small>
+       Agents Wazuh
+      </small>
+     </button>
+     <button aria-controls="soc-node-description" aria-pressed="true" class="soc-node" data-description="Le laboratoire centralise les événements de sécurité provenant de différents systèmes afin de permettre leur supervision, leur détection et leur analyse depuis une plateforme SIEM/XDR." type="button">
+      <span>
+       02
+      </span>
+      <strong>
+       Wazuh
+      </strong>
+      <small>
+       Centralisation / Détection
+      </small>
+     </button>
+     <button aria-controls="soc-node-description" aria-pressed="false" class="soc-node" data-description="Les événements peuvent être transmis à un modèle de langage local via un pipeline automatisé afin de produire une synthèse exploitable par l'analyste." type="button">
+      <span>
+       03
+      </span>
+      <strong>
+       LLM local
+      </strong>
+      <small>
+       Analyse assistée
+      </small>
+     </button>
+    </div>
+    <div class="soc-intro-reading">
+     <p aria-live="polite" id="soc-node-description">
+      Le laboratoire centralise les événements de sécurité provenant de différents systèmes afin de permettre leur supervision, leur détection et leur analyse depuis une plateforme SIEM/XDR.
+     </p>
+     <a class="soc-read-more" href="#soc-full-detail">
+      Voir les captures et le projet complet ↓
+     </a>
+    </div>
+    <nav aria-label="Rubriques" class="soc-section-nav">
+     <a href="#home">
+      <span>
+       01
+      </span>
+      Présentation
+      <i aria-hidden="true">
+      </i>
+     </a>
+     <a href="#services">
+      <span>
+       02
+      </span>
+      Compétences
+      <i aria-hidden="true">
+      </i>
+     </a>
+     <a href="#parcours">
+      <span>
+       03
+      </span>
+      Parcours
+      <i aria-hidden="true">
+      </i>
+     </a>
+     <a href="#certifications">
+      <span>
+       04
+      </span>
+      Certifications
+      <i aria-hidden="true">
+      </i>
+     </a>
+     <a href="#portfolio">
+      <span>
+       05
+      </span>
+      Projets
+      <i aria-hidden="true">
+      </i>
+     </a>
+     <a href="#contact">
+      <span>
+       06
+      </span>
+      Contact
+      <i aria-hidden="true">
+      </i>
+     </a>
+    </nav>
+   </section>
+   <div class="dialog-content" id="soc-full-detail">
     <div>
      <div>
       <div>
        <div>
-        <h2 id="portfolioModal5-title">
-         AI-Augmented SOC Homelab
-        </h2>
-        <img alt="AI-Augmented SOC Homelab" decoding="async" height="1024" loading="lazy" src="assets/img/projects/ai-soc-homelab.png" width="1536"/>
+        <img alt="Wazuh Security Alert" class="soc-opening-capture" decoding="async" height="422" loading="lazy" src="assets/img/projects/wazuh-alert.png" width="473"/>
         <h4>
          Vue d’ensemble
         </h4>
@@ -1592,7 +1687,7 @@
         <h4>
          Détection &amp; investigation
         </h4>
-        <img alt="Wazuh Security Alert" decoding="async" height="422" loading="lazy" src="assets/img/projects/wazuh-alert.png" width="473"/>
+        <img alt="AI-Augmented SOC Homelab" decoding="async" height="1024" loading="lazy" src="assets/img/projects/ai-soc-homelab.png" width="1536"/>
         <p>
          Plusieurs scénarios sont exécutés dans le laboratoire afin de
                                     générer des événements de sécurité observables depuis Wazuh.

@@ -34,11 +34,14 @@
     });
   }
   function previewTrack(index) {
+    if (!tracks.length) return;
     if (preview === index) return;
     preview = index;
     tracks.forEach((a, i) => a.classList.toggle('is-preview', i === index));
     const track = tracks[index], image = document.querySelector('.preview-window img');
     document.querySelector('.cover-preview').dataset.track = track.getAttribute('href').slice(1);
+    image.removeAttribute('srcset');
+    image.removeAttribute('data-fallback');
     image.src = track.dataset.image;
     document.getElementById('preview-number').textContent = String(index + 1).padStart(2, '0');
     document.getElementById('preview-hint').textContent = track.dataset.hint;
@@ -70,7 +73,7 @@
     const cover = root.classList.contains('album-motion') ? p < .6 : y < positions[0] - h * .25;
     if (cover !== isCover) {
       isCover = cover;root.classList.toggle('is-cover', cover);
-      nav.inert = cover;
+      nav.inert = cover && !root.classList.contains('project-home');
       language();
     }
     if (root.classList.contains('album-motion')) {
@@ -104,7 +107,7 @@
   }
   const queueMeasure = () => { if (!measureFrame) measureFrame = requestAnimationFrame(measure); };
   function mode() {
-    root.classList.toggle('album-motion', motion.matches && !reduced.matches);
+    root.classList.toggle('album-motion', motion.matches && !reduced.matches && !root.classList.contains('liquid'));
     home.inert = false;
     [...tracks, ...coverExtras].forEach(el => { el.inert = false;el.style.visibility = ''; });
     isCover = null;measure();
@@ -188,7 +191,7 @@
       openDetail(dialog);return;
     }
     const wasOpen = currentDialog;
-    if (wasOpen) {wasOpen.close();currentDialog = null;document.body.classList.remove('modal-open');}
+    if (wasOpen) {wasOpen.dispatchEvent(new Event('detailclosing'));wasOpen.close();currentDialog = null;document.body.classList.remove('modal-open');}
     measure();
     if (restore && Number.isFinite(history.state?.albumY)) {
       scrollTo({top:history.state.albumY, behavior:'instant'});
@@ -209,7 +212,13 @@
       history.replaceState(stateWith({albumY:scrollY,albumFocus:a.id}), '', location.href);
       history.pushState({albumDetail:id,albumReturn:true}, '', '#' + id);
       openDetail(target);
-    } else navigate(id);
+    } else if (currentDialog && currentDialog.contains(target)) {
+      target.scrollIntoView({behavior:'instant',block:'start'});
+      target.setAttribute('tabindex','-1');target.focus({preventScroll:true});
+    } else {
+      if (currentDialog) {currentDialog.close();currentDialog=null;document.body.classList.remove('modal-open');}
+      navigate(id);
+    }
   });
   addEventListener('popstate', () => {
     syncRoute(true);restoring = true;setTimeout(() => {restoring = false;}, 0);
@@ -228,7 +237,7 @@
     if (img.complete && !img.naturalWidth) fallback();
   });
   root.classList.add('enhanced');history.scrollRestoration = 'manual';
-  mode();previewTrack(0);
+  mode();previewTrack(root.classList.contains('liquid') ? 4 : 0);
   syncRoute(false);
   addEventListener('load', () => {measure();if (!currentDialog && !Number.isFinite(history.state?.albumY)) syncRoute(false);}, {once:true});
 })();
