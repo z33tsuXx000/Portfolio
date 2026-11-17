@@ -3,6 +3,7 @@
   if (!window.HTMLDialogElement || !HTMLDialogElement.prototype.showModal || !window.ResizeObserver) return;
   const root = document.documentElement;
   const fr = root.lang === 'fr';
+  const clickExplore = root.classList.contains('soft-club');
   const opening = document.querySelector('.album-opening');
   const stage = opening.querySelector('.cover-stage');
   const home = document.getElementById('home');
@@ -64,7 +65,7 @@
   }
   function update() {
     frame = 0;
-    if (currentDialog) return;
+    if (currentDialog || clickExplore) return;
     const y = scrollY, h = innerHeight;
     const p = root.classList.contains('album-motion') ? clamp(y / openingDistance) : 0;
     root.style.setProperty('--opening', p.toFixed(4));
@@ -73,7 +74,7 @@
     const cover = root.classList.contains('album-motion') ? p < .6 : y < positions[0] - h * .25;
     if (cover !== isCover) {
       isCover = cover;root.classList.toggle('is-cover', cover);
-      nav.inert = cover && !root.classList.contains('project-home');
+      nav.inert = cover && !root.classList.contains('project-home') && !root.classList.contains('cobalt');
       language();
     }
     if (root.classList.contains('album-motion')) {
@@ -86,6 +87,7 @@
     showChapter(index);
     root.style.setProperty('--progress', clamp(y / scrollExtent).toFixed(4));
     route.style.setProperty('--route-progress', clamp((y + h * .5 - routeTop) / routeHeight).toFixed(4));
+    if (root.classList.contains('cobalt')) return;
     let stop = 0;
     stopPositions.forEach((top, i) => { if (top <= y + h * .5) stop = i; });
     if (stop !== lastStop) {
@@ -99,7 +101,7 @@
   function measure() {
     measureFrame = 0;
     openingDistance = Math.max(1, opening.offsetHeight - stage.offsetHeight);
-    positions = chapters.map(c => c === home && root.classList.contains('album-motion') ? openingDistance : documentTop(c) - 80);
+    positions = chapters.map(c => c === home && root.classList.contains('album-motion') ? openingDistance : documentTop(c) - (root.classList.contains('cobalt') ? document.querySelector('.masthead').offsetHeight : 80));
     stopPositions = stops.map(documentTop);
     routeTop = documentTop(route);routeHeight = route.offsetHeight;
     scrollExtent = Math.max(1, document.documentElement.scrollHeight - innerHeight);
@@ -107,7 +109,7 @@
   }
   const queueMeasure = () => { if (!measureFrame) measureFrame = requestAnimationFrame(measure); };
   function mode() {
-    root.classList.toggle('album-motion', motion.matches && !reduced.matches && !root.classList.contains('liquid'));
+    root.classList.toggle('album-motion', motion.matches && !reduced.matches && !root.classList.contains('liquid') && !root.classList.contains('cobalt'));
     home.inert = false;
     [...tracks, ...coverExtras].forEach(el => { el.inert = false;el.style.visibility = ''; });
     isCover = null;measure();
@@ -145,8 +147,18 @@
     const target = document.getElementById(id);
     if (!target) return;
     if (push) { remember();history.pushState({albumAnchor:id}, '', '#' + id); }
+    if (clickExplore) {
+      const section = target.closest('main .scene');
+      const selected = section || opening;
+      opening.hidden = selected !== opening;
+      chapters.forEach(c => { c.hidden = c !== selected; });
+      isCover = selected === opening;
+      root.classList.toggle('is-cover', isCover);
+      if (!isCover) showChapter(chapters.indexOf(selected));
+      nav.inert = false;
+    }
     measure();
-    const y = id === 'cover' ? 0 : id === 'home' ? positions[0] : Math.max(0, documentTop(target) - 100);
+    const y = clickExplore && (target === opening || chapters.includes(target)) ? 0 : id === 'cover' ? 0 : id === 'home' ? positions[0] : Math.max(0, documentTop(target) - (root.classList.contains('cobalt') ? document.querySelector('.masthead').offsetHeight : 100));
     scrollTo({top:y, behavior:'instant'});
     if (!target.hasAttribute('tabindex') && !target.matches('a,button')) target.setAttribute('tabindex', '-1');
     target.focus({preventScroll:true});
@@ -194,6 +206,7 @@
     if (wasOpen) {wasOpen.dispatchEvent(new Event('detailclosing'));wasOpen.close();currentDialog = null;document.body.classList.remove('modal-open');}
     measure();
     if (restore && Number.isFinite(history.state?.albumY)) {
+      if (clickExplore) navigate(id, false);
       scrollTo({top:history.state.albumY, behavior:'instant'});
       const opener = document.getElementById(history.state.albumFocus || '');
       if (opener) opener.focus({preventScroll:true});
@@ -236,7 +249,7 @@
     img.addEventListener('error', fallback);
     if (img.complete && !img.naturalWidth) fallback();
   });
-  root.classList.add('enhanced');history.scrollRestoration = 'manual';
+  root.classList.add('enhanced');if (clickExplore) root.classList.add('click-explore');history.scrollRestoration = 'manual';
   mode();previewTrack(root.classList.contains('liquid') ? 4 : 0);
   syncRoute(false);
   addEventListener('load', () => {measure();if (!currentDialog && !Number.isFinite(history.state?.albumY)) syncRoute(false);}, {once:true});

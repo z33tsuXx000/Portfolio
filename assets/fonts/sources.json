@@ -22,5 +22,14 @@
     "source": "https://fonts.gstatic.com/s/ibmplexsanscondensed/v15/Gg8gN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHY4C6rvspYY.woff2",
     "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsanscondensed/OFL.txt",
     "bytes": 19840
+  },
+  {
+    "family": "Barlow Condensed",
+    "weight": "800",
+    "style": "italic",
+    "file": "barlowcondensed-800-italic-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrf3fmu4kG.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt",
+    "bytes": 23780
   }
 ]
