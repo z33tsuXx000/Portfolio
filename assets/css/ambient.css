@@ -1,0 +1,65 @@
+﻿/* Ambient 4625 */
+html.ambient{--night:#17192e;--ink:#eff4f7;--accent:#c6e7f5;--rail:clamp(160px,15vw,225px)}
+.ambient .masthead,.ambient.is-cover .masthead{padding:18px 4vw;height:72px}
+.ambient .masthead a,.ambient .header-links{background:none;text-shadow:0 1px 5px #151828}
+.ambient .signature,.ambient.is-cover .signature{font:400 21px var(--text);background:none;min-width:0;padding:0}
+.ambient .album-index,.ambient.enhanced.is-cover .album-index{left:3vw;right:auto;top:39%;bottom:auto;width:calc(var(--rail) - 20px);background:none;transform:none;padding:0;gap:2px}
+.ambient .album-index a[data-scene-link],.ambient.is-cover .album-index a[data-scene-link]{display:flex;justify-content:flex-start;font:400 15px var(--text);gap:9px;min-height:40px;padding:6px 0;border:0;clip-path:none;background:none;text-decoration:none;color:inherit}
+.ambient .album-index a[data-scene-link][aria-current]{font-weight:700;border-bottom:1px solid currentColor}
+.ambient .album-index a:hover{text-decoration:underline}.ambient .album-index .index-cover{background:none}
+.ambient .scene,.ambient .cover-face{background:#17192e!important;border:0}
+.ambient .cobalt-decor{inset:0;z-index:-1}
+.ambient .cobalt-decor img{width:100%;height:100vh;object-fit:cover;object-position:center top;display:block}
+.ambient .cover-face .cover-copy{padding:27vh 10vw 8vh calc(var(--rail) + 6vw);background:none}
+.ambient .cover-face .cover-copy h1{font:300 clamp(36px,4vw,64px)/1.05 var(--display)}
+.ambient .cover-face .cover-manifesto{background:none;padding:0}
+.ambient .glass-number{position:absolute;left:66%;top:45%;font:300 clamp(48px,8vw,125px)/1 var(--display);color:#dafaffb8;letter-spacing:.04em}
+.ambient .scene .scene-scroll,.ambient #home .scene-scroll,.ambient #parcours .scene-scroll,.ambient #portfolio .scene-scroll,.ambient #services .scene-scroll{padding:clamp(90px,13vh,150px) 5vw 70px calc(var(--rail) + 6vw)}
+.ambient .scene .scene-content{margin:0;max-width:none}
+.ambient #home .scene-content{width:min(47vw,60ch);background:linear-gradient(90deg,#121a2699,transparent);padding:16px}
+.ambient .scene .section-heading,.ambient #services .section-heading,.ambient #portfolio .section-heading,.ambient #certifications .section-heading{background:none;padding:0;clip-path:none;margin:0 0 24px}
+.ambient .scene h2,.ambient .arrival h2,.ambient .scene .section-heading h2{font:300 clamp(34px,3.8vw,58px)/1.1 var(--display)}
+.ambient .explorer{grid-template-columns:minmax(155px,210px) minmax(0,56ch);gap:3vw}
+.ambient .skill-index,.ambient .project-shelf,.ambient .journey-stop,.ambient .skill-panels{background:linear-gradient(90deg,#15192de3,#15192d99);clip-path:none}
+.ambient .skill-index button,.ambient .project-name{font:400 17px var(--text)}
+.ambient #parcours .scene-content{padding-top:0;grid-template-columns:minmax(180px,260px) minmax(0,60ch)}
+.ambient #parcours .section-heading{margin-bottom:23vh}
+.ambient .route-index{background:#16192de6}
+.ambient .credentials{margin:0;width:min(46vw,560px);max-width:100%;padding:10px;background:linear-gradient(90deg,#17182aeb,#17182ad4)}
+.ambient .credential summary{grid-template-columns:74px 1fr 20px;min-height:68px;gap:10px}
+.ambient .credential img{max-width:68px}
+.ambient .sleeve-label{position:absolute;right:10%;top:48vh;transform:rotate(10deg);font:300 clamp(22px,3vw,44px) var(--display);color:#1d223a;border-bottom:1px solid}
+.ambient .project-spread{grid-template-columns:minmax(230px,.65fr) minmax(0,1fr);gap:5vw}
+.ambient .project-selection{align-self:start;padding:12px;background:#132128a8}.ambient .project-selection img{height:auto;max-height:39vh;object-fit:contain}
+.ambient .project-shelf{padding:12px}.ambient .departure.is-selected{background:#20354094;border-left:2px solid #c2e9ff}
+.ambient #contact{color:#20273c!important;background:#dde6ee!important}
+.ambient .contact-copy{padding:8vh 0 0;background:none;color:#20273c}
+.ambient #contact :is(h2,.email,.eyebrow,.action,.contact-location,#copy-status){color:#20273c;background:none}
+.ambient #contact .email{padding-left:0;font:400 clamp(23px,3vw,48px) var(--text)}
+.ambient .contact-copy .actions{margin-left:0}.ambient #contact .actions>*{background:none;color:#20273c;border:0;border-bottom:1px solid}
+.ambient[data-scene=contact]:not(.is-cover) :is(.masthead,.album-index,.header-links,.masthead a,.album-index a,.album-index a span){color:#20273c;background:none;text-shadow:none}
+.ambient #contact .credits{background:#e6eef5c9;color:#20273c}
+@media(max-width:800px){
+ .ambient .masthead,.ambient.is-cover .masthead{padding:8px 16px}
+ .ambient .album-index,.ambient.enhanced.is-cover .album-index{position:fixed;inset:auto 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;background:#17192ef5;padding:4px;gap:0}
+ .ambient .album-index a[data-scene-link],.ambient.is-cover .album-index a[data-scene-link]{font-size:14px;justify-content:center;min-height:44px}
+ .ambient.is-cover .album-index a span{display:none}
+ .ambient[data-scene=contact]:not(.is-cover) .album-index{background:#e6eef5f5}
+ .ambient .cover-face .cover-copy{padding:18vh 6vw 125px;min-height:100svh;background:linear-gradient(90deg,#131820ac,transparent)}
+ .ambient .glass-number{top:49%;left:56%}
+ .ambient .scene .scene-scroll,.ambient #home .scene-scroll,.ambient #services .scene-scroll,.ambient #portfolio .scene-scroll,.ambient #parcours .scene-scroll{padding:110px 20px 138px}
+ .ambient #home .scene-content{width:100%;background:linear-gradient(90deg,#131828e6,#13182888)}
+ .ambient #home .cobalt-decor img{object-position:68% top}
+ .ambient #services .cobalt-decor img{object-position:75% top}
+ .ambient #portfolio .cobalt-decor img{object-position:65% top}
+ .ambient #certifications .cobalt-decor img,.ambient #parcours .cobalt-decor img{height:auto;margin-top:65px;object-fit:contain}
+ .ambient #parcours .scene-scroll,.ambient #certifications .scene-scroll{padding-top:calc(60vw + 68px)}
+ .ambient #parcours .section-heading{margin-bottom:14px}
+ .ambient .credentials{width:100%}.ambient .sleeve-label{top:calc(65px + 26vw);right:6%;font-size:18px}
+ .ambient #parcours .scene-content{background:none}.ambient .route-index{display:grid;grid-template-columns:1fr 1fr}
+ .ambient .contact-copy{padding:0}.ambient #contact .cobalt-decor img{object-fit:contain;background:#dde6ee;object-position:bottom}
+ .ambient #home .arrival h2{margin-bottom:20px}
+}
+.ambient .sleeve-label{right:6%;top:31vh;width:38%;border:0;transform:perspective(900px) rotateY(-12deg) rotateX(10deg) rotateZ(10deg)}
+.ambient .sleeve-label img{width:100%;height:auto;display:block}
+@media(max-width:800px){.ambient .sleeve-label{top:calc(65px + 16vw);width:43%;right:5%}}
