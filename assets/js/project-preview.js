@@ -3,7 +3,7 @@
  if(!panel)return;
  const links=[...document.querySelectorAll('[data-project-preview]')];
  const buttons=[...document.querySelectorAll('.project-select')];
- const media=['wazuh-alert.png','PSIR.jpg','ss.png',null,'tournoi.png'];
+ const media=['soc-architecture.png','PSIR.jpg','ss.png',null,'tournoi.png'];
  function select(i){
   const link=links[i],img=panel.querySelector('img');
   img.src=media[i]?'assets/img/projects/'+media[i]:'assets/img/logos/esaip-robotics.png';
@@ -17,6 +17,6 @@
   links.forEach((a,j)=>a.classList.toggle('is-selected',i===j));
  }
  buttons.forEach((b,i)=>b.addEventListener('click',()=>select(i)));
- links.forEach((a,i)=>{a.addEventListener('focus',()=>select(i));a.addEventListener('pointerenter',()=>select(i));});
+ links.forEach((a,i)=>{a.addEventListener('focus',()=>select(i));a.addEventListener('pointermove',()=>select(i));});
  select(0);
 })();

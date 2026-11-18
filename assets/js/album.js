@@ -30,8 +30,8 @@
   function language() {
     const hash = currentDialog ? currentDialog.id : isCover ? 'cover' : chapters[Math.max(active, 0)].id;
     document.querySelectorAll('[data-language]').forEach(a => {
-      const page = new URL(a.href).pathname.split('/').pop();
-      a.href = page + '#' + hash;
+      const page = a.lang === 'fr' ? './' : 'en.html';
+      a.href = page + '#' + (location.hash.slice(1) || hash);
     });
   }
   function previewTrack(index) {
@@ -156,6 +156,7 @@
       root.classList.toggle('is-cover', isCover);
       if (!isCover) showChapter(chapters.indexOf(selected));
       nav.inert = false;
+      document.querySelector('.skip-link').href = '#' + selected.id;
     }
     measure();
     const y = clickExplore && (target === opening || chapters.includes(target)) ? 0 : id === 'cover' ? 0 : id === 'home' ? positions[0] : Math.max(0, documentTop(target) - (root.classList.contains('cobalt') ? document.querySelector('.masthead').offsetHeight : 100));
@@ -220,6 +221,7 @@
     const id = a.getAttribute('href').slice(1), target = document.getElementById(id);
     if (!target) return;
     e.preventDefault();
+    if (a.matches('.skip-link')) {target.focus();return;}
     if (target.matches('.project-detail')) {
       if (!a.id) a.id = 'project-opener-' + [...document.querySelectorAll('a')].indexOf(a);
       history.replaceState(stateWith({albumY:scrollY,albumFocus:a.id}), '', location.href);

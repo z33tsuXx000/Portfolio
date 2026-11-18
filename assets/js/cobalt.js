@@ -30,17 +30,8 @@
   if(!target||!(target.matches('main .scene')||target.id==='cover'))return;
   cancel();
   if(reduced.matches)return;
-  const from=root.classList.contains('is-cover')?document.querySelector('.cover-copy'):document.querySelector('#'+root.dataset.scene+' .scene-content');
-  const fromRect=from?.getBoundingClientRect(),copy=from?.cloneNode(true);
-  if(copy){copy.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));copy.removeAttribute('id');}
   requestAnimationFrame(()=>{
-   if(copy&&fromRect.bottom>66&&fromRect.top<innerHeight){
-    outgoing=document.createElement('div');outgoing.className='scene-transition-out';outgoing.setAttribute('aria-hidden','true');outgoing.inert=true;
-    Object.assign(copy.style,{position:'absolute',left:fromRect.left+'px',top:fromRect.top+'px',width:fromRect.width+'px',margin:'0',padding:'0',maxWidth:'none'});
-    outgoing.append(copy);document.body.append(outgoing);
-    const holder=outgoing;const exit=copy.animate([{transform:'translateX(0)',opacity:1},{transform:'translateX(-45px)',opacity:0}],{duration:220,easing:'ease-in',fill:'forwards'});
-    effects.push(exit);exit.finished.then(()=>holder.remove(),()=>holder.remove());
-   }
+   if(target.hidden)return;
    const content=target.querySelector('.scene-content,.cover-copy');
    const art=target.querySelector('.cobalt-decor');
    if(content)effects.push(content.animate([{opacity:0,transform:'translateX(18px)',offset:0},{opacity:0,transform:'translateX(18px)',offset:.32},{opacity:1,transform:'translateX(0)',offset:1}],{duration:420,easing:'cubic-bezier(.2,.7,.2,1)'}));
