@@ -63,3 +63,14 @@ html.ambient{--night:#17192e;--ink:#eff4f7;--accent:#c6e7f5;--rail:clamp(160px,1
 .ambient .sleeve-label{right:6%;top:31vh;width:38%;border:0;transform:perspective(900px) rotateY(-12deg) rotateX(10deg) rotateZ(10deg)}
 .ambient .sleeve-label img{width:100%;height:auto;display:block}
 @media(max-width:800px){.ambient .sleeve-label{top:calc(65px + 16vw);width:43%;right:5%}}
+
+.ambient .cover-face .cover-copy h1{width:max-content;max-width:none}
+.ambient .glass-number{left:65%;top:41%;display:grid;justify-items:start;gap:3px;font-size:clamp(40px,6.4vw,100px);color:#d8f7fa;text-shadow:0 0 3px #a5e9ee70;text-decoration:none}
+.ambient .glass-caption{font:500 14px/1.5 ui-monospace,monospace;letter-spacing:0;background:#162c35dc;color:#edfaff;padding:1px 5px;text-shadow:none}
+.ambient .glass-number:is(:hover,:focus-visible) .glass-caption,.ambient .languages [aria-current=true]{text-decoration:underline;text-underline-offset:.22em}
+.ambient .glass-number:focus-visible{outline:2px solid #e4ffff;outline-offset:4px}
+@media(max-width:800px){
+ .ambient .cover-face .cover-copy h1{width:auto;max-width:100%}
+ .ambient .cover-break{display:none}
+ .ambient .glass-number{left:auto;right:6%;top:50%;font-size:48px}
+}
